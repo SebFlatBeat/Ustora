@@ -1,5 +1,6 @@
 <%@ page pageEncoding="UTF-8" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jstl/fmt" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <!--
@@ -42,20 +43,20 @@ URL: https://www.freshdesignweb.com/ustora/
 <div class="header-area">
     <div class="container">
         <div class="row">
-            <div class="col-md-3 pull-right">
+            <div class="col-lg-4 pull-right">
                 <div class="user-menu">
                     <ul>
                         <c:if test="${pageContext.request.userPrincipal == null}">
-                        <li><a href="<c:url value="/register"/>"><i class="fa fa-user"></i> Create account</a></li>
-                        <li><a href="<c:url value="/login"/>"><i class="fa fa-user"></i>Connexion</a>
-                        </li>
+                            <li><a href="<c:url value="/register"/>"><i class="fa fa-user"></i> Creer Compte</a></li>
+                            <li><a href="<c:url value="/login"/>"><i class="fa fa-user"></i>Connexion</a>
+                            </li>
                         </c:if>
                         <c:if test="${pageContext.request.userPrincipal != null}">
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">${pageContext.request.userPrincipal.name}<b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li><a href="<c:url value="/espacePerso"/>">Mon espace perso</a></li>
-                                <li><a href="/login?logout">Deconnect</a></li>
+                                <li><a href="<c:url value="/logout"/>">Deconnexion</a></li>
                                 </c:if>
                             </ul>
                         </li>
@@ -74,12 +75,6 @@ URL: https://www.freshdesignweb.com/ustora/
                     <h1><a href="../../../.."><img src="../../img/logo.png"/></a></h1>
                 </div>
             </div>
-
-            <div class="col-sm-6">
-                <div class="shopping-item">
-                    <a href="../../../../templates/cart.html">Cart - <span class="cart-amunt">$100</span> <i class="fa fa-shopping-cart"></i> <span class="product-count">5</span></a>
-                </div>
-            </div>
         </div>
     </div>
 </div> <!-- End site branding area -->
@@ -87,25 +82,55 @@ URL: https://www.freshdesignweb.com/ustora/
 <div class="mainmenu-area">
     <div class="container">
         <div class="row">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+            <div class="col-lg-12">
+                <div class="boxed-grey">
+                    <form id="contact-form" action="/searchBook">
+                        <div class="row">
+                            <div class="form-group col-md-3">
+                                <label for="titre">Le livre</label>
+                                <select id="titre" name="titre" class="chosen-select form-control" data-placeholder="Cherchez par livre" >
+                                    <option></option>
+                                    <c:forEach var="findBook" items="${allBook}">
+                                        <option value="${findBook.titre}">${findBook.titre}</option>
+                                    </c:forEach>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.jsp">Home</a></li>
-                    <li><a href="../../../../templates/shop.html">Shop page</a></li>
-                    <li><a href="../../../../templates/single-product.html">Single product</a></li>
-                    <li><a href="../../../../templates/cart.html">Cart</a></li>
-                    <li><a href="checkout.jsp">Checkout</a></li>
-                    <li><a href="#">Category</a></li>
-                    <li><a href="#">Others</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+        </div>
+        <div class="row">
+            <div class="service-box team boxed-grey">
+                <h5>Liste de Livre</h5>
+                <table class="table table-responsive-lg table-striped">
+                    <thead class="thead-dark">
+                    <tr class="bg-primary">
+                        <th class="text-center" scope="col">Livre</th>
+                        <th class="text-center" scope="col">Nom de l'auteur</th>
+                        <th class="text-center" scope="col">Prénom de l'auteur</th>
+                        <th class="text-center" scope="col"> Editeur</th>
+                        <th class="text-center" scope="col"> Année d'édition</th>
+                        <th class="text-center" scope="col"> Section</th>
+                        <th class="text-center" scope="col"> ISBN</th>
+                        <th class="text-center" scope="col"> Nombre d'exemplaire</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <c:forEach items="${allBook}" var="bookAll">
+                        <tr>
+                            <td class="text-center" scope="row">${bookAll.titre}</td>
+                            <td class="text-center" scope="row">${bookAll.auteurPrincipalNom}</td>
+                            <td class="text-center" scope="row">${bookAll.auteurPrincipalPrenom}</td>
+                            <td class="text-center" scope="row">${bookAll.editeur}</td>
+                            <td class="text-center" scope="row">${bookAll.anneeEdition}</td>
+                            <td class="text-center" scope="row">${bookAll.section}</td>
+                            <td class="text-center" scope="row">${bookAll.isbn}</td>
+                            <td class="text-center" scope="row">${bookAll.nbreExemplaire}</td>
+                        </tr>
+                    </c:forEach>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
@@ -566,5 +591,14 @@ URL: https://www.freshdesignweb.com/ustora/
 <!-- Slider -->
 <script type="text/javascript" src="../../js/bxslider.min.js"></script>
 <script type="text/javascript" src="../../js/script.slider.js"></script>
+
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+<script src="chosen/chosen.jquery.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $(".chosen-select").chosen();
+    });
+</script>
 </body>
 </html>
