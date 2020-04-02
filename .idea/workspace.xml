@@ -1,7 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c71ef9e-16a3-4367-b8d3-f39ec379e535" name="Default Changelist" comment="" />
+    <list default="true" id="1c71ef9e-16a3-4367-b8d3-f39ec379e535" name="Default Changelist" comment="Modification du fichier xml">
+      <change afterPath="$PROJECT_DIR$/clientui/config-server/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientui/config-server/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientui/config-server/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientui/config-server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientui/config-server/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientui/config-server/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientui/config-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientui/config-server/src/main/java/com/Ustora/configserver/ConfigServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientui/config-server/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientui/config-server/src/test/java/com/Ustora/configserver/ConfigServerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientui/src/main/resources/WEB-INF/jsp/espacePerso.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientui/src/main/resources/WEB-INF/jsp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientui/src/main/resources/WEB-INF/jsp/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientui/src/main/resources/WEB-INF/jsp/register.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientui/src/main/resources/WEB-INF/jsp/registerSuccess.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientui/src/main/resources/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientui/src/main/resources/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/META-INF.resources/WEB-INF/jsp/espacePerso.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/META-INF.resources/WEB-INF/jsp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/META-INF.resources/WEB-INF/jsp/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/META-INF.resources/WEB-INF/jsp/register.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/META-INF.resources/WEB-INF/jsp/registerSuccess.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/META-INF.resources/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/META-INF.resources/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/java/com/Ustora/configserver/ConfigServerApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/test/java/com/Ustora/configserver/ConfigServerApplicationTests.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,6 +92,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
@@ -65,7 +103,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/clientui/src/main/resources/META-INF.resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -234,12 +272,31 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585777105680</updated>
-      <workItem from="1585777110656" duration="8573000" />
+      <workItem from="1585777110656" duration="9899000" />
     </task>
+    <task id="LOCAL-00001" summary="Modification du fichier xml">
+      <created>1585788896625</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585788896625</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Modification du fichier xml">
+      <created>1585789009360</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585789009360</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Modification du fichier xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modification du fichier xml" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Notifications" timestamp="1585788923959">
@@ -262,14 +319,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="482" y="271" key="#com.intellij.javaee.module.view.web.EditWebRootDialog/0.0.1366.728@0.0.1366.728" timestamp="1585784304857" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1585788894564">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1585789376358">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585788894564" />
-    <state x="463" y="57" key="FileChooserDialogImpl" timestamp="1585783452215">
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585789376358" />
+    <state x="129" y="55" key="DiffContextDialog" timestamp="1585789225641">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="57" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1585783452215" />
+    <state x="129" y="55" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1585789225641" />
+    <state x="463" y="57" key="FileChooserDialogImpl" timestamp="1585790777360">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="57" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1585790777360" />
+    <state x="553" y="257" key="Github.ShareDialog" timestamp="1585790800540">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="553" y="257" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1585790800540" />
     <state width="1021" height="244" key="GridCell.Tab.0.bottom" timestamp="1585788988617">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -330,10 +395,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1585784816916" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1585788908108">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1585789308485">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1585788908108" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1585789308485" />
+    <state x="492" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585789153950">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="492" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1585789153950" />
+    <state x="497" y="258" key="git4idea.ui.GitResetDialog" timestamp="1585789367183">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="497" y="258" key="git4idea.ui.GitResetDialog/0.0.1366.728@0.0.1366.728" timestamp="1585789367183" />
     <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1585782952607">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
