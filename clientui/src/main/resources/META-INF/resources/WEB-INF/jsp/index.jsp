@@ -45,7 +45,12 @@ URL: https://www.freshdesignweb.com/ustora/
 <div class="header-area">
     <div class="container">
         <div class="row">
-            <div class="col-md-4 ml-auto ">
+            <div class="col-md-4 mr-auto">
+                <div class="logo ml-auto">
+                    <h1><a href="<c:url value="/index"/>"><img src="../../img/logo.png"/></a></h1>
+                </div>
+            </div>
+            <div class="col-md-4">
                 <div class="user-menu text-right">
                     <ul>
                         <c:if test="${pageContext.request.userPrincipal == null}">
@@ -67,19 +72,54 @@ URL: https://www.freshdesignweb.com/ustora/
             </div>
         </div>
     </div>
-</div> <!-- End header area -->
+</div>
 
-<div class="site-branding-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 ml-auto mr-auto">
-                <div class="logo ml-auto">
-                    <h1><a href="../../../.."><img src="../../img/logo.png"/></a></h1>
+</div> <!-- End header area -->
+<div class="slider-area">
+    <!-- Slider -->
+    <div class="block-slider block-slider4">
+        <ul class="" id="bxslider-home4">
+            <li>
+                <img src="../../img/h4-slide.png" alt="Slide">
+                <div class="caption-group">
+                    <h2 class="caption title">
+                        J.R.R <span class="primary"><strong>Tolkien</strong></span>
+                    </h2>
+                    <h4 class="caption subtitle">Beowulf</h4>
+                    <a class="caption button-radius" href="#"><span class="icon"></span>Plus de détails</a>
                 </div>
-            </div>
-        </div>
+            </li>
+            <li><img src="../../img/h4-slide2.png" alt="Slide">
+                <div class="caption-group">
+                    <h2 class="caption title">
+                       Jules <span class="primary"><strong>Verne</strong></span>
+                    </h2>
+                    <h4 class="caption subtitle">L'étonnante aventure de la mission barsac</h4>
+                    <a class="caption button-radius" href="#"><span class="icon"></span>Plus de détails</a>
+                </div>
+            </li>
+            <li><img src="../../img/h4-slide3.png" alt="Slide">
+                <div class="caption-group">
+                    <h2 class="caption title">
+                        Stephen <span class="primary"><strong>King</strong></span>
+                    </h2>
+                    <h4 class="caption subtitle">The Mist</h4>
+                    <a class="caption button-radius" href="#"><span class="icon"></span>Plus de détails</a>
+                </div>
+            </li>
+            <li><img src="../../img/h4-slide4.png" alt="Slide">
+                <div class="caption-group">
+                    <h2 class="caption title">
+                        Mary <span class="primary">Higgins <strong>Clark</strong></span>
+                    </h2>
+                    <h4 class="caption subtitle">Dernière Danse</h4>
+                    <a class="caption button-radius" href="#"><span class="icon"></span>Plus de détails</a>
+                </div>
+            </li>
+        </ul>
     </div>
-</div> <!-- End site branding area -->
+    <!-- ./Slider -->
+</div> <!-- End slider area -->
 
 <div class="mainmenu-area">
     <div class="container">
@@ -93,7 +133,7 @@ URL: https://www.freshdesignweb.com/ustora/
                                 <label for="titre" class="">Le livre</label>
                                 <select id="titre" name="titre" class="chosen-select form-control" data-placeholder="Cherchez par livre" >
                                     <option></option>
-                                    <c:forEach var="findBook" items="${allBook}">
+                                    <c:forEach var="findBook" items="${allBookList}">
                                         <option value="${findBook.titre}">${findBook.titre}</option>
                                     </c:forEach>
                                 </select>
@@ -102,7 +142,7 @@ URL: https://www.freshdesignweb.com/ustora/
                                 <label for="auteurPrincipalNom">Nom d'auteur</label>
                                 <select id="auteurPrincipalNom" name="auteurPrincipalNom" class="chosen-select form-control" data-placeholder="Cherchez par nom d'auteur" >
                                     <option></option>
-                                    <c:forEach var="findBook" items="${allBook}">
+                                    <c:forEach var="findBook" items="${allBookList}">
                                         <option value="${findBook.auteurPrincipalNom}">${findBook.auteurPrincipalNom}</option>
                                     </c:forEach>
                                 </select>
@@ -111,7 +151,7 @@ URL: https://www.freshdesignweb.com/ustora/
                                 <label for="auteurPrincipalPrenom">Prénoms</label>
                                 <select id="auteurPrincipalPrenom" name="auteurPrincipalPrenom" class="chosen-select form-control" data-placeholder="Cherchez par prénom" >
                                     <option></option>
-                                    <c:forEach var="findBook" items="${allBook}">
+                                    <c:forEach var="findBook" items="${allBookList}">
                                         <option value="${findBook.auteurPrincipalPrenom}">${findBook.auteurPrincipalPrenom}</option>
                                     </c:forEach>
                                 </select>
@@ -120,11 +160,43 @@ URL: https://www.freshdesignweb.com/ustora/
                                 <label for="editeur">Editeur</label>
                                 <select id="editeur" name="editeur" class="chosen-select form-control" data-placeholder="Cherchez par prénom" >
                                     <option></option>
-                                    <c:forEach var="findBook" items="${allBook}">
+                                    <c:forEach var="findBook" items="${allBookList}">
                                         <option value="${findBook.editeur}">${findBook.editeur}</option>
                                     </c:forEach>
                                 </select>
                             </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-3 ">
+                            <label for="anneeEdition" class="">Année d"édition</label>
+                            <select id="anneeEdition" name="anneeEdition" class="chosen-select form-control" data-placeholder="Cherchez par année" >
+                                <option></option>
+                                <c:forEach var="findBook" items="${allBookList}">
+                                    <option value="${findBook.anneeEdition}">${findBook.anneeEdition}</option>
+                                </c:forEach>
+                            </select>
+                        </div>
+                            <div class="form-group col-md-3 ">
+                                <label for="section" class="">Section</label>
+                                <select id="section" name="section" class="chosen-select form-control" data-placeholder="Cherchez par section" >
+                                    <option></option>
+                                    <c:forEach var="findBook" items="${allBookList}">
+                                        <option value="${findBook.section}">${findBook.section}</option>
+                                    </c:forEach>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-3 ">
+                                <label for="isbn" class="">ISBN</label>
+                                <select id="isbn" name="isbn" class="chosen-select form-control" data-placeholder="Cherchez par ISBN" >
+                                    <option></option>
+                                    <c:forEach var="findBook" items="${allBookList}">
+                                        <option value="${findBook.isbn}">${findBook.isbn}</option>
+                                    </c:forEach>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="single-product mr-auto">
+                            <button class="btn btn-info">Chercher</button>
                         </div>
                     </form>
                 </div>
@@ -132,7 +204,7 @@ URL: https://www.freshdesignweb.com/ustora/
         </div>
         <div class="row">
             <div class="service-box team boxed-grey">
-                <h5>Liste de Livre</h5>
+                <h5 class="col-md-2 ml-auto mr-auto">Liste des Livres</h5>
                 <table class="table table-responsive-lg table-striped table-hover">
                     <thead class="thead-dark">
                     <tr class="bg-primary">
@@ -144,6 +216,7 @@ URL: https://www.freshdesignweb.com/ustora/
                         <th class="text-center" scope="col"> Section</th>
                         <th class="text-center" scope="col"> ISBN</th>
                         <th class="text-center" scope="col"> Nombre d'exemplaire</th>
+                        <th class="text-center" scope="col"></th>
                     </tr>
                     </thead>
                     <tbody>
@@ -157,499 +230,464 @@ URL: https://www.freshdesignweb.com/ustora/
                             <td class="text-center" scope="row">${bookAll.section}</td>
                             <td class="text-center" scope="row">${bookAll.isbn}</td>
                             <td class="text-center" scope="row">${bookAll.nbreExemplaire}</td>
+                            <td class="text-center" scope="row">
+                                <div class="single-product">
+                                    <button href="../../../../bookDetail/${bookAll.id}" class="view-details-link">Plus de détails</button>
+                                    <button class="btn-success">Reserver</button>
+                                </div>
+                            </td>
                         </tr>
+
                     </c:forEach>
                     </tbody>
                 </table>
-                <nav aria-label="Page navigation example">
-                    <ul class="pagination justify-content-center">
-                        <c:if test="${paginationBook.getNumber() == 0}">
-                        <li class="page-item disabled">
-                            <a class="page-link" href="#" tabindex="-1">Previous</a>
-                        </li>
-                        </c:if>
-                        <c:if test="${paginationBook.getNumber() != 0}">
-                        <li class="page-item">
-                            <a class="page-link" href="/page/${paginationBook.getNumber()-1}">Previous</a>
-                        </li>
-                        </c:if>
-                        <li class="page-item">
-                            <a class="page-link" >${paginationBook.getNumber()}</a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link" href="/page/${paginationBook.getNumber()+1}">Next</a>
-                        </li>
-                    </ul>
-                </nav>
+            </div>
+        </div>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <c:if test="${paginationBook.getNumber() == 0}">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                    </li>
+                </c:if>
+                <c:if test="${paginationBook.getNumber() != 0}">
+                    <li class="page-item">
+                        <a class="page-link" href="/page/${paginationBook.getNumber()-1}">Previous</a>
+                    </li>
+                </c:if>
+                <li class="page-item">
+                    <a class="page-link" >${paginationBook.getNumber()}</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="/page/${paginationBook.getNumber()+1}">Next</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+</div>
+</div>
+<!-- End mainmenu area -->
+
+
+
+<div class="promo-area">
+    <div class="zigzag-bottom"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="single-promo promo1">
+                    <i class="fa fa-refresh"></i>
+                    <p>30 Days return</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="single-promo promo2">
+                    <i class="fa fa-truck"></i>
+                    <p>Free shipping</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="single-promo promo3">
+                    <i class="fa fa-lock"></i>
+                    <p>Secure payments</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="single-promo promo4">
+                    <i class="fa fa-gift"></i>
+                    <p>New products</p>
+                </div>
             </div>
         </div>
     </div>
-</div>
-    <!-- End mainmenu area -->
+</div> <!-- End promo area -->
 
-    <div class="slider-area">
-        <!-- Slider -->
-        <div class="block-slider block-slider4">
-            <ul class="" id="bxslider-home4">
-                <li>
-                    <img src="../../img/h4-slide.png" alt="Slide">
-                    <div class="caption-group">
-                        <h2 class="caption title">
-                            iPhone <span class="primary">6 <strong>Plus</strong></span>
-                        </h2>
-                        <h4 class="caption subtitle">Dual SIM</h4>
-                        <a class="caption button-radius" href="#"><span class="icon"></span>Shop now</a>
-                    </div>
-                </li>
-                <li><img src="../../img/h4-slide2.png" alt="Slide">
-                    <div class="caption-group">
-                        <h2 class="caption title">
-                            by one, get one <span class="primary">50% <strong>off</strong></span>
-                        </h2>
-                        <h4 class="caption subtitle">school supplies & backpacks.*</h4>
-                        <a class="caption button-radius" href="#"><span class="icon"></span>Shop now</a>
-                    </div>
-                </li>
-                <li><img src="../../img/h4-slide3.png" alt="Slide">
-                    <div class="caption-group">
-                        <h2 class="caption title">
-                            Apple <span class="primary">Store <strong>Ipod</strong></span>
-                        </h2>
-                        <h4 class="caption subtitle">Select Item</h4>
-                        <a class="caption button-radius" href="#"><span class="icon"></span>Shop now</a>
-                    </div>
-                </li>
-                <li><img src="../../img/h4-slide4.png" alt="Slide">
-                    <div class="caption-group">
-                        <h2 class="caption title">
-                            Apple <span class="primary">Store <strong>Ipod</strong></span>
-                        </h2>
-                        <h4 class="caption subtitle">& Phone</h4>
-                        <a class="caption button-radius" href="#"><span class="icon"></span>Shop now</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <!-- ./Slider -->
-    </div> <!-- End slider area -->
-
-    <div class="promo-area">
-        <div class="zigzag-bottom"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <div class="single-promo promo1">
-                        <i class="fa fa-refresh"></i>
-                        <p>30 Days return</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="single-promo promo2">
-                        <i class="fa fa-truck"></i>
-                        <p>Free shipping</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="single-promo promo3">
-                        <i class="fa fa-lock"></i>
-                        <p>Secure payments</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="single-promo promo4">
-                        <i class="fa fa-gift"></i>
-                        <p>New products</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> <!-- End promo area -->
-
-    <div class="maincontent-area">
-        <div class="zigzag-bottom"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="latest-product">
-                        <h2 class="section-title">Latest Products</h2>
-                        <div class="product-carousel">
-                            <div class="single-product">
-                                <div class="product-f-image">
-                                    <img src="../../img/product-1.jpg" alt="">
-                                    <div class="product-hover">
-                                        <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-                                        <a href="../../../../templates/single-product.html" class="view-details-link"><i class="fa fa-link"></i> See details</a>
-                                    </div>
-                                </div>
-
-                                <h2><a href="../../../../templates/single-product.html">Samsung Galaxy s5- 2015</a></h2>
-
-                                <div class="product-carousel-price">
-                                    <ins>$700.00</ins> <del>$100.00</del>
+<div class="maincontent-area">
+    <div class="zigzag-bottom"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="latest-product">
+                    <h2 class="section-title">Latest Products</h2>
+                    <div class="product-carousel">
+                        <div class="single-product">
+                            <div class="product-f-image">
+                                <img src="../../img/product-1.jpg" alt="">
+                                <div class="product-hover">
+                                    <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                                    <a href="../../../../templates/single-product.html" class="view-details-link"><i class="fa fa-link"></i> See details</a>
                                 </div>
                             </div>
-                            <div class="single-product">
-                                <div class="product-f-image">
-                                    <img src="../../img/product-2.jpg" alt="">
-                                    <div class="product-hover">
-                                        <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-                                        <a href="../../../../templates/single-product.html" class="view-details-link"><i class="fa fa-link"></i> See details</a>
-                                    </div>
-                                </div>
 
-                                <h2>Nokia Lumia 1320</h2>
-                                <div class="product-carousel-price">
-                                    <ins>$899.00</ins> <del>$999.00</del>
-                                </div>
-                            </div>
-                            <div class="single-product">
-                                <div class="product-f-image">
-                                    <img src="../../img/product-3.jpg" alt="">
-                                    <div class="product-hover">
-                                        <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-                                        <a href="../../../../templates/single-product.html" class="view-details-link"><i class="fa fa-link"></i> See details</a>
-                                    </div>
-                                </div>
+                            <h2><a href="../../../../templates/single-product.html">Samsung Galaxy s5- 2015</a></h2>
 
-                                <h2>LG Leon 2015</h2>
-
-                                <div class="product-carousel-price">
-                                    <ins>$400.00</ins> <del>$425.00</del>
-                                </div>
-                            </div>
-                            <div class="single-product">
-                                <div class="product-f-image">
-                                    <img src="../../img/product-4.jpg" alt="">
-                                    <div class="product-hover">
-                                        <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-                                        <a href="../../../../templates/single-product.html" class="view-details-link"><i class="fa fa-link"></i> See details</a>
-                                    </div>
-                                </div>
-
-                                <h2><a href="../../../../templates/single-product.html">Sony microsoft</a></h2>
-
-                                <div class="product-carousel-price">
-                                    <ins>$200.00</ins> <del>$225.00</del>
-                                </div>
-                            </div>
-                            <div class="single-product">
-                                <div class="product-f-image">
-                                    <img src="../../img/product-5.jpg" alt="">
-                                    <div class="product-hover">
-                                        <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-                                        <a href="../../../../templates/single-product.html" class="view-details-link"><i class="fa fa-link"></i> See details</a>
-                                    </div>
-                                </div>
-
-                                <h2>iPhone 6</h2>
-
-                                <div class="product-carousel-price">
-                                    <ins>$1200.00</ins> <del>$1355.00</del>
-                                </div>
-                            </div>
-                            <div class="single-product">
-                                <div class="product-f-image">
-                                    <img src="../../img/product-6.jpg" alt="">
-                                    <div class="product-hover">
-                                        <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-                                        <a href="../../../../templates/single-product.html" class="view-details-link"><i class="fa fa-link"></i> See details</a>
-                                    </div>
-                                </div>
-
-                                <h2><a href="../../../../templates/single-product.html">Samsung gallaxy note 4</a></h2>
-
-                                <div class="product-carousel-price">
-                                    <ins>$400.00</ins>
-                                </div>
+                            <div class="product-carousel-price">
+                                <ins>$700.00</ins> <del>$100.00</del>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> <!-- End main content area -->
-
-    <div class="brands-area">
-        <div class="zigzag-bottom"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="brand-wrapper">
-                        <div class="brand-list">
-                            <img src="../../img/brand1.png" alt="">
-                            <img src="../../img/brand2.png" alt="">
-                            <img src="../../img/brand3.png" alt="">
-                            <img src="../../img/brand4.png" alt="">
-                            <img src="../../img/brand5.png" alt="">
-                            <img src="../../img/brand6.png" alt="">
-                            <img src="../../img/brand1.png" alt="">
-                            <img src="../../img/brand2.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> <!-- End brands area -->
-
-    <div class="product-widget-area">
-        <div class="zigzag-bottom"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="single-product-widget">
-                        <h2 class="product-wid-title">Top Sellers</h2>
-                        <a href="" class="wid-view-more">View All</a>
-                        <div class="single-wid-product">
-                            <a href="../../../../templates/single-product.html"><img src="../../img/product-thumb-1.jpg" alt="" class="product-thumb"></a>
-                            <h2><a href="../../../../templates/single-product.html">Sony Smart TV - 2015</a></h2>
-                            <div class="product-wid-rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
+                        <div class="single-product">
+                            <div class="product-f-image">
+                                <img src="../../img/product-2.jpg" alt="">
+                                <div class="product-hover">
+                                    <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                                    <a href="../../../../templates/single-product.html" class="view-details-link"><i class="fa fa-link"></i> See details</a>
+                                </div>
                             </div>
-                            <div class="product-wid-price">
+
+                            <h2>Nokia Lumia 1320</h2>
+                            <div class="product-carousel-price">
+                                <ins>$899.00</ins> <del>$999.00</del>
+                            </div>
+                        </div>
+                        <div class="single-product">
+                            <div class="product-f-image">
+                                <img src="../../img/product-3.jpg" alt="">
+                                <div class="product-hover">
+                                    <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                                    <a href="../../../../templates/single-product.html" class="view-details-link"><i class="fa fa-link"></i> See details</a>
+                                </div>
+                            </div>
+
+                            <h2>LG Leon 2015</h2>
+
+                            <div class="product-carousel-price">
                                 <ins>$400.00</ins> <del>$425.00</del>
                             </div>
                         </div>
-                        <div class="single-wid-product">
-                            <a href="../../../../templates/single-product.html"><img src="../../img/product-thumb-2.jpg" alt="" class="product-thumb"></a>
-                            <h2><a href="../../../../templates/single-product.html">Apple new mac book 2015</a></h2>
-                            <div class="product-wid-rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
+                        <div class="single-product">
+                            <div class="product-f-image">
+                                <img src="../../img/product-4.jpg" alt="">
+                                <div class="product-hover">
+                                    <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                                    <a href="../../../../templates/single-product.html" class="view-details-link"><i class="fa fa-link"></i> See details</a>
+                                </div>
                             </div>
-                            <div class="product-wid-price">
-                                <ins>$400.00</ins> <del>$425.00</del>
-                            </div>
-                        </div>
-                        <div class="single-wid-product">
-                            <a href="../../../../templates/single-product.html"><img src="../../img/product-thumb-3.jpg" alt="" class="product-thumb"></a>
-                            <h2><a href="../../../../templates/single-product.html">Apple new i phone 6</a></h2>
-                            <div class="product-wid-rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="product-wid-price">
-                                <ins>$400.00</ins> <del>$425.00</del>
+
+                            <h2><a href="../../../../templates/single-product.html">Sony microsoft</a></h2>
+
+                            <div class="product-carousel-price">
+                                <ins>$200.00</ins> <del>$225.00</del>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="single-product-widget">
-                        <h2 class="product-wid-title">Recently Viewed</h2>
-                        <a href="#" class="wid-view-more">View All</a>
-                        <div class="single-wid-product">
-                            <a href="../../../../templates/single-product.html"><img src="../../img/product-thumb-4.jpg" alt="" class="product-thumb"></a>
-                            <h2><a href="../../../../templates/single-product.html">Sony playstation microsoft</a></h2>
-                            <div class="product-wid-rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
+                        <div class="single-product">
+                            <div class="product-f-image">
+                                <img src="../../img/product-5.jpg" alt="">
+                                <div class="product-hover">
+                                    <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                                    <a href="../../../../templates/single-product.html" class="view-details-link"><i class="fa fa-link"></i> See details</a>
+                                </div>
                             </div>
-                            <div class="product-wid-price">
-                                <ins>$400.00</ins> <del>$425.00</del>
+
+                            <h2>iPhone 6</h2>
+
+                            <div class="product-carousel-price">
+                                <ins>$1200.00</ins> <del>$1355.00</del>
                             </div>
                         </div>
-                        <div class="single-wid-product">
-                            <a href="../../../../templates/single-product.html"><img src="../../img/product-thumb-1.jpg" alt="" class="product-thumb"></a>
-                            <h2><a href="../../../../templates/single-product.html">Sony Smart Air Condtion</a></h2>
-                            <div class="product-wid-rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
+                        <div class="single-product">
+                            <div class="product-f-image">
+                                <img src="../../img/product-6.jpg" alt="">
+                                <div class="product-hover">
+                                    <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                                    <a href="../../../../templates/single-product.html" class="view-details-link"><i class="fa fa-link"></i> See details</a>
+                                </div>
                             </div>
-                            <div class="product-wid-price">
-                                <ins>$400.00</ins> <del>$425.00</del>
-                            </div>
-                        </div>
-                        <div class="single-wid-product">
-                            <a href="../../../../templates/single-product.html"><img src="../../img/product-thumb-2.jpg" alt="" class="product-thumb"></a>
+
                             <h2><a href="../../../../templates/single-product.html">Samsung gallaxy note 4</a></h2>
-                            <div class="product-wid-rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="product-wid-price">
-                                <ins>$400.00</ins> <del>$425.00</del>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="single-product-widget">
-                        <h2 class="product-wid-title">Top New</h2>
-                        <a href="#" class="wid-view-more">View All</a>
-                        <div class="single-wid-product">
-                            <a href="../../../../templates/single-product.html"><img src="../../img/product-thumb-3.jpg" alt="" class="product-thumb"></a>
-                            <h2><a href="../../../../templates/single-product.html">Apple new i phone 6</a></h2>
-                            <div class="product-wid-rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="product-wid-price">
-                                <ins>$400.00</ins> <del>$425.00</del>
-                            </div>
-                        </div>
-                        <div class="single-wid-product">
-                            <a href="../../../../templates/single-product.html"><img src="../../img/product-thumb-4.jpg" alt="" class="product-thumb"></a>
-                            <h2><a href="../../../../templates/single-product.html">Samsung gallaxy note 4</a></h2>
-                            <div class="product-wid-rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="product-wid-price">
-                                <ins>$400.00</ins> <del>$425.00</del>
-                            </div>
-                        </div>
-                        <div class="single-wid-product">
-                            <a href="../../../../templates/single-product.html"><img src="../../img/product-thumb-1.jpg" alt="" class="product-thumb"></a>
-                            <h2><a href="../../../../templates/single-product.html">Sony playstation microsoft</a></h2>
-                            <div class="product-wid-rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="product-wid-price">
-                                <ins>$400.00</ins> <del>$425.00</del>
+
+                            <div class="product-carousel-price">
+                                <ins>$400.00</ins>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div> <!-- End product widget area -->
+    </div>
+</div> <!-- End main content area -->
 
-    <div class="footer-top-area">
-        <div class="zigzag-bottom"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <div class="footer-about-us">
-                        <h2>u<span>Stora</span></h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis sunt id doloribus vero quam laborum quas alias dolores blanditiis iusto consequatur, modi aliquid eveniet eligendi iure eaque ipsam iste, pariatur omnis sint! Suscipit, debitis, quisquam. Laborum commodi veritatis magni at?</p>
-                        <div class="footer-social">
-                            <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                            <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                            <a href="#" target="_blank"><i class="fa fa-youtube"></i></a>
-                            <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+<div class="brands-area">
+    <div class="zigzag-bottom"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="brand-wrapper">
+                    <div class="brand-list">
+                        <img src="../../img/brand1.png" alt="">
+                        <img src="../../img/brand2.png" alt="">
+                        <img src="../../img/brand3.png" alt="">
+                        <img src="../../img/brand4.png" alt="">
+                        <img src="../../img/brand5.png" alt="">
+                        <img src="../../img/brand6.png" alt="">
+                        <img src="../../img/brand1.png" alt="">
+                        <img src="../../img/brand2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- End brands area -->
+
+<div class="product-widget-area">
+    <div class="zigzag-bottom"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="single-product-widget">
+                    <h2 class="product-wid-title">Top Sellers</h2>
+                    <a href="" class="wid-view-more">View All</a>
+                    <div class="single-wid-product">
+                        <a href="../../../../templates/single-product.html"><img src="../../img/product-thumb-1.jpg" alt="" class="product-thumb"></a>
+                        <h2><a href="../../../../templates/single-product.html">Sony Smart TV - 2015</a></h2>
+                        <div class="product-wid-rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="product-wid-price">
+                            <ins>$400.00</ins> <del>$425.00</del>
+                        </div>
+                    </div>
+                    <div class="single-wid-product">
+                        <a href="../../../../templates/single-product.html"><img src="../../img/product-thumb-2.jpg" alt="" class="product-thumb"></a>
+                        <h2><a href="../../../../templates/single-product.html">Apple new mac book 2015</a></h2>
+                        <div class="product-wid-rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="product-wid-price">
+                            <ins>$400.00</ins> <del>$425.00</del>
+                        </div>
+                    </div>
+                    <div class="single-wid-product">
+                        <a href="../../../../templates/single-product.html"><img src="../../img/product-thumb-3.jpg" alt="" class="product-thumb"></a>
+                        <h2><a href="../../../../templates/single-product.html">Apple new i phone 6</a></h2>
+                        <div class="product-wid-rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="product-wid-price">
+                            <ins>$400.00</ins> <del>$425.00</del>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-3 col-sm-6">
-                    <div class="footer-menu">
-                        <h2 class="footer-wid-title">User Navigation </h2>
-                        <ul>
-                            <li><a href="#">My account</a></li>
-                            <li><a href="#">Order history</a></li>
-                            <li><a href="#">Wishlist</a></li>
-                            <li><a href="#">Vendor contact</a></li>
-                            <li><a href="#">Front page</a></li>
-                        </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="single-product-widget">
+                    <h2 class="product-wid-title">Recently Viewed</h2>
+                    <a href="#" class="wid-view-more">View All</a>
+                    <div class="single-wid-product">
+                        <a href="../../../../templates/single-product.html"><img src="../../img/product-thumb-4.jpg" alt="" class="product-thumb"></a>
+                        <h2><a href="../../../../templates/single-product.html">Sony playstation microsoft</a></h2>
+                        <div class="product-wid-rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="product-wid-price">
+                            <ins>$400.00</ins> <del>$425.00</del>
+                        </div>
+                    </div>
+                    <div class="single-wid-product">
+                        <a href="../../../../templates/single-product.html"><img src="../../img/product-thumb-1.jpg" alt="" class="product-thumb"></a>
+                        <h2><a href="../../../../templates/single-product.html">Sony Smart Air Condtion</a></h2>
+                        <div class="product-wid-rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="product-wid-price">
+                            <ins>$400.00</ins> <del>$425.00</del>
+                        </div>
+                    </div>
+                    <div class="single-wid-product">
+                        <a href="../../../../templates/single-product.html"><img src="../../img/product-thumb-2.jpg" alt="" class="product-thumb"></a>
+                        <h2><a href="../../../../templates/single-product.html">Samsung gallaxy note 4</a></h2>
+                        <div class="product-wid-rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="product-wid-price">
+                            <ins>$400.00</ins> <del>$425.00</del>
+                        </div>
                     </div>
                 </div>
-
-                <div class="col-md-3 col-sm-6">
-                    <div class="footer-menu">
-                        <h2 class="footer-wid-title">Categories</h2>
-                        <ul>
-                            <li><a href="#">Mobile Phone</a></li>
-                            <li><a href="#">Home accesseries</a></li>
-                            <li><a href="#">LED TV</a></li>
-                            <li><a href="#">Computer</a></li>
-                            <li><a href="#">Gadets</a></li>
-                        </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="single-product-widget">
+                    <h2 class="product-wid-title">Top New</h2>
+                    <a href="#" class="wid-view-more">View All</a>
+                    <div class="single-wid-product">
+                        <a href="../../../../templates/single-product.html"><img src="../../img/product-thumb-3.jpg" alt="" class="product-thumb"></a>
+                        <h2><a href="../../../../templates/single-product.html">Apple new i phone 6</a></h2>
+                        <div class="product-wid-rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="product-wid-price">
+                            <ins>$400.00</ins> <del>$425.00</del>
+                        </div>
                     </div>
-                </div>
-
-                <div class="col-md-3 col-sm-6">
-                    <div class="footer-newsletter">
-                        <h2 class="footer-wid-title">Newsletter</h2>
-                        <p>Sign up to our newsletter and get exclusive deals you wont find anywhere else straight to your inbox!</p>
-                        <div class="newsletter-form">
-                            <form action="#">
-                                <input type="email" placeholder="Type your email">
-                                <input type="submit" value="Subscribe">
-                            </form>
+                    <div class="single-wid-product">
+                        <a href="../../../../templates/single-product.html"><img src="../../img/product-thumb-4.jpg" alt="" class="product-thumb"></a>
+                        <h2><a href="../../../../templates/single-product.html">Samsung gallaxy note 4</a></h2>
+                        <div class="product-wid-rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="product-wid-price">
+                            <ins>$400.00</ins> <del>$425.00</del>
+                        </div>
+                    </div>
+                    <div class="single-wid-product">
+                        <a href="../../../../templates/single-product.html"><img src="../../img/product-thumb-1.jpg" alt="" class="product-thumb"></a>
+                        <h2><a href="../../../../templates/single-product.html">Sony playstation microsoft</a></h2>
+                        <div class="product-wid-rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="product-wid-price">
+                            <ins>$400.00</ins> <del>$425.00</del>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div> <!-- End footer top area -->
+    </div>
+</div> <!-- End product widget area -->
 
-    <div class="footer-bottom-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="copyright">
-                        <p>&copy; 2015 uCommerce. All Rights Reserved. <a href="http://www.freshdesignweb.com" target="_blank">freshDesignweb.com</a></p>
+<div class="footer-top-area">
+    <div class="zigzag-bottom"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="footer-about-us">
+                    <h2>u<span>Stora</span></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis sunt id doloribus vero quam laborum quas alias dolores blanditiis iusto consequatur, modi aliquid eveniet eligendi iure eaque ipsam iste, pariatur omnis sint! Suscipit, debitis, quisquam. Laborum commodi veritatis magni at?</p>
+                    <div class="footer-social">
+                        <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fa fa-youtube"></i></a>
+                        <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
                     </div>
                 </div>
+            </div>
 
-                <div class="col-md-4">
-                    <div class="footer-card-icon">
-                        <i class="fa fa-cc-discover"></i>
-                        <i class="fa fa-cc-mastercard"></i>
-                        <i class="fa fa-cc-paypal"></i>
-                        <i class="fa fa-cc-visa"></i>
+            <div class="col-md-3 col-sm-6">
+                <div class="footer-menu">
+                    <h2 class="footer-wid-title">User Navigation </h2>
+                    <ul>
+                        <li><a href="#">My account</a></li>
+                        <li><a href="#">Order history</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                        <li><a href="#">Vendor contact</a></li>
+                        <li><a href="#">Front page</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="footer-menu">
+                    <h2 class="footer-wid-title">Categories</h2>
+                    <ul>
+                        <li><a href="#">Mobile Phone</a></li>
+                        <li><a href="#">Home accesseries</a></li>
+                        <li><a href="#">LED TV</a></li>
+                        <li><a href="#">Computer</a></li>
+                        <li><a href="#">Gadets</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="footer-newsletter">
+                    <h2 class="footer-wid-title">Newsletter</h2>
+                    <p>Sign up to our newsletter and get exclusive deals you wont find anywhere else straight to your inbox!</p>
+                    <div class="newsletter-form">
+                        <form action="#">
+                            <input type="email" placeholder="Type your email">
+                            <input type="submit" value="Subscribe">
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-    </div> <!-- End footer bottom area -->
+    </div>
+</div> <!-- End footer top area -->
 
-    <!-- Latest jQuery form server -->
-    <script src="https://code.jquery.com/jquery.min.js"></script>
+<div class="footer-bottom-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="copyright">
+                    <p>&copy; 2015 uCommerce. All Rights Reserved. <a href="http://www.freshdesignweb.com" target="_blank">freshDesignweb.com</a></p>
+                </div>
+            </div>
 
-    <!-- Bootstrap JS form CDN -->
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+            <div class="col-md-4">
+                <div class="footer-card-icon">
+                    <i class="fa fa-cc-discover"></i>
+                    <i class="fa fa-cc-mastercard"></i>
+                    <i class="fa fa-cc-paypal"></i>
+                    <i class="fa fa-cc-visa"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- End footer bottom area -->
 
-    <!-- jQuery sticky menu -->
-    <script src="../../js/owl.carousel.min.js"></script>
-    <script src="../../js/jquery.sticky.js"></script>
+<!-- Latest jQuery form server -->
+<script src="https://code.jquery.com/jquery.min.js"></script>
 
-    <!-- jQuery easing -->
-    <script src="../../js/jquery.easing.1.3.min.js"></script>
+<!-- Bootstrap JS form CDN -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
-    <!-- Main Script -->
-    <script src="../../js/main.js"></script>
+<!-- jQuery sticky menu -->
+<script src="../../js/owl.carousel.min.js"></script>
+<script src="../../js/jquery.sticky.js"></script>
 
-    <!-- Slider -->
-    <script type="text/javascript" src="../../js/bxslider.min.js"></script>
-    <script type="text/javascript" src="../../js/script.slider.js"></script>
+<!-- jQuery easing -->
+<script src="../../js/jquery.easing.1.3.min.js"></script>
 
-    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
-    <script type="text/javascript">
-        $(function() {
-            $(".chosen-select").chosen();
-        });
-    </script>
+<!-- Main Script -->
+<script src="../../js/main.js"></script>
+
+<!-- Slider -->
+<script type="text/javascript" src="../../js/bxslider.min.js"></script>
+<script type="text/javascript" src="../../js/script.slider.js"></script>
+
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $(".chosen-select").chosen();
+    });
+</script>
 </body>
 </html>

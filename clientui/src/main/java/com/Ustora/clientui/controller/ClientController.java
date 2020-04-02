@@ -9,12 +9,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.*;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 
 @Controller
@@ -26,14 +24,54 @@ public class ClientController {
     @Autowired
     private BookProxy bookProxy;
 
-    @GetMapping(value = {"/","/index"})
-    public String index(Model modelAllBook,Model modelPagination,
-                        @RequestParam(name = "page", defaultValue = "0")int page,
-                        @RequestParam(name = "size", defaultValue = "20")int size
+    @GetMapping(value = {"/","/index","/page/{page}"})
+    public String index(Model modelAllBook, Model modelPagination, Model modelAllBookList,
+                        @PathVariable(required = false) Integer page,
+                        @RequestParam(name = "size", defaultValue = "20") int size,
+                        @RequestParam Optional<String> titre, Model modelDistinctTitre,
+                        @RequestParam Optional<String> auteurNom, Model modelDistinctAuteurNom,
+                        @RequestParam Optional<String> auteurPrenom, Model modelDistinctAuteurPrenom,
+                        @RequestParam Optional<String> editeur, Model modelDistinctEditeur,
+                        @RequestParam Optional<String> anneeEdition, Model modelDistinctAnneeEdition,
+                        @RequestParam Optional<String> section, Model modelDistinctSection,
+                        @RequestParam Optional<String> isbn, Model modelDistinctIsbn
                         ) {
+        if(page==null){
+            page=0;
+        }
         RestResponsePage <BookBean> allBook = bookProxy.allBook(page);
+        List<BookBean> allBookList = bookProxy.allBookList();
         modelAllBook.addAttribute("allBook",allBook.getContent());
         modelPagination.addAttribute("paginationBook",allBook);
+        modelAllBookList.addAttribute("allBookList", allBookList);
+
+        List<String> titres = bookProxy.findTitre();
+        modelDistinctTitre.addAttribute("titres",titres);
+
+        List<String> auteurNoms = bookProxy.findAuteurNom();
+        modelDistinctAuteurNom.addAttribute("auteurNoms",auteurNoms);
+
+        List<String> auteurPrenoms = bookProxy.findAuteurPrenom();
+        modelDistinctAuteurPrenom.addAttribute("auteurPrenoms", auteurPrenoms);
+
+        List<String> editeurs = bookProxy.findEditeur();
+        modelDistinctEditeur.addAttribute("editeurs",editeurs);
+
+        List<String> anneeEditions = bookProxy.findAnneeEdition();
+        modelDistinctAnneeEdition.addAttribute("anneeEditions",anneeEditions);
+
+        List<String> sections = bookProxy.findSection();
+        modelDistinctSection.addAttribute("sections",sections);
+
+        List<String> isbns = bookProxy.findIsbn();
+        modelDistinctIsbn.addAttribute("isbns",isbns);
+
+        List<BookBean> searchBook = bookProxy.allBookList();
+
+        if(titre.isPresent() && !searchBook.isEmpty()){
+            searchBook = bookProxy.searchTitre(titre.get(),searchBook);
+        }
+        
         return "index";
     }
 
