@@ -50,7 +50,7 @@ public class SecurityConfig  extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf().disable();
-        http.authorizeRequests().antMatchers("/","/registerPost","/registerSuccess","/register","/login" ,"/index", "/css/**", "/cssLogin/**", "/fonts/**", "/fontsLogin/**", "/img/**", "/iconsLogin/**", "/js/**,","/jsLogin/**","/vendorLogin/**").permitAll()
+        http.authorizeRequests().antMatchers("/","/registerPost","/registerSuccess","/register","/login" ,"/index","/chosen", "/css/**", "/cssLogin/**", "/fonts/**", "/fontsLogin/**", "/img/**", "/iconsLogin/**", "/js/**,","/jsLogin/**","/vendorLogin/**").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .formLogin()
@@ -69,6 +69,7 @@ public class SecurityConfig  extends WebSecurityConfigurerAdapter {
     @Override
     public void configure(WebSecurity web) throws Exception {
         //Web resources
+        web.ignoring().antMatchers("/chosen/**");
         web.ignoring().antMatchers("/css/**");
         web.ignoring().antMatchers("/cssLogin/**");
         web.ignoring().antMatchers("/fonts/**");

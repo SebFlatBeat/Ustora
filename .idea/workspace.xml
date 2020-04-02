@@ -1,43 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c71ef9e-16a3-4367-b8d3-f39ec379e535" name="Default Changelist" comment="Modification du fichier xml">
-      <change afterPath="$PROJECT_DIR$/clientui/config-server/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientui/config-server/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientui/config-server/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientui/config-server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientui/config-server/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientui/config-server/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientui/config-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientui/config-server/src/main/java/com/Ustora/configserver/ConfigServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientui/config-server/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientui/config-server/src/test/java/com/Ustora/configserver/ConfigServerApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientui/src/main/resources/WEB-INF/jsp/espacePerso.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientui/src/main/resources/WEB-INF/jsp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientui/src/main/resources/WEB-INF/jsp/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientui/src/main/resources/WEB-INF/jsp/register.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientui/src/main/resources/WEB-INF/jsp/registerSuccess.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientui/src/main/resources/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientui/src/main/resources/WEB-INF/web.xml" afterDir="false" />
+    <list default="true" id="1c71ef9e-16a3-4367-b8d3-f39ec379e535" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/clientui_Web2_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/META-INF.resources/WEB-INF/jsp/espacePerso.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/META-INF.resources/WEB-INF/jsp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/META-INF.resources/WEB-INF/jsp/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/META-INF.resources/WEB-INF/jsp/register.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/META-INF.resources/WEB-INF/jsp/registerSuccess.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/META-INF.resources/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/META-INF.resources/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/java/com/Ustora/configserver/ConfigServerApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/test/java/com/Ustora/configserver/ConfigServerApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/web/WebConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/web/WebConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +57,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1ZxO6nKbFyIiq8r2QdK6EwoZt7x" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -97,14 +71,14 @@
     <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="491" />
-    <property name="RequestMappingsPanelWidth1" value="491" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Facets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -113,11 +87,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main\resources\META-INF\resources" />
       <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main\resources\META-INF.resources" />
       <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main" />
       <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main\resources\WEB-INF" />
       <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main\resources" />
-      <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main\webapp\WEB-INF" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Vincs\IdeaProjects\Ustora\user\src\main\java\com\Ustora\user" />
@@ -244,16 +218,16 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
                 <item name="Not Started" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Bibliotheque@localhost: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Bibliotheque@localhost: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@99e7607" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
             </expand>
             <select />
@@ -272,7 +246,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585777105680</updated>
-      <workItem from="1585777110656" duration="9899000" />
+      <workItem from="1585777110656" duration="12592000" />
     </task>
     <task id="LOCAL-00001" summary="Modification du fichier xml">
       <created>1585788896625</created>
@@ -288,15 +262,24 @@
       <option name="project" value="LOCAL" />
       <updated>1585789009360</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Ajout web resources">
+      <created>1585791390250</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1585791390250</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Modification du fichier xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modification du fichier xml" />
+    <MESSAGE value="Ajout web resources" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout web resources" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Notifications" timestamp="1585788923959">
@@ -307,66 +290,66 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1585781092833" />
-    <state x="313" y="53" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1585781306627">
+    <state x="313" y="53" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1585792510360">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="313" y="53" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1366.728@0.0.1366.728" timestamp="1585781306627" />
-    <state x="458" y="271" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath" timestamp="1585784294298">
+    <state x="313" y="53" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1366.728@0.0.1366.728" timestamp="1585792510360" />
+    <state x="458" y="271" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath" timestamp="1585792643528">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="458" y="271" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath/0.0.1366.728@0.0.1366.728" timestamp="1585784294298" />
-    <state x="482" y="271" key="#com.intellij.javaee.module.view.web.EditWebRootDialog" timestamp="1585784304857">
+    <state x="458" y="271" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath/0.0.1366.728@0.0.1366.728" timestamp="1585792643528" />
+    <state x="482" y="271" key="#com.intellij.javaee.module.view.web.EditWebRootDialog" timestamp="1585792840259">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="482" y="271" key="#com.intellij.javaee.module.view.web.EditWebRootDialog/0.0.1366.728@0.0.1366.728" timestamp="1585784304857" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1585789376358">
+    <state x="482" y="271" key="#com.intellij.javaee.module.view.web.EditWebRootDialog/0.0.1366.728@0.0.1366.728" timestamp="1585792840259" />
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1585791379638">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585789376358" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585791379638" />
     <state x="129" y="55" key="DiffContextDialog" timestamp="1585789225641">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="129" y="55" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1585789225641" />
-    <state x="463" y="57" key="FileChooserDialogImpl" timestamp="1585790777360">
+    <state x="463" y="57" key="FileChooserDialogImpl" timestamp="1585792838336">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="57" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1585790777360" />
+    <state x="463" y="57" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1585792838336" />
     <state x="553" y="257" key="Github.ShareDialog" timestamp="1585790800540">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="553" y="257" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1585790800540" />
-    <state width="1021" height="244" key="GridCell.Tab.0.bottom" timestamp="1585788988617">
+    <state width="1021" height="244" key="GridCell.Tab.0.bottom" timestamp="1585793810058">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="244" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585788988617" />
-    <state width="1021" height="244" key="GridCell.Tab.0.center" timestamp="1585788988617">
+    <state width="1021" height="244" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585793810058" />
+    <state width="1021" height="244" key="GridCell.Tab.0.center" timestamp="1585793810057">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="244" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585788988617" />
-    <state width="1021" height="244" key="GridCell.Tab.0.left" timestamp="1585788988616">
+    <state width="1021" height="244" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585793810057" />
+    <state width="1021" height="244" key="GridCell.Tab.0.left" timestamp="1585793810057">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="244" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585788988616" />
-    <state width="1021" height="244" key="GridCell.Tab.0.right" timestamp="1585788988617">
+    <state width="1021" height="244" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585793810057" />
+    <state width="1021" height="244" key="GridCell.Tab.0.right" timestamp="1585793810058">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="244" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585788988617" />
-    <state width="1021" height="244" key="GridCell.Tab.1.bottom" timestamp="1585788988617">
+    <state width="1021" height="244" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585793810058" />
+    <state width="1021" height="244" key="GridCell.Tab.1.bottom" timestamp="1585793810058">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="244" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585788988617" />
-    <state width="1021" height="244" key="GridCell.Tab.1.center" timestamp="1585788988617">
+    <state width="1021" height="244" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585793810058" />
+    <state width="1021" height="244" key="GridCell.Tab.1.center" timestamp="1585793810058">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="244" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1585788988617" />
-    <state width="1021" height="244" key="GridCell.Tab.1.left" timestamp="1585788988617">
+    <state width="1021" height="244" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1585793810058" />
+    <state width="1021" height="244" key="GridCell.Tab.1.left" timestamp="1585793810058">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="244" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1585788988617" />
-    <state width="1021" height="244" key="GridCell.Tab.1.right" timestamp="1585788988617">
+    <state width="1021" height="244" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1585793810058" />
+    <state width="1021" height="244" key="GridCell.Tab.1.right" timestamp="1585793810058">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="244" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1585788988617" />
+    <state width="1021" height="244" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1585793810058" />
     <state width="1021" height="244" key="GridCell.Tab.2.bottom" timestamp="1585782558287">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -387,18 +370,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="213" y="19" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1585779291108" />
-    <state x="348" y="63" key="NewModule_or_Project.wizard" timestamp="1585780650116">
+    <state x="348" y="63" key="NewModule_or_Project.wizard" timestamp="1585792438447">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="348" y="63" key="NewModule_or_Project.wizard/0.0.1366.728@0.0.1366.728" timestamp="1585780650116" />
-    <state x="163" y="0" key="SettingsEditor" timestamp="1585784816916">
+    <state x="348" y="63" key="NewModule_or_Project.wizard/0.0.1366.728@0.0.1366.728" timestamp="1585792438447" />
+    <state x="163" y="0" key="SettingsEditor" timestamp="1585792854811">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1585784816916" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1585789308485">
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1585792854811" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1585791486206">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1585789308485" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1585791486206" />
     <state x="492" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585789153950">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
