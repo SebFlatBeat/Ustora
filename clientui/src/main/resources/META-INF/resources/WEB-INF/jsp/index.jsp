@@ -30,6 +30,8 @@ URL: https://www.freshdesignweb.com/ustora/
     <link rel="stylesheet" href="../../css/owl.carousel.css" type="text/css"/>
     <link rel="stylesheet" href="../../css/style.css" type="text/css"/>
     <link rel="stylesheet" href="../../css/responsive.css" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.css">
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -43,8 +45,8 @@ URL: https://www.freshdesignweb.com/ustora/
 <div class="header-area">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 pull-right">
-                <div class="user-menu">
+            <div class="col-md-4 ml-auto ">
+                <div class="user-menu text-right">
                     <ul>
                         <c:if test="${pageContext.request.userPrincipal == null}">
                             <li><a href="<c:url value="/register"/>"><i class="fa fa-user"></i> Creer Compte</a></li>
@@ -70,8 +72,8 @@ URL: https://www.freshdesignweb.com/ustora/
 <div class="site-branding-area">
     <div class="container">
         <div class="row">
-            <div class="col-sm-6">
-                <div class="logo">
+            <div class="col-md-4 ml-auto mr-auto">
+                <div class="logo ml-auto">
                     <h1><a href="../../../.."><img src="../../img/logo.png"/></a></h1>
                 </div>
             </div>
@@ -85,13 +87,41 @@ URL: https://www.freshdesignweb.com/ustora/
             <div class="col-lg-12">
                 <div class="boxed-grey">
                     <form id="contact-form" action="/searchBook">
+                        <h2 class="text-lg-center">Rechechez votre livre</h2>
                         <div class="row">
-                            <div class="form-group col-md-3">
-                                <label for="titre">Le livre</label>
+                            <div class="form-group col-md-3 ">
+                                <label for="titre" class="">Le livre</label>
                                 <select id="titre" name="titre" class="chosen-select form-control" data-placeholder="Cherchez par livre" >
                                     <option></option>
                                     <c:forEach var="findBook" items="${allBook}">
                                         <option value="${findBook.titre}">${findBook.titre}</option>
+                                    </c:forEach>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="auteurPrincipalNom">Nom d'auteur</label>
+                                <select id="auteurPrincipalNom" name="auteurPrincipalNom" class="chosen-select form-control" data-placeholder="Cherchez par nom d'auteur" >
+                                    <option></option>
+                                    <c:forEach var="findBook" items="${allBook}">
+                                        <option value="${findBook.auteurPrincipalNom}">${findBook.auteurPrincipalNom}</option>
+                                    </c:forEach>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="auteurPrincipalPrenom">Prénoms</label>
+                                <select id="auteurPrincipalPrenom" name="auteurPrincipalPrenom" class="chosen-select form-control" data-placeholder="Cherchez par prénom" >
+                                    <option></option>
+                                    <c:forEach var="findBook" items="${allBook}">
+                                        <option value="${findBook.auteurPrincipalPrenom}">${findBook.auteurPrincipalPrenom}</option>
+                                    </c:forEach>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="editeur">Editeur</label>
+                                <select id="editeur" name="editeur" class="chosen-select form-control" data-placeholder="Cherchez par prénom" >
+                                    <option></option>
+                                    <c:forEach var="findBook" items="${allBook}">
+                                        <option value="${findBook.editeur}">${findBook.editeur}</option>
                                     </c:forEach>
                                 </select>
                             </div>
@@ -614,7 +644,7 @@ URL: https://www.freshdesignweb.com/ustora/
     <script type="text/javascript" src="../../js/script.slider.js"></script>
 
     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-    <script src="chosen/chosen.jquery.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
     <script type="text/javascript">
         $(function() {
