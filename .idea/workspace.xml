@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1c71ef9e-16a3-4367-b8d3-f39ec379e535" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Bibliotheque@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Bibliotheque@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Bibliotheque@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="Bibliotheque: database" type="162271b6:PgImplModel$Database" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ZxO6nKbFyIiq8r2QdK6EwoZt7x" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="491" />
+    <property name="RequestMappingsPanelWidth1" value="491" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/clientui/src/main/resources/META-INF.resources" />
+    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main\resources\META-INF.resources" />
+      <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main" />
+      <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main\resources\WEB-INF" />
+      <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main\resources" />
+      <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main\webapp\WEB-INF" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Vincs\IdeaProjects\Ustora\user\src\main\java\com\Ustora\user" />
+      <recent name="C:\Users\Vincs\IdeaProjects\Ustora\book\src\main\java\com\Ustora\book" />
+      <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main\resources" />
+      <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main\java\com\Ustora\clientui" />
+      <recent name="C:\Users\Vincs\IdeaProjects\Ustora\" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn install" />
+      <command value="mvn clean install" />
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ClientuiApplication">
+    <configuration name="BookApplication (9022)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="book" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.Ustora.book.BookApplication" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=9022" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookApplication(9002)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="book" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.Ustora.book.BookApplication" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=9002" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientuiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="clientui" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.Ustora.clientui.ClientuiApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="config-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.Ustora.configserver.ConfigServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eureka" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.Ustora.eureka.EurekaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringAdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-admin" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.Ustora.springadmin.SpringAdminApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserApplication (9033)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="user" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.Ustora.user.UserApplication" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=9033" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserApplication(9003)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="user" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.Ustora.user.UserApplication" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=9003" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZuulServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="zuul-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.Ustora.zuulserver.ZuulServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.ClientuiApplication" />
+      <item itemvalue="Spring Boot.ConfigServerApplication" />
+      <item itemvalue="Spring Boot.EurekaApplication" />
+      <item itemvalue="Spring Boot.SpringAdminApplication" />
+      <item itemvalue="Spring Boot.ZuulServerApplication" />
+      <item itemvalue="Spring Boot.BookApplication(9002)" />
+      <item itemvalue="Spring Boot.BookApplication (9022)" />
+      <item itemvalue="Spring Boot.UserApplication(9003)" />
+      <item itemvalue="Spring Boot.UserApplication (9033)" />
+    </list>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <option name="contentProportion" value="0.21020092" />
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Not Started" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Bibliotheque@localhost: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Bibliotheque@localhost: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@99e7607" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1c71ef9e-16a3-4367-b8d3-f39ec379e535" name="Default Changelist" comment="" />
+      <created>1585777105680</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585777105680</updated>
+      <workItem from="1585777110656" duration="7937000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585781092833">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1585781092833" />
+    <state x="313" y="53" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1585781306627">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="313" y="53" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1366.728@0.0.1366.728" timestamp="1585781306627" />
+    <state x="458" y="271" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath" timestamp="1585784294298">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="458" y="271" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath/0.0.1366.728@0.0.1366.728" timestamp="1585784294298" />
+    <state x="482" y="271" key="#com.intellij.javaee.module.view.web.EditWebRootDialog" timestamp="1585784304857">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="482" y="271" key="#com.intellij.javaee.module.view.web.EditWebRootDialog/0.0.1366.728@0.0.1366.728" timestamp="1585784304857" />
+    <state x="463" y="57" key="FileChooserDialogImpl" timestamp="1585783452215">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="57" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1585783452215" />
+    <state width="1021" height="244" key="GridCell.Tab.0.bottom" timestamp="1585784926160">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1021" height="244" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585784926160" />
+    <state width="1021" height="244" key="GridCell.Tab.0.center" timestamp="1585784926160">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1021" height="244" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585784926160" />
+    <state width="1021" height="244" key="GridCell.Tab.0.left" timestamp="1585784926160">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1021" height="244" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585784926160" />
+    <state width="1021" height="244" key="GridCell.Tab.0.right" timestamp="1585784926160">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1021" height="244" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585784926160" />
+    <state width="1021" height="244" key="GridCell.Tab.1.bottom" timestamp="1585784926161">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1021" height="244" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585784926161" />
+    <state width="1021" height="244" key="GridCell.Tab.1.center" timestamp="1585784926160">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1021" height="244" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1585784926160" />
+    <state width="1021" height="244" key="GridCell.Tab.1.left" timestamp="1585784926160">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1021" height="244" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1585784926160" />
+    <state width="1021" height="244" key="GridCell.Tab.1.right" timestamp="1585784926161">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1021" height="244" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1585784926161" />
+    <state width="1021" height="244" key="GridCell.Tab.2.bottom" timestamp="1585782558287">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1021" height="244" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585782558287" />
+    <state width="1021" height="244" key="GridCell.Tab.2.center" timestamp="1585782558287">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1021" height="244" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1585782558287" />
+    <state width="1021" height="244" key="GridCell.Tab.2.left" timestamp="1585782558287">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1021" height="244" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1585782558287" />
+    <state width="1021" height="244" key="GridCell.Tab.2.right" timestamp="1585782558287">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1021" height="244" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1585782558287" />
+    <state x="213" y="19" key="Maven.ArtifactSearchDialog" timestamp="1585779291108">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="213" y="19" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1585779291108" />
+    <state x="348" y="63" key="NewModule_or_Project.wizard" timestamp="1585780650116">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="348" y="63" key="NewModule_or_Project.wizard/0.0.1366.728@0.0.1366.728" timestamp="1585780650116" />
+    <state x="163" y="0" key="SettingsEditor" timestamp="1585784816916">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1585784816916" />
+    <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1585782952607">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1585782952607" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/controller/ClientController.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/controller/ClientController.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
