@@ -41,13 +41,13 @@ public interface BookProxy {
     @GetMapping("/book/find/isbn")
      List<String> findIsbn();
 
-    @PostMapping("/book/search/auteurNom/{auteurNom}")
+    @PostMapping("/book/search/auteurPrincipalNom/{auteurNom}")
     List<BookBean> searchAuteurNom(@PathVariable("auteurNom") String auteurNom, @RequestBody List<BookBean> searchBook);
 
     @PostMapping("/book/search/titre/{titre}")
     List<BookBean> searchTitre(@PathVariable("titre") String titre, @RequestBody List<BookBean> searchBook);
 
-    @PostMapping("/book/search/auteurPrenom/{auteurPrenom}")
+    @PostMapping("/book/search/auteurPrincipalPrenom/{auteurPrenom}")
     List<BookBean> searchAuteurPrenom(@PathVariable("auteurPrenom") String auteurPrenom, @RequestBody List<BookBean> searchBook);
 
     @PostMapping("/book/search/editeur/{editeur}")

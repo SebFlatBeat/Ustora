@@ -31,70 +31,67 @@
 
 </head>
 <body>
-	
-	<div class="limiter">
-		<div class="container-login100">
-			<div class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
-				<form class="login100-form validate-form flex-sb flex-w" action="/login" method="post">
+<div class="col-md-4 mr-auto">
+	<div class="logo ml-auto">
+		<h1><a href="<c:url value="/index"/>"><img src="../../img/logo.png"/></a></h1>
+	</div>
+</div>
+<div class="limiter">
+	<div class="container-login100">
+		<div class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
+			<form class="login100-form validate-form flex-sb flex-w" action="/login" method="post">
 					<span class="login100-form-title p-b-32">
 						Account Login
 					</span>
 
-					<span class="txt1 p-b-11">
+				<span class="txt1 p-b-11">
 						<label for="userName">Username</label>
 					</span>
-					<div class="wrap-input100 validate-input m-b-36" data-validate = "Username is required">
-						<input class="input100" type="text" name="username" id="username"/>
-						<span class="focus-input100"></span>
-					</div>
-					
-					<span class="txt1 p-b-11">
+				<div class="wrap-input100 validate-input m-b-36" data-validate = "Username is required">
+					<input class="input100" type="text" name="username" id="username"/>
+					<span class="focus-input100"></span>
+				</div>
+
+				<span class="txt1 p-b-11">
 						<label for="password">Password</label>
 					</span>
-					<div class="wrap-input100 validate-input m-b-12" data-validate = "Password is required">
+				<div class="wrap-input100 validate-input m-b-12" data-validate = "Password is required">
 						<span class="btn-show-pass">
 							<i class="fa fa-eye"></i>
 						</span>
-						<input class="input100" type="password" name="password" id="password"/>
-						<span class="focus-input100"></span>
-					</div>
-
-
-					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
-							Login
-						</button>
-
-						<button class="login100-form-btn btn-warning" href="<:c:url value="/index">">
-							Retour
-						</button>
-					</div>
-
-				</form>
-			</div>
+					<input class="input100" type="password" name="password" id="password"/>
+					<span class="focus-input100"></span>
+				</div>
+				<div class="container-login100-form-btn">
+					<button class="login100-form-btn">
+						Login
+					</button>
+				</div>
+			</form>
 		</div>
 	</div>
-	
+</div>
 
-	<div id="dropDownSelect1"></div>
 
-	<script src="../../vendorLogin/jquery/jquery-3.2.1.min.js"></script>
+<div id="dropDownSelect1"></div>
 
-	<script src="../../vendorLogin/animsition/js/animsition.min.js"></script>
+<script src="../../vendorLogin/jquery/jquery-3.2.1.min.js"></script>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.js"></script>
+<script src="../../vendorLogin/animsition/js/animsition.min.js"></script>
 
-	<script src="../../vendorLogin/bootstrap/js/popper.js"></script>
-	<script src="../../vendorLogin/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.js"></script>
 
-	<script src="../../vendorLogin/select2/select2.min.js"></script>
+<script src="../../vendorLogin/bootstrap/js/popper.js"></script>
+<script src="../../vendorLogin/bootstrap/js/bootstrap.min.js"></script>
 
-	<script src="../../vendorLogin/daterangepicker/moment.min.js"></script>
-	<script src="../../vendorLogin/daterangepicker/daterangepicker.js"></script>
+<script src="../../vendorLogin/select2/select2.min.js"></script>
 
-	<script src="../../vendorLogin/countdowntime/countdowntime.js"></script>
+<script src="../../vendorLogin/daterangepicker/moment.min.js"></script>
+<script src="../../vendorLogin/daterangepicker/daterangepicker.js"></script>
 
-	<script src="../../js/main.js"></script>
+<script src="../../vendorLogin/countdowntime/countdowntime.js"></script>
+
+<script src="../../js/main.js"></script>
 
 </body>
 </html>

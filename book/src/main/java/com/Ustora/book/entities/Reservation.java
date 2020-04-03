@@ -1,9 +1,7 @@
 package com.Ustora.book.entities;
 
-import com.Ustora.book.beans.UserBean;
-import com.Ustora.book.proxies.UserProxy;
 import org.hibernate.annotations.Cascade;
-import org.springframework.beans.factory.annotation.Autowired;
+
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -48,7 +46,7 @@ public Reservation(){
     public void setBorrower(String borrower) {
         this.borrower = borrower;
     }
-    
+
     public String getBookReservation() {
         return bookReservation;
     }

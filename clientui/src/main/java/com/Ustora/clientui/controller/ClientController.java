@@ -29,8 +29,8 @@ public class ClientController {
                         @RequestParam(name = "page", defaultValue = "0") int page,
                         @RequestParam(name = "size", defaultValue = "20") int size,
                         @RequestParam Optional<String> titre, Model modelDistinctTitre,
-                        @RequestParam Optional<String> auteurNom, Model modelDistinctAuteurNom,
-                        @RequestParam Optional<String> auteurPrenom, Model modelDistinctAuteurPrenom,
+                        @RequestParam Optional<String> auteurPrincipalNom, Model modelDistinctAuteurNom,
+                        @RequestParam Optional<String> auteurPrincipalPrenom, Model modelDistinctAuteurPrenom,
                         @RequestParam Optional<String> editeur, Model modelDistinctEditeur,
                         @RequestParam Optional<String> anneeEdition, Model modelDistinctAnneeEdition,
                         @RequestParam Optional<String> section, Model modelDistinctSection,
@@ -71,22 +71,22 @@ public class ClientController {
             searchBook = bookProxy.searchTitre(titre.get(),searchBook);
         }
 
-        if(auteurNom.isPresent()  && !auteurNom.get().isEmpty()  && !searchBook.isEmpty()){
-            searchBook = bookProxy.searchAuteurNom(auteurNom.get(),searchBook);
+        if(auteurPrincipalNom.isPresent() && !auteurPrincipalNom.get().isEmpty()&& !searchBook.isEmpty()){
+            searchBook = bookProxy.searchAuteurNom(auteurPrincipalNom.get(),searchBook);
         }
-        if(auteurPrenom.isPresent()  && !auteurPrenom.get().isEmpty() && !searchBook.isEmpty()){
-            searchBook = bookProxy.searchAuteurPrenom(auteurPrenom.get(),searchBook);
+        if(auteurPrincipalPrenom.isPresent() && !auteurPrincipalPrenom.get().isEmpty() && !searchBook.isEmpty()){
+            searchBook = bookProxy.searchAuteurPrenom(auteurPrincipalPrenom.get(),searchBook);
         }
-        if (editeur.isPresent()  && !editeur.get().isEmpty() && !searchBook.isEmpty()){
+        if (editeur.isPresent() && !editeur.get().isEmpty() && !searchBook.isEmpty()){
             searchBook = bookProxy.searchEditeur(editeur.get(),searchBook);
         }
-        if(anneeEdition.isPresent()  && !anneeEdition.get().isEmpty() && !searchBook.isEmpty()){
+        if(anneeEdition.isPresent() && !anneeEdition.get().isEmpty()  &&  !searchBook.isEmpty()){
             searchBook = bookProxy.searchAnneeEdition(anneeEdition.get(),searchBook);
         }
-        if(section.isPresent()  && !section.get().isEmpty() && !searchBook.isEmpty()){
+        if(section.isPresent() && !section.get().isEmpty()  && !searchBook.isEmpty()){
             searchBook = bookProxy.searchSection(section.get(),searchBook);
         }
-        if(isbn.isPresent()  && !isbn.get().isEmpty() && !searchBook.isEmpty()){
+        if(isbn.isPresent() && !isbn.get().isEmpty()   && !searchBook.isEmpty()){
             searchBook = bookProxy.searchIsbn(isbn.get(),searchBook);
         }
         Sort sort = Sort.by(

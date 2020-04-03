@@ -81,12 +81,12 @@ public class BookController {
         return bookDao.findByTitre(titre, searchBook);
     }
 
-    @PostMapping("/search/auteurNom/{auteurNom}")
+    @PostMapping("/search/auteurPrincipalNom/{auteurNom}")
     public List<Book> searchAuteurNom(@PathVariable("auteurNom") String auteurNom, @RequestBody List<Book> searchBook){
         return bookDao.findByAuteurPrincipalNom(auteurNom, searchBook);
     }
 
-    @PostMapping("/search/auteurPrenom/{auteurPrenom}")
+    @PostMapping("/search/auteurPrincipalPrenom/{auteurPrenom}")
     public List<Book> searchAuteurPrenom(@PathVariable("auteurPrenom") String auteurPrenom, @RequestBody List<Book> searchBook){
         return bookDao.findByAuteurPrincipalPrenom(auteurPrenom, searchBook);
     }
