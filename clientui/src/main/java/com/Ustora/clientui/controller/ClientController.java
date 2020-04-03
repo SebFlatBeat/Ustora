@@ -24,9 +24,9 @@ public class ClientController {
     @Autowired
     private BookProxy bookProxy;
 
-    @GetMapping(value = {"/","/index","/page/{page}"})
+    @GetMapping(value = {"/","/index"})
     public String index(Model modelAllBook, Model modelPagination, Model modelAllBookList,
-                        @PathVariable(required = false) Integer page,
+                        @RequestParam(name = "page", defaultValue = "0") int page,
                         @RequestParam(name = "size", defaultValue = "20") int size,
                         @RequestParam Optional<String> titre, Model modelDistinctTitre,
                         @RequestParam Optional<String> auteurNom, Model modelDistinctAuteurNom,
@@ -35,16 +35,14 @@ public class ClientController {
                         @RequestParam Optional<String> anneeEdition, Model modelDistinctAnneeEdition,
                         @RequestParam Optional<String> section, Model modelDistinctSection,
                         @RequestParam Optional<String> isbn, Model modelDistinctIsbn,
-                        Model modelSearchBook
+                        Model modelSearchBook, Model modelSearchBookPage, Model modelPaginationSearchBook
                         ) {
-        if(page==null){
-            page=0;
-        }
         RestResponsePage <BookBean> allBook = bookProxy.allBook(page);
         List<BookBean> allBookList = bookProxy.allBookList();
+        modelAllBookList.addAttribute("allBookList",allBookList);
         modelAllBook.addAttribute("allBook",allBook.getContent());
         modelPagination.addAttribute("paginationBook",allBook);
-        modelAllBookList.addAttribute("allBookList", allBookList);
+
 
         List<String> titres = bookProxy.findTitre();
         modelDistinctTitre.addAttribute("titres",titres);
@@ -69,29 +67,36 @@ public class ClientController {
 
         List<BookBean> searchBook = bookProxy.allBookList();
 
-        if(titre.isPresent() && !searchBook.isEmpty()){
+        if(titre.isPresent() && !titre.get().isEmpty() && !searchBook.isEmpty()){
             searchBook = bookProxy.searchTitre(titre.get(),searchBook);
         }
 
-        if(auteurNom.isPresent() && !searchBook.isEmpty()){
+        if(auteurNom.isPresent()  && !auteurNom.get().isEmpty()  && !searchBook.isEmpty()){
             searchBook = bookProxy.searchAuteurNom(auteurNom.get(),searchBook);
         }
-        if(auteurPrenom.isPresent() && !searchBook.isEmpty()){
+        if(auteurPrenom.isPresent()  && !auteurPrenom.get().isEmpty() && !searchBook.isEmpty()){
             searchBook = bookProxy.searchAuteurPrenom(auteurPrenom.get(),searchBook);
         }
-        if (editeur.isPresent() && !searchBook.isEmpty()){
+        if (editeur.isPresent()  && !editeur.get().isEmpty() && !searchBook.isEmpty()){
             searchBook = bookProxy.searchEditeur(editeur.get(),searchBook);
         }
-        if(anneeEdition.isPresent()&& !searchBook.isEmpty()){
+        if(anneeEdition.isPresent()  && !anneeEdition.get().isEmpty() && !searchBook.isEmpty()){
             searchBook = bookProxy.searchAnneeEdition(anneeEdition.get(),searchBook);
         }
-        if(section.isPresent()&& !searchBook.isEmpty()){
+        if(section.isPresent()  && !section.get().isEmpty() && !searchBook.isEmpty()){
             searchBook = bookProxy.searchSection(section.get(),searchBook);
         }
-        if(isbn.isPresent()&& !searchBook.isEmpty()){
+        if(isbn.isPresent()  && !isbn.get().isEmpty() && !searchBook.isEmpty()){
             searchBook = bookProxy.searchIsbn(isbn.get(),searchBook);
         }
+        Sort sort = Sort.by(
+                Sort.Order.asc("auteurPrincpalNom")
+        );
+        Pageable pageable = PageRequest.of(0,20, sort);
+        Page<BookBean> searchBookPage = new PageImpl<>(searchBook,pageable,searchBook.size());
         modelSearchBook.addAttribute("searchBook",searchBook);
+        modelSearchBookPage.addAttribute("searchBookPage",searchBookPage);
+        modelPaginationSearchBook.addAttribute("paginationSearchBook", searchBookPage);
         return "index";
     }
 

@@ -64,6 +64,10 @@
 						<button class="login100-form-btn">
 							Login
 						</button>
+
+						<button class="login100-form-btn btn-warning" href="<:c:url value="/index">">
+							Retour
+						</button>
 					</div>
 
 				</form>

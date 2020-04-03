@@ -2,12 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c71ef9e-16a3-4367-b8d3-f39ec379e535" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/dao/ReservationDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/entities/Reservation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/img/product-7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3d98b5d7-2063-4113-b89f-d98b42a02839.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/3d98b5d7-2063-4113-b89f-d98b42a02839.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3d98b5d7-2063-4113-b89f-d98b42a02839/storage_v2/_src_/database/Bibliotheque.R4OgdQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/3d98b5d7-2063-4113-b89f-d98b42a02839/storage_v2/_src_/database/Bibliotheque.R4OgdQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/controller/BookController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/dao/BookDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/dao/BookDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/proxies/UserProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/proxies/UserProxy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/controller/ClientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/proxies/BookProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/proxies/BookProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/espacePerso.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/espacePerso.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/img/product-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/img/product-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/img/product-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/img/product-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/img/product-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/img/product-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/img/product-4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/img/product-4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/img/product-5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/img/product-5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/img/product-6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/img/product-6.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,25 +69,6 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Bibliotheque@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="Bibliotheque: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Bibliotheque@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="Bibliotheque: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="book: table" type="69fad909:PgImplModel$LocalTable" />
-      </path>
     </expand>
     <select />
   </component>
@@ -82,6 +76,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -125,19 +120,19 @@
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main\resources\META-INF\resources\WEB-INF\jsp" />
-      <recent name="C:\Users\Vincs\IdeaProjects\Ustora\user\src\main\java\com\Ustora\user" />
-      <recent name="C:\Users\Vincs\IdeaProjects\Ustora\book\src\main\java\com\Ustora\book" />
-      <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main\resources" />
-      <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main\java\com\Ustora\clientui" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main\resources\META-INF\resources" />
       <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main\resources\META-INF.resources" />
       <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main" />
       <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main\resources\WEB-INF" />
       <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main\resources" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main\resources\META-INF\resources\WEB-INF\jsp" />
+      <recent name="C:\Users\Vincs\IdeaProjects\Ustora\user\src\main\java\com\Ustora\user" />
+      <recent name="C:\Users\Vincs\IdeaProjects\Ustora\book\src\main\java\com\Ustora\book" />
+      <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main\resources" />
+      <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main\java\com\Ustora\clientui" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -153,7 +148,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ConfigServerApplication">
+  <component name="RunManager" selected="Spring Boot.ClientuiApplication">
     <configuration name="BookApplication (9022)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="book" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.Ustora.book.BookApplication" />
@@ -259,10 +254,6 @@
                 <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
                 <item name="Not Started" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Bibliotheque@localhost: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
             </expand>
             <select />
           </treeState>
@@ -281,7 +272,8 @@
       <option name="presentableId" value="Default" />
       <updated>1585777105680</updated>
       <workItem from="1585777110656" duration="35651000" />
-      <workItem from="1585854401384" duration="16969000" />
+      <workItem from="1585854401384" duration="18828000" />
+      <workItem from="1585900041209" duration="14847000" />
     </task>
     <task id="LOCAL-00001" summary="Modification du fichier xml">
       <created>1585788896625</created>
@@ -339,7 +331,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585868714763</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Ajout de la fonctionnalité Recherche MutlitCritère">
+      <created>1585872174146</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1585872174146</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,7 +353,8 @@
     <MESSAGE value="Afficher et paginer une liste de livre" />
     <MESSAGE value="Mise en page d'index" />
     <MESSAGE value="Ajout des Listes de recherche sur page d'index" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout des Listes de recherche sur page d'index" />
+    <MESSAGE value="Ajout de la fonctionnalité Recherche MutlitCritère" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout de la fonctionnalité Recherche MutlitCritère" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Notifications" timestamp="1585788923959">
@@ -365,6 +365,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1585781092833" />
+    <state x="488" y="48" key="#com.intellij.ide.util.MemberChooser" timestamp="1585917904760">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="48" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1585917904760" />
     <state x="313" y="53" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1585792510360">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -377,14 +381,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="482" y="271" key="#com.intellij.javaee.module.view.web.EditWebRootDialog/0.0.1366.728@0.0.1366.728" timestamp="1585792840259" />
-    <state x="270" y="78" width="773" height="594" key="#xdebugger.evaluate" timestamp="1585830310289">
+    <state x="270" y="78" width="773" height="594" key="#xdebugger.evaluate" timestamp="1585916768340">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="270" y="78" width="773" height="594" key="#xdebugger.evaluate/0.0.1366.728@0.0.1366.728" timestamp="1585830310289" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1585868711168">
+    <state x="270" y="78" width="773" height="594" key="#xdebugger.evaluate/0.0.1366.728@0.0.1366.728" timestamp="1585916768340" />
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1585872169422">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585868711168" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585872169422" />
+    <state width="394" height="466" key="DebuggerActiveHint" timestamp="1585904954962">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="394" height="466" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1585904954962" />
     <state x="129" y="55" key="DiffContextDialog" timestamp="1585789225641">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -397,54 +405,54 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="553" y="257" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1585790800540" />
-    <state width="1021" height="188" key="GridCell.Tab.0.bottom" timestamp="1585871432589">
+    <state width="1021" height="286" key="GridCell.Tab.0.bottom" timestamp="1585917506933">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="188" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585871432589" />
-    <state width="1021" height="188" key="GridCell.Tab.0.center" timestamp="1585871432588">
+    <state width="1021" height="286" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585917506933" />
+    <state width="1021" height="286" key="GridCell.Tab.0.center" timestamp="1585917506932">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="188" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585871432588" />
-    <state width="1021" height="188" key="GridCell.Tab.0.left" timestamp="1585871432588">
+    <state width="1021" height="286" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585917506932" />
+    <state width="1021" height="286" key="GridCell.Tab.0.left" timestamp="1585917506932">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="188" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585871432588" />
-    <state width="1021" height="188" key="GridCell.Tab.0.right" timestamp="1585871432589">
+    <state width="1021" height="286" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585917506932" />
+    <state width="1021" height="286" key="GridCell.Tab.0.right" timestamp="1585917506933">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="188" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585871432589" />
-    <state width="1021" height="188" key="GridCell.Tab.1.bottom" timestamp="1585871432590">
+    <state width="1021" height="286" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585917506933" />
+    <state width="1021" height="286" key="GridCell.Tab.1.bottom" timestamp="1585917506933">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="188" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585871432590" />
-    <state width="1021" height="188" key="GridCell.Tab.1.center" timestamp="1585871432589">
+    <state width="1021" height="286" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585917506933" />
+    <state width="1021" height="286" key="GridCell.Tab.1.center" timestamp="1585917506933">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="188" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1585871432589" />
-    <state width="1021" height="188" key="GridCell.Tab.1.left" timestamp="1585871432589">
+    <state width="1021" height="286" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1585917506933" />
+    <state width="1021" height="286" key="GridCell.Tab.1.left" timestamp="1585917506933">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="188" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1585871432589" />
-    <state width="1021" height="188" key="GridCell.Tab.1.right" timestamp="1585871432590">
+    <state width="1021" height="286" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1585917506933" />
+    <state width="1021" height="286" key="GridCell.Tab.1.right" timestamp="1585917506933">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="188" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1585871432590" />
-    <state width="1021" height="188" key="GridCell.Tab.2.bottom" timestamp="1585864533514">
+    <state width="1021" height="286" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1585917506933" />
+    <state width="1021" height="286" key="GridCell.Tab.2.bottom" timestamp="1585917506934">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="188" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585864533514" />
-    <state width="1021" height="188" key="GridCell.Tab.2.center" timestamp="1585864533514">
+    <state width="1021" height="286" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585917506934" />
+    <state width="1021" height="286" key="GridCell.Tab.2.center" timestamp="1585917506933">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="188" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1585864533514" />
-    <state width="1021" height="188" key="GridCell.Tab.2.left" timestamp="1585864533514">
+    <state width="1021" height="286" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1585917506933" />
+    <state width="1021" height="286" key="GridCell.Tab.2.left" timestamp="1585917506933">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="188" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1585864533514" />
-    <state width="1021" height="188" key="GridCell.Tab.2.right" timestamp="1585864533514">
+    <state width="1021" height="286" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1585917506933" />
+    <state width="1021" height="286" key="GridCell.Tab.2.right" timestamp="1585917506933">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="188" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1585864533514" />
+    <state width="1021" height="286" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1585917506933" />
     <state x="213" y="19" key="Maven.ArtifactSearchDialog" timestamp="1585779291108">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -461,10 +469,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="514" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1585859175299" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1585868722245">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1585872192715">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1585868722245" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1585872192715" />
+    <state x="582" y="254" width="326" height="234" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1585904068195">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="582" y="254" width="326" height="234" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1366.728@0.0.1366.728" timestamp="1585904068195" />
     <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1585854445005">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -481,5 +493,20 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1585869832067" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1585907812853">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1585907812853" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/controller/ClientController.java</url>
+          <line>97</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

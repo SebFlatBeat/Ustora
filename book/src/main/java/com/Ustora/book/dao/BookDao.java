@@ -15,25 +15,25 @@ public interface BookDao extends PagingAndSortingRepository<Book, Long> {
 
     List<Book> findAll();
 
-    @Query("select distinct book.titre from Book book")
+    @Query("select distinct book.titre from Book book order by book.titre asc ")
     List<String> findDistinctByTitre();
 
-    @Query("select distinct book.auteurPrincipalNom from Book book")
+    @Query("select distinct book.auteurPrincipalNom from Book book order by book.auteurPrincipalNom asc")
     List<String> findDistinctByAuteurPrincipalNom();
 
-    @Query("select distinct book.auteurPrincipalPrenom from Book book")
+    @Query("select distinct book.auteurPrincipalPrenom from Book book order by book.auteurPrincipalPrenom asc")
     List<String> findDistinctByAuteurPrincipalPrenom();
 
-    @Query("select distinct book.editeur from Book book")
+    @Query("select distinct book.editeur from Book book order by book.editeur asc")
     List<String> findDistinctByEditeur();
 
-    @Query("select distinct book.anneeEdition from Book book")
+    @Query("select distinct book.anneeEdition from Book book order by book.anneeEdition asc")
     List<String> findDistinctByAnneeEdition();
 
-    @Query("select distinct book.section from Book book")
+    @Query("select distinct book.section from Book book order by book.section")
     List<String> findDistinctBySection();
 
-    @Query("select distinct book.isbn from Book book")
+    @Query("select distinct book.isbn from Book book order by book.isbn asc")
     List<String> findDistinctByIsbn();
 
     @Query("select distinct book from Book book where book.titre=:titre and book in :listBook")
