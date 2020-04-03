@@ -41,6 +41,24 @@ public interface BookProxy {
     @GetMapping("/book/find/isbn")
      List<String> findIsbn();
 
+    @PostMapping("/book/search/auteurNom/{auteurNom}")
+    List<BookBean> searchAuteurNom(@PathVariable("auteurNom") String auteurNom, @RequestBody List<BookBean> searchBook);
+
     @PostMapping("/book/search/titre/{titre}")
     List<BookBean> searchTitre(@PathVariable("titre") String titre, @RequestBody List<BookBean> searchBook);
+
+    @PostMapping("/book/search/auteurPrenom/{auteurPrenom}")
+    List<BookBean> searchAuteurPrenom(@PathVariable("auteurPrenom") String auteurPrenom, @RequestBody List<BookBean> searchBook);
+
+    @PostMapping("/book/search/editeur/{editeur}")
+    List<BookBean> searchEditeur(@PathVariable("editeur") String editeur, @RequestBody List<BookBean> searchBook);
+
+    @PostMapping("/book/search/anneeEdition/{anneeEdition}")
+    List<BookBean> searchAnneeEdition(@PathVariable("anneeEdition") String anneeEdition, @RequestBody List<BookBean> searchBook);
+
+    @PostMapping("/book/search/section/{section}")
+    List<BookBean> searchSection(@PathVariable("section") String section, @RequestBody List<BookBean> searchBook);
+
+    @PostMapping("/book/search/isbn/{isbn}")
+    List<BookBean> searchIsbn(@PathVariable("isbn") String isbn, @RequestBody List<BookBean> searchBook);
 }

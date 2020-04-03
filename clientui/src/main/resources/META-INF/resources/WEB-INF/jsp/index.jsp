@@ -126,15 +126,15 @@ URL: https://www.freshdesignweb.com/ustora/
         <div class="row">
             <div class="col-lg-12">
                 <div class="boxed-grey">
-                    <form id="contact-form" action="/searchBook">
+                    <form id="contact-form" action="/">
                         <h2 class="text-lg-center">Rechechez votre livre</h2>
                         <div class="row">
                             <div class="form-group col-md-3 ">
                                 <label for="titre" class="">Le livre</label>
                                 <select id="titre" name="titre" class="chosen-select form-control" data-placeholder="Cherchez par livre" >
                                     <option></option>
-                                    <c:forEach var="findBook" items="${allBookList}">
-                                        <option value="${findBook.titre}">${findBook.titre}</option>
+                                    <c:forEach var="titre" items="${titres}">
+                                        <option value="${titre}">${titre}</option>
                                     </c:forEach>
                                 </select>
                             </div>
@@ -142,8 +142,8 @@ URL: https://www.freshdesignweb.com/ustora/
                                 <label for="auteurPrincipalNom">Nom d'auteur</label>
                                 <select id="auteurPrincipalNom" name="auteurPrincipalNom" class="chosen-select form-control" data-placeholder="Cherchez par nom d'auteur" >
                                     <option></option>
-                                    <c:forEach var="findBook" items="${allBookList}">
-                                        <option value="${findBook.auteurPrincipalNom}">${findBook.auteurPrincipalNom}</option>
+                                    <c:forEach var="auteurNom" items="${auteurNoms}">
+                                        <option value="${auteurNom}">${auteurNom}</option>
                                     </c:forEach>
                                 </select>
                             </div>
@@ -151,8 +151,8 @@ URL: https://www.freshdesignweb.com/ustora/
                                 <label for="auteurPrincipalPrenom">Prénoms</label>
                                 <select id="auteurPrincipalPrenom" name="auteurPrincipalPrenom" class="chosen-select form-control" data-placeholder="Cherchez par prénom" >
                                     <option></option>
-                                    <c:forEach var="findBook" items="${allBookList}">
-                                        <option value="${findBook.auteurPrincipalPrenom}">${findBook.auteurPrincipalPrenom}</option>
+                                    <c:forEach var="auteurPrenom" items="${auteurPrenoms}">
+                                        <option value="${auteurPrenoms}">${auteurPrenoms}</option>
                                     </c:forEach>
                                 </select>
                             </div>
@@ -160,8 +160,8 @@ URL: https://www.freshdesignweb.com/ustora/
                                 <label for="editeur">Editeur</label>
                                 <select id="editeur" name="editeur" class="chosen-select form-control" data-placeholder="Cherchez par prénom" >
                                     <option></option>
-                                    <c:forEach var="findBook" items="${allBookList}">
-                                        <option value="${findBook.editeur}">${findBook.editeur}</option>
+                                    <c:forEach var="editeur" items="${editeurs}">
+                                        <option value="${editeur}">${editeur}</option>
                                     </c:forEach>
                                 </select>
                             </div>
@@ -171,8 +171,8 @@ URL: https://www.freshdesignweb.com/ustora/
                             <label for="anneeEdition" class="">Année d"édition</label>
                             <select id="anneeEdition" name="anneeEdition" class="chosen-select form-control" data-placeholder="Cherchez par année" >
                                 <option></option>
-                                <c:forEach var="findBook" items="${allBookList}">
-                                    <option value="${findBook.anneeEdition}">${findBook.anneeEdition}</option>
+                                <c:forEach var="anneeEdition" items="${anneeEditions}">
+                                    <option value="${anneeEdition}">${anneeEdition}</option>
                                 </c:forEach>
                             </select>
                         </div>
@@ -180,8 +180,8 @@ URL: https://www.freshdesignweb.com/ustora/
                                 <label for="section" class="">Section</label>
                                 <select id="section" name="section" class="chosen-select form-control" data-placeholder="Cherchez par section" >
                                     <option></option>
-                                    <c:forEach var="findBook" items="${allBookList}">
-                                        <option value="${findBook.section}">${findBook.section}</option>
+                                    <c:forEach var="section" items="${sections}">
+                                        <option value="${section}">${section}</option>
                                     </c:forEach>
                                 </select>
                             </div>
@@ -189,8 +189,8 @@ URL: https://www.freshdesignweb.com/ustora/
                                 <label for="isbn" class="">ISBN</label>
                                 <select id="isbn" name="isbn" class="chosen-select form-control" data-placeholder="Cherchez par ISBN" >
                                     <option></option>
-                                    <c:forEach var="findBook" items="${allBookList}">
-                                        <option value="${findBook.isbn}">${findBook.isbn}</option>
+                                    <c:forEach var="isbn" items="${isbns}">
+                                        <option value="${isbn}">${isbn}</option>
                                     </c:forEach>
                                 </select>
                             </div>
@@ -220,6 +220,7 @@ URL: https://www.freshdesignweb.com/ustora/
                     </tr>
                     </thead>
                     <tbody>
+                    <c:if test="${allBookList.size()==searchBook.size()}">
                     <c:forEach items="${allBook}" var="bookAll">
                         <tr>
                             <td class="text-center" scope="row">${bookAll.titre}</td>
@@ -237,8 +238,28 @@ URL: https://www.freshdesignweb.com/ustora/
                                 </div>
                             </td>
                         </tr>
-
                     </c:forEach>
+                    </c:if>
+                    <c:if test="${allBookList.size()!=searchBook.size()}">
+                        <c:forEach items="${searchBook}" var="bookAll">
+                            <tr>
+                                <td class="text-center" scope="row">${bookAll.titre}</td>
+                                <td class="text-center" scope="row">${bookAll.auteurPrincipalNom}</td>
+                                <td class="text-center" scope="row">${bookAll.auteurPrincipalPrenom}</td>
+                                <td class="text-center" scope="row">${bookAll.editeur}</td>
+                                <td class="text-center" scope="row">${bookAll.anneeEdition}</td>
+                                <td class="text-center" scope="row">${bookAll.section}</td>
+                                <td class="text-center" scope="row">${bookAll.isbn}</td>
+                                <td class="text-center" scope="row">${bookAll.nbreExemplaire}</td>
+                                <td class="text-center" scope="row">
+                                    <div class="single-product">
+                                        <button href="../../../../bookDetail/${bookAll.id}" class="view-details-link">Plus de détails</button>
+                                        <button class="btn-success">Reserver</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </c:forEach>
+                    </c:if>
                     </tbody>
                 </table>
             </div>

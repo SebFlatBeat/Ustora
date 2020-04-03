@@ -34,7 +34,8 @@ public class ClientController {
                         @RequestParam Optional<String> editeur, Model modelDistinctEditeur,
                         @RequestParam Optional<String> anneeEdition, Model modelDistinctAnneeEdition,
                         @RequestParam Optional<String> section, Model modelDistinctSection,
-                        @RequestParam Optional<String> isbn, Model modelDistinctIsbn
+                        @RequestParam Optional<String> isbn, Model modelDistinctIsbn,
+                        Model modelSearchBook
                         ) {
         if(page==null){
             page=0;
@@ -71,7 +72,26 @@ public class ClientController {
         if(titre.isPresent() && !searchBook.isEmpty()){
             searchBook = bookProxy.searchTitre(titre.get(),searchBook);
         }
-        
+
+        if(auteurNom.isPresent() && !searchBook.isEmpty()){
+            searchBook = bookProxy.searchAuteurNom(auteurNom.get(),searchBook);
+        }
+        if(auteurPrenom.isPresent() && !searchBook.isEmpty()){
+            searchBook = bookProxy.searchAuteurPrenom(auteurPrenom.get(),searchBook);
+        }
+        if (editeur.isPresent() && !searchBook.isEmpty()){
+            searchBook = bookProxy.searchEditeur(editeur.get(),searchBook);
+        }
+        if(anneeEdition.isPresent()&& !searchBook.isEmpty()){
+            searchBook = bookProxy.searchAnneeEdition(anneeEdition.get(),searchBook);
+        }
+        if(section.isPresent()&& !searchBook.isEmpty()){
+            searchBook = bookProxy.searchSection(section.get(),searchBook);
+        }
+        if(isbn.isPresent()&& !searchBook.isEmpty()){
+            searchBook = bookProxy.searchIsbn(isbn.get(),searchBook);
+        }
+        modelSearchBook.addAttribute("searchBook",searchBook);
         return "index";
     }
 

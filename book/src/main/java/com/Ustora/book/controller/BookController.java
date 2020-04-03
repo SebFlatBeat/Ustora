@@ -81,4 +81,33 @@ public class BookController {
         return bookDao.findByTitre(titre, searchBook);
     }
 
+    @PostMapping("/search/auteurNom/{auteurNom}")
+    public List<Book> searchAuteurNom(@PathVariable("auteurNom") String auteurNom, @RequestBody List<Book> searchBook){
+        return bookDao.findByAuteurPrincipalNom(auteurNom, searchBook);
+    }
+
+    @PostMapping("/search/auteurPrenom/{auteurPrenom}")
+    public List<Book> searchAuteurPrenom(@PathVariable("auteurPrenom") String auteurPrenom, @RequestBody List<Book> searchBook){
+        return bookDao.findByAuteurPrincipalPrenom(auteurPrenom, searchBook);
+    }
+
+    @PostMapping("/search/editeur/{editeur}")
+    public List<Book> searchEditeur(@PathVariable("editeur") String editeur, @RequestBody List<Book> searchBook){
+        return bookDao.findByEditeur(editeur, searchBook);
+    }
+
+    @PostMapping("/search/anneeEdition/{anneeEdition}")
+    public List<Book> searchAnneeEdition(@PathVariable("anneeEdition") String anneeEdition, @RequestBody List<Book> searchBook){
+        return bookDao.findByAnneeEdition(anneeEdition, searchBook);
+    }
+
+    @PostMapping("/search/section/{section}")
+    public List<Book> searchSection(@PathVariable("section") String section, @RequestBody List<Book> searchBook){
+        return bookDao.findBySection(section, searchBook);
+    }
+
+    @PostMapping("/search/isbn/{isbn}")
+    public List<Book> searchIsbn(@PathVariable("isbn") String isbn, @RequestBody List<Book> searchBook){
+        return bookDao.findByIsbn(isbn, searchBook);
+    }
 }

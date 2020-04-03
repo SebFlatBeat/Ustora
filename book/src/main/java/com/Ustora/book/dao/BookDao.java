@@ -54,6 +54,6 @@ public interface BookDao extends PagingAndSortingRepository<Book, Long> {
     @Query("select distinct book from Book book where book.section=:section and book in :listBook")
     List<Book> findBySection(@Param("section") String section, @Param("listBook")List<Book> bookList);
 
-    @Query("select distinct book from Book book where book.isbn=:section and book in :listBook")
+    @Query("select distinct book from Book book where book.isbn=:isbn and book in :listBook")
     List<Book> findByIsbn(@Param("isbn") String section, @Param("listBook")List<Book> bookList);
 }
