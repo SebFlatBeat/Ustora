@@ -4,7 +4,6 @@
     <list default="true" id="1c71ef9e-16a3-4367-b8d3-f39ec379e535" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/espacePerso.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/espacePerso.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -119,19 +118,19 @@
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main\resources\META-INF\resources" />
-      <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main\resources\META-INF.resources" />
-      <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main" />
-      <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main\resources\WEB-INF" />
-      <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main\resources" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main\resources\META-INF\resources\WEB-INF\jsp" />
       <recent name="C:\Users\Vincs\IdeaProjects\Ustora\user\src\main\java\com\Ustora\user" />
       <recent name="C:\Users\Vincs\IdeaProjects\Ustora\book\src\main\java\com\Ustora\book" />
       <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main\resources" />
       <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main\java\com\Ustora\clientui" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main\resources\META-INF\resources" />
+      <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main\resources\META-INF.resources" />
+      <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main" />
+      <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main\resources\WEB-INF" />
+      <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main\resources" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -279,7 +278,7 @@
       <workItem from="1585900041209" duration="26210000" />
       <workItem from="1585988631101" duration="2616000" />
       <workItem from="1585992719127" duration="636000" />
-      <workItem from="1586004802471" duration="9794000" />
+      <workItem from="1586004802471" duration="10607000" />
     </task>
     <task id="LOCAL-00001" summary="Modification du fichier xml">
       <created>1585788896625</created>
@@ -372,7 +371,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586010191050</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Mise en page de l'espace Perso">
+      <created>1586014716388</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1586014716388</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -392,7 +398,8 @@
     <MESSAGE value="Correction Anomalie Recherche Multi Critere" />
     <MESSAGE value="Ajout de javaDoc, correction affichage sur registerSuccess, correction encryptement password" />
     <MESSAGE value="Correction Bug Dropdown du Menu Utilisateur" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correction Bug Dropdown du Menu Utilisateur" />
+    <MESSAGE value="Mise en page de l'espace Perso" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mise en page de l'espace Perso" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Notifications" timestamp="1585788923959">
@@ -427,10 +434,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="383" y="78" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728@0.0.1366.728" timestamp="1585988474996" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1586010187648">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1586014714428">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586010187648" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586014714428" />
     <state width="394" height="466" key="DebuggerActiveHint" timestamp="1585904954962">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -447,38 +454,38 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="553" y="257" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1585790800540" />
-    <state width="1021" height="264" key="GridCell.Tab.0.bottom" timestamp="1586013614702">
+    <state width="1021" height="264" key="GridCell.Tab.0.bottom" timestamp="1586014796710">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="264" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586013614702" />
-    <state width="1021" height="264" key="GridCell.Tab.0.center" timestamp="1586013614702">
+    <state width="1021" height="264" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586014796710" />
+    <state width="1021" height="264" key="GridCell.Tab.0.center" timestamp="1586014796710">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="264" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586013614702" />
-    <state width="1021" height="264" key="GridCell.Tab.0.left" timestamp="1586013614702">
+    <state width="1021" height="264" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586014796710" />
+    <state width="1021" height="264" key="GridCell.Tab.0.left" timestamp="1586014796710">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="264" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586013614702" />
-    <state width="1021" height="264" key="GridCell.Tab.0.right" timestamp="1586013614702">
+    <state width="1021" height="264" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586014796710" />
+    <state width="1021" height="264" key="GridCell.Tab.0.right" timestamp="1586014796710">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="264" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586013614702" />
-    <state width="1021" height="264" key="GridCell.Tab.1.bottom" timestamp="1586013614702">
+    <state width="1021" height="264" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586014796710" />
+    <state width="1021" height="264" key="GridCell.Tab.1.bottom" timestamp="1586014796710">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="264" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586013614702" />
-    <state width="1021" height="264" key="GridCell.Tab.1.center" timestamp="1586013614702">
+    <state width="1021" height="264" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586014796710" />
+    <state width="1021" height="264" key="GridCell.Tab.1.center" timestamp="1586014796710">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="264" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1586013614702" />
-    <state width="1021" height="264" key="GridCell.Tab.1.left" timestamp="1586013614702">
+    <state width="1021" height="264" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1586014796710" />
+    <state width="1021" height="264" key="GridCell.Tab.1.left" timestamp="1586014796710">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="264" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1586013614702" />
-    <state width="1021" height="264" key="GridCell.Tab.1.right" timestamp="1586013614702">
+    <state width="1021" height="264" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1586014796710" />
+    <state width="1021" height="264" key="GridCell.Tab.1.right" timestamp="1586014796710">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="264" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1586013614702" />
+    <state width="1021" height="264" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1586014796710" />
     <state width="1021" height="262" key="GridCell.Tab.2.bottom" timestamp="1586005799002">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -511,10 +518,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="514" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1585859175299" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1586010195156">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1586014729585">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586010195156" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586014729585" />
     <state x="438" y="208" key="cloudConfig.SelfSettingsDialog" timestamp="1585988119579">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

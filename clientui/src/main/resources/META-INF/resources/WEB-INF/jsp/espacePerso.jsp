@@ -75,7 +75,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+            <li class="nav-item ">
                 <a class="nav-link"  href="<c:url value="/index"/>">Accueil</a>
             </li>
             <li class="nav-item">
@@ -88,10 +88,13 @@
     </div>
 </nav>
 <!-- End nav area -->
+&nbsp;
+&nbsp;
+&nbsp;
 
 <section id="prets">
 <div class="service-box team boxed-grey col-md-10 ml-auto mr-auto">
-    <h5 class="text-center">Prêt en cours</h5>
+    <h3 class="text-center">Prêt en cours</h3>
     <table class="table table-responsive-lg table-striped table-hover">
         <thead class="thead-dark">
         <tr class="bg-primary">
@@ -107,7 +110,7 @@
                 <c:if test="${lend.accepted}">
                     <td class="text-center" scope="row">${lend.bookReservation}</td>
                     <td class="text-center" scope="row">${lend.borrower}</td>
-                    <td class="text-center" scope="row"><fmt:formatDate value="${lend.borrowing}"></fmt:formatDate></td>
+                    <td class="text-center" scope="row">${lend.borrowing}></td>
                 </c:if>
             </tr>
         </c:forEach>
