@@ -21,7 +21,7 @@ URL: https://www.freshdesignweb.com/ustora/
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'/>
 
     <!-- Bootstrap -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="../../css/font-awesome.min.css" type="text/css"/>
@@ -52,27 +52,28 @@ URL: https://www.freshdesignweb.com/ustora/
             </div>
             <div class="col-md-4">
                 <div class="user-menu text-right">
-                    <ul>
+                    <ul class="navbar-brand">
                         <c:if test="${pageContext.request.userPrincipal == null}">
-                            <li><a href="<c:url value="/register"/>"><i class="fa fa-user"></i> Creer Compte</a></li>
-                            <li><a href="<c:url value="/login"/>"><i class="fa fa-user"></i>Connexion</a>
-                            </li>
-                        </c:if>
-                        <c:if test="${pageContext.request.userPrincipal != null}">
-                        <li class="dropdown">
-                            <i class="fa fa-user"></i>
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">${pageContext.request.userPrincipal.name}</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="<c:url value="/espacePerso"/>">Mon espace perso</a></li>
-                                <li><a href="<c:url value="/logout"/>">Deconnexion</a></li>
-                            </ul>
+                        <li class="nav-item"><a class="nav-link" href="<c:url value="/register"/>"><i class="fa fa-user"></i> Creer Compte</a></li>
+                        <li class="nav-item"><a class="nav-link" href="<c:url value="/login"/>"><i class="fa fa-user"></i>Connexion</a>
                         </li>
                         </c:if>
-                    </ul>
+                        <c:if test="${pageContext.request.userPrincipal != null}">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-user"></i>${pageContext.request.userPrincipal.name}</a>
+                            <div class="dropdown-menu">
+                        <a class="dropdown-item" href="<c:url value="/espacePerso"/>">Espace Perso</a>
+                        <a class="dropdown-item" href="<c:url value="/logout"/>">Déconnexion</a>
                 </div>
+                </li>
+                </c:if>
+                </ul>
             </div>
         </div>
     </div>
+</div>
 </div>
 <!-- End header area -->
 
@@ -196,7 +197,7 @@ URL: https://www.freshdesignweb.com/ustora/
                             </select>
                         </div>
                         <div class="form-group col-md-3 ">
-                                <button class="btn btn-outline-primary ml-auto mr-auto">Chercher</button>
+                            <button class="btn btn-outline-primary ml-auto mr-auto">Chercher</button>
                         </div>
                     </div>
                 </form>
@@ -235,7 +236,7 @@ URL: https://www.freshdesignweb.com/ustora/
                                 <div class="single-product">
                                     <button href="../../../../bookDetail/${bookAll.id}" class="btn btn-outline-primary">Détails</button>
                                     <sec:authorize access="hasAnyAuthority('USER', 'ADMIN')">
-                                    <button class="btn btn-outline-success">Reserver</button>
+                                        <button class="btn btn-outline-success">Reserver</button>
                                     </sec:authorize>
                                 </div>
                             </td>
@@ -257,7 +258,7 @@ URL: https://www.freshdesignweb.com/ustora/
                                 <div class="single-product">
                                     <button href="../../../../bookDetail/${bookAll.id}" class="btn btn-outline-primary">Détails</button>
                                     <sec:authorize access="hasAnyAuthority('USER', 'ADMIN')">
-                                    <button class="btn btn-outline-success">Reserver</button>
+                                        <button class="btn btn-outline-success">Reserver</button>
                                     </sec:authorize>
                                 </div>
                             </td>
@@ -268,7 +269,7 @@ URL: https://www.freshdesignweb.com/ustora/
             </table>
         </div>
     </div>
-<c:if test="${allBookList.size()==searchBook.size()}">
+    <c:if test="${allBookList.size()==searchBook.size()}">
     <nav aria-label="Page navigation example">
         <ul class="pagination justify-content-center">
             <c:if test="${paginationBook.getNumber() == 0}">
@@ -292,9 +293,9 @@ URL: https://www.freshdesignweb.com/ustora/
 </div>
 </c:if>
 <c:if test="${allBookList.size()!=searchBook.size()}">
-<nav>
+    <nav>
 
-</nav>
+    </nav>
 </c:if>
 </div>
 <!-- End mainmenu area -->
@@ -502,8 +503,11 @@ URL: https://www.freshdesignweb.com/ustora/
 <!-- Latest jQuery form server -->
 <script src="https://code.jquery.com/jquery.min.js"></script>
 
+<!-- jQuery popper -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
 <!-- Bootstrap JS form CDN -->
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 <!-- jQuery sticky menu -->
 <script src="../../js/owl.carousel.min.js"></script>
@@ -520,7 +524,7 @@ URL: https://www.freshdesignweb.com/ustora/
 <script type="text/javascript" src="../../js/script.slider.js"></script>
 
 <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
 <script type="text/javascript">
@@ -528,5 +532,6 @@ URL: https://www.freshdesignweb.com/ustora/
         $(".chosen-select").chosen();
     });
 </script>
+
 </body>
 </html>
