@@ -523,10 +523,16 @@ URL: https://www.freshdesignweb.com/ustora/
 <script type="text/javascript" src="../../js/bxslider.min.js"></script>
 <script type="text/javascript" src="../../js/script.slider.js"></script>
 
+<!-- jQuery UI -->
 <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
 
+<!-- jQuery chosen -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.js"></script>
+
+<!-- jQuery anchor -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+
+<!-- Chosen Script -->
 <script type="text/javascript">
     $(function() {
         $(".chosen-select").chosen();
