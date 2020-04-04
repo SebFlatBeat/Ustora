@@ -42,6 +42,18 @@ public class Book {
 
     }
 
+    /**
+     *
+     * @param id
+     * @param titre
+     * @param auteurPrincipalNom
+     * @param auteurPrincipalPrenom
+     * @param isbn
+     * @param editeur
+     * @param anneeEdition
+     * @param section
+     * @param nbreExemplaire
+     */
     public Book(Long id,
                 @Size( max = 100, min = 3, message = "Le nom du livre doit contenir entre 3 et 50 charactères." )
                 @NotEmpty( message = "Veuillez saisir le nom de livre" )

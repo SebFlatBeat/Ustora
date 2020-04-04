@@ -16,7 +16,10 @@ public class SecurityController {
         return "redirect:/";
     }
 
-
+    /**
+     *
+     * @return login
+     */
     @GetMapping("/login")
     public String login() {
 

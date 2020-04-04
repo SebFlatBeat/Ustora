@@ -20,6 +20,12 @@ public class BookController {
     @Autowired
     private BookDao bookDao;
 
+    /**
+     *
+     * @param page
+     * @param size
+     * @return bookList
+     */
     @GetMapping("/allBook")
     public Page<Book> books(@RequestParam(name="page",defaultValue = "0") int page,
                             @RequestParam(name = "size",defaultValue = "20") int size){
@@ -28,54 +34,94 @@ public class BookController {
         return bookList;
     }
 
+    /**
+     *
+     * @return books
+     */
     @GetMapping("/allBookList")
     public List<Book> allBookList(){
         List<Book> books = bookDao.findAll();
         return books;
     }
 
+    /**
+     *
+     * @return titre
+     */
     @GetMapping("/find/titre")
     public List<String> findTitre(){
         List<String> titre = bookDao.findDistinctByTitre();
         return titre;
     }
 
+    /**
+     *
+     * @return auteurNom
+     */
     @GetMapping("/find/auteurNom")
     public List<String> findAuteurNom(){
         List<String> auteurNom = bookDao.findDistinctByAuteurPrincipalNom();
         return auteurNom;
     }
 
+    /**
+     *
+     * @return auteurPrenom
+     */
     @GetMapping("/find/auteurPrenom")
     public List<String> findAuteurPrenom(){
         List<String> auteurPrenom = bookDao.findDistinctByAuteurPrincipalPrenom();
         return auteurPrenom;
     }
 
+    /**
+     *
+     * @return editeur
+     */
     @GetMapping("/find/editeur")
     public List<String> findEditeur(){
         List<String> editeur = bookDao.findDistinctByEditeur();
         return editeur;
     }
 
+    /**
+     *
+     * @return anneeEdition
+     */
     @GetMapping("/find/anneeEdition")
     public List<String> findAnneeEdition(){
         List<String> anneeEdition = bookDao.findDistinctByAnneeEdition();
         return anneeEdition;
     }
 
+    /**
+     *
+     * @return section
+     */
     @GetMapping("/find/section")
     public List<String> findSection(){
         List<String> section = bookDao.findDistinctBySection();
         return section;
     }
 
+    /**
+     *
+     * @return isbn
+     */
     @GetMapping("/find/isbn")
     public List<String> findIsbn(){
         List<String> isbn = bookDao.findDistinctByIsbn();
         return isbn;
     }
 
+    /**
+     *
+     * @param titre
+     * @param searchBook
+     * @return
+     */
+
+    //Est-il obligatoire de faire un return? peut-etre mettre un void
     @PostMapping("/search/titre/{titre}")
     public List<Book> searchTitre(@PathVariable("titre") String titre, @RequestBody List<Book> searchBook){
         return bookDao.findByTitre(titre, searchBook);

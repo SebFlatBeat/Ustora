@@ -21,9 +21,16 @@ public class Reservation implements Serializable {
     @Cascade(org.hibernate.annotations.CascadeType.DETACH)
     private Book book;
 
-public Reservation(){
-}
+    public Reservation(){
+    }
 
+    /**
+     *
+     * @param borrower
+     * @param bookReservation
+     * @param borrowing
+     * @param accepted
+     */
     public Reservation(String borrower, String bookReservation, Date borrowing, boolean accepted) {
         this.borrower = borrower;
         this.bookReservation = bookReservation;

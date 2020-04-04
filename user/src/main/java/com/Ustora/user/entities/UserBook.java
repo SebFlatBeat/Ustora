@@ -83,7 +83,7 @@ public class UserBook {
     }
 
     public void setPassword(String password) {
-        this.password = password;
+        this.password = BCryptEncoderConfig.passwordencoder().encode(password);
     }
 
     public void grantAuthority(UserRole authority) {

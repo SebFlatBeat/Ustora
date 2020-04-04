@@ -118,4 +118,10 @@ public class ClientController {
         return "redirect:/registerSuccess";
     }
 
+    @GetMapping("/registerSuccess")
+    public String registerSuccess(){
+        return "registerSuccess";
+    }
+
+
 }

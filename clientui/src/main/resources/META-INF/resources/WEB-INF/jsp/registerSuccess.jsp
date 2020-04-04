@@ -31,46 +31,46 @@
 
 </head>
 <body>
-	
-	<div class="limiter">
-		<div class="container-login100">
-			<div class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
+
+<div class="limiter">
+	<div class="container-login100">
+		<div class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
 
 					<span class="login100-form-title p-b-32">
-						Register Success
+						Enregistré(e) avec succes
 					</span>
 
-				<span class="login100-form-title">
-					Votre compte a été crée !
+			<span class="login100-form-title">
+					Votre compte a été créé
 				</span>
-
-				<button class="btn btn-success" href="<c:url value="/login"/>">Connexion</button>
-				<button class="btn btn-warning"href="<c:url value="/index"/>">Accueil</button>
-
+			<div class="col-md-7 ml-auto">
+				<button><a class="btn btn-success" href="<c:url value="/login"/>">Connexion</a></button>
+				<button><a class="btn btn-warning"href="<c:url value="/index"/>">Accueil</a></button>
 			</div>
 		</div>
 	</div>
-	
+</div>
 
-	<div id="dropDownSelect1"></div>
 
-	<script src="../../vendorLogin/jquery/jquery-3.2.1.min.js"></script>
+<div id="dropDownSelect1"></div>
 
-	<script src="../../vendorLogin/animsition/js/animsition.min.js"></script>
+<script src="../../vendorLogin/jquery/jquery-3.2.1.min.js"></script>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.js"></script>
+<script src="../../vendorLogin/animsition/js/animsition.min.js"></script>
 
-	<script src="../../vendorLogin/bootstrap/js/popper.js"></script>
-	<script src="../../vendorLogin/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.js"></script>
 
-	<script src="../../vendorLogin/select2/select2.min.js"></script>
+<script src="../../vendorLogin/bootstrap/js/popper.js"></script>
+<script src="../../vendorLogin/bootstrap/js/bootstrap.min.js"></script>
 
-	<script src="../../vendorLogin/daterangepicker/moment.min.js"></script>
-	<script src="../../vendorLogin/daterangepicker/daterangepicker.js"></script>
+<script src="../../vendorLogin/select2/select2.min.js"></script>
 
-	<script src="../../vendorLogin/countdowntime/countdowntime.js"></script>
+<script src="../../vendorLogin/daterangepicker/moment.min.js"></script>
+<script src="../../vendorLogin/daterangepicker/daterangepicker.js"></script>
 
-	<script src="../../js/main.js"></script>
+<script src="../../vendorLogin/countdowntime/countdowntime.js"></script>
+
+<script src="../../js/main.js"></script>
 
 </body>
 </html>

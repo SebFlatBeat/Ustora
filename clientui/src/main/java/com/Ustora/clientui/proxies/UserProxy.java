@@ -20,6 +20,5 @@ public interface UserProxy {
 
     @PostMapping(value = "/user/registerPost")
     UserBean register(UserBean userBean);
-
     }
 

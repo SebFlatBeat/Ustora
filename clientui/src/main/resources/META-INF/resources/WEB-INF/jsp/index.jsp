@@ -60,7 +60,8 @@ URL: https://www.freshdesignweb.com/ustora/
                         </c:if>
                         <c:if test="${pageContext.request.userPrincipal != null}">
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">${pageContext.request.userPrincipal.name}<b class="caret"></b></a>
+                            <i class="fa fa-user"></i>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">${pageContext.request.userPrincipal.name}</a>
                             <ul class="dropdown-menu">
                                 <li><a href="<c:url value="/espacePerso"/>">Mon espace perso</a></li>
                                 <li><a href="<c:url value="/logout"/>">Deconnexion</a></li>
@@ -233,7 +234,9 @@ URL: https://www.freshdesignweb.com/ustora/
                             <td class="text-center" scope="row">
                                 <div class="single-product">
                                     <button href="../../../../bookDetail/${bookAll.id}" class="btn btn-outline-primary">Détails</button>
+                                    <sec:authorize access="hasAnyAuthority('USER', 'ADMIN')">
                                     <button class="btn btn-outline-success">Reserver</button>
+                                    </sec:authorize>
                                 </div>
                             </td>
                         </tr>
@@ -253,7 +256,9 @@ URL: https://www.freshdesignweb.com/ustora/
                             <td class="text-center" scope="row">
                                 <div class="single-product">
                                     <button href="../../../../bookDetail/${bookAll.id}" class="btn btn-outline-primary">Détails</button>
+                                    <sec:authorize access="hasAnyAuthority('USER', 'ADMIN')">
                                     <button class="btn btn-outline-success">Reserver</button>
+                                    </sec:authorize>
                                 </div>
                             </td>
                         </tr>
@@ -383,20 +388,6 @@ URL: https://www.freshdesignweb.com/ustora/
 
                             <div class="product-carousel-price">
                                 <ins>Hänsel et Gretel</ins>
-                            </div>
-                        </div>
-                        <div class="single-product">
-                            <div class="product-f-image">
-                                <img src="../../img/product-5.jpg" alt="">
-                                <div class="product-hover">
-                                    <a href="../../../../templates/single-product.html" class="view-details-link"><i class="fa fa-link"></i> Voir details</a>
-                                </div>
-                            </div>
-
-                            <h2>Victor Hugo</h2>
-
-                            <div class="product-carousel-price">
-                                <ins>Au Jardin Des Plantes</ins>
                             </div>
                         </div>
                         <div class="single-product">
