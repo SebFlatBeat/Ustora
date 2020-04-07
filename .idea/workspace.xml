@@ -2,37 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c71ef9e-16a3-4367-b8d3-f39ec379e535" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/0/1028b280eb54dfe3b4529393601471cb86d1a9f9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/a/5ac35c7f645490e3224d5314551405ae635705ae" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/7/7702300589b8d8260276bb16363dc04016009d14" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/5/b5aa843524f5813d789502fd42e3b080ca499533" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/d/cd9a09e8e49c358fd2ef4a7e12eb08c399a7724d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/c/dcc08c1c35c705fd552febefc613abc6209ca2bb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/controller/ReservationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/dao/ReservationDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/beans/ReservationBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/proxies/ReservationProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/reservationSuccess.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/img/book-24px.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3d98b5d7-2063-4113-b89f-d98b42a02839.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/3d98b5d7-2063-4113-b89f-d98b42a02839.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3d98b5d7-2063-4113-b89f-d98b42a02839/storage_v2/_src_/database/Bibliotheque.R4OgdQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/3d98b5d7-2063-4113-b89f-d98b42a02839/storage_v2/_src_/database/Bibliotheque.R4OgdQ/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/book/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/dao/ReservationDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/dao/ReservationDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/entities/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/entities/Reservation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/proxies/UserProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/proxies/UserProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/beans/UserBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/beans/UserBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/BookApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/BookApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/controller/ReservationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/controller/ReservationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/controller/ClientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/proxies/BookProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/proxies/BookProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/proxies/UserProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/proxies/UserProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/security/SecurityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/security/SecurityController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/bookDetail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/bookDetail.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/espacePerso.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/espacePerso.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/Ustora/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/Ustora/user/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/Ustora/user/UserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/Ustora/user/UserApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -292,11 +267,6 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
                 <item name="Not Started" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
               <path>
@@ -325,7 +295,7 @@
       <workItem from="1585900041209" duration="26210000" />
       <workItem from="1585988631101" duration="2616000" />
       <workItem from="1585992719127" duration="636000" />
-      <workItem from="1586004802471" duration="49808000" />
+      <workItem from="1586004802471" duration="53403000" />
     </task>
     <task id="LOCAL-00001" summary="Modification du fichier xml">
       <created>1585788896625</created>
@@ -432,7 +402,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586015631666</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Implementatiton de la Reservation">
+      <created>1586244523340</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1586244523340</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -454,7 +431,8 @@
     <MESSAGE value="Correction Bug Dropdown du Menu Utilisateur" />
     <MESSAGE value="Mise en page de l'espace Perso" />
     <MESSAGE value="espace Perso -&gt; ajout navbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="espace Perso -&gt; ajout navbar" />
+    <MESSAGE value="Implementatiton de la Reservation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementatiton de la Reservation" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Notifications" timestamp="1585788923959">
@@ -481,18 +459,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="482" y="271" key="#com.intellij.javaee.module.view.web.EditWebRootDialog/0.0.1366.728@0.0.1366.728" timestamp="1585792840259" />
-    <state x="270" y="78" width="773" height="594" key="#xdebugger.evaluate" timestamp="1586243302995">
+    <state x="270" y="78" width="773" height="594" key="#xdebugger.evaluate" timestamp="1586247116034">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="270" y="78" width="773" height="594" key="#xdebugger.evaluate/0.0.1366.728@0.0.1366.728" timestamp="1586243302995" />
+    <state x="270" y="78" width="773" height="594" key="#xdebugger.evaluate/0.0.1366.728@0.0.1366.728" timestamp="1586247116034" />
     <state x="383" y="78" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1585988474996">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="383" y="78" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728@0.0.1366.728" timestamp="1585988474996" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1586015629601">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1586244517200">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586015629601" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586244517200" />
     <state width="394" height="466" key="DebuggerActiveHint" timestamp="1585904954962">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -509,54 +487,54 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="553" y="257" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1585790800540" />
-    <state width="1021" height="329" key="GridCell.Tab.0.bottom" timestamp="1586244385002">
+    <state width="1021" height="332" key="GridCell.Tab.0.bottom" timestamp="1586247195582">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="329" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586244385002" />
-    <state width="1021" height="329" key="GridCell.Tab.0.center" timestamp="1586244385001">
+    <state width="1021" height="332" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586247195582" />
+    <state width="1021" height="332" key="GridCell.Tab.0.center" timestamp="1586247195582">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="329" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586244385001" />
-    <state width="1021" height="329" key="GridCell.Tab.0.left" timestamp="1586244385001">
+    <state width="1021" height="332" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586247195582" />
+    <state width="1021" height="332" key="GridCell.Tab.0.left" timestamp="1586247195582">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="329" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586244385001" />
-    <state width="1021" height="329" key="GridCell.Tab.0.right" timestamp="1586244385001">
+    <state width="1021" height="332" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586247195582" />
+    <state width="1021" height="332" key="GridCell.Tab.0.right" timestamp="1586247195582">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="329" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586244385001" />
-    <state width="1021" height="329" key="GridCell.Tab.1.bottom" timestamp="1586244385002">
+    <state width="1021" height="332" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586247195582" />
+    <state width="1021" height="332" key="GridCell.Tab.1.bottom" timestamp="1586247195582">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="329" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586244385002" />
-    <state width="1021" height="329" key="GridCell.Tab.1.center" timestamp="1586244385002">
+    <state width="1021" height="332" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586247195582" />
+    <state width="1021" height="332" key="GridCell.Tab.1.center" timestamp="1586247195582">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="329" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1586244385002" />
-    <state width="1021" height="329" key="GridCell.Tab.1.left" timestamp="1586244385002">
+    <state width="1021" height="332" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1586247195582" />
+    <state width="1021" height="332" key="GridCell.Tab.1.left" timestamp="1586247195582">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="329" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1586244385002" />
-    <state width="1021" height="329" key="GridCell.Tab.1.right" timestamp="1586244385002">
+    <state width="1021" height="332" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1586247195582" />
+    <state width="1021" height="332" key="GridCell.Tab.1.right" timestamp="1586247195582">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="329" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1586244385002" />
-    <state width="1021" height="329" key="GridCell.Tab.2.bottom" timestamp="1586244385003">
+    <state width="1021" height="332" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1586247195582" />
+    <state width="1021" height="332" key="GridCell.Tab.2.bottom" timestamp="1586247195583">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="329" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586244385003" />
-    <state width="1021" height="329" key="GridCell.Tab.2.center" timestamp="1586244385002">
+    <state width="1021" height="332" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586247195583" />
+    <state width="1021" height="332" key="GridCell.Tab.2.center" timestamp="1586247195583">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="329" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1586244385002" />
-    <state width="1021" height="329" key="GridCell.Tab.2.left" timestamp="1586244385002">
+    <state width="1021" height="332" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1586247195583" />
+    <state width="1021" height="332" key="GridCell.Tab.2.left" timestamp="1586247195582">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="329" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1586244385002" />
-    <state width="1021" height="329" key="GridCell.Tab.2.right" timestamp="1586244385002">
+    <state width="1021" height="332" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1586247195582" />
+    <state width="1021" height="332" key="GridCell.Tab.2.right" timestamp="1586247195583">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="329" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1586244385002" />
+    <state width="1021" height="332" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1586247195583" />
     <state x="213" y="19" key="Maven.ArtifactSearchDialog" timestamp="1585779291108">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -573,10 +551,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="514" height="477" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1586166494655" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1586015638402">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1586244526162">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586015638402" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586244526162" />
     <state x="438" y="208" key="cloudConfig.SelfSettingsDialog" timestamp="1585988119579">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

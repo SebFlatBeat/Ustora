@@ -131,7 +131,7 @@ public class ClientController {
         return "registerSuccess";
     }
 
-    @PostMapping(value = "/reservation")
+    @PostMapping(value = "/save/reservation")
     public String reservation (@ModelAttribute ReservationBean reservationBean){
         reservationProxy.newReservation(reservationBean);
         return "redirect:/reservationSuccess";
