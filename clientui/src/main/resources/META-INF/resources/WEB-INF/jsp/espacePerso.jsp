@@ -101,7 +101,6 @@
     <table class="table table-responsive-lg table-striped table-hover">
         <thead class="thead-dark">
         <tr class="bg-primary">
-            <th class="text-center" scope="col"> Numéro de réservation</th>
             <th class="text-center" scope="col"> Nom du Livre</th>
             <th class="text-center" scope="col">Date d'emprunt</th>
             <th class="text-center" scope="col">Date de fin de prêt</th>
@@ -111,7 +110,6 @@
         <tbody>
         <c:forEach var="available" items="${userReservation}">
             <tr>
-                <td class="text-center" scope="row">${available.id}</td>
                     <td class="text-center" scope="row">${available.book.titre}</td>
                     <td class="text-center" scope="row">
                         <fmt:formatDate value="${available.borrowing}" type="date" pattern="dd.MM.yyyy" />

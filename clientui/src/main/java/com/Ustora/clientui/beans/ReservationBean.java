@@ -12,7 +12,7 @@ public class ReservationBean {
     private Date endBorrowing;
     private boolean extend;
 
-    private BookBean bookBean;
+    private BookBean book;
 
     public ReservationBean() {
     }
@@ -65,12 +65,12 @@ public class ReservationBean {
         this.extend = extend;
     }
 
-    public BookBean getBookBean() {
-        return bookBean;
+    public BookBean getBook() {
+        return book;
     }
 
-    public void setBookBean(BookBean bookBean) {
-        this.bookBean = bookBean;
+    public void setBook(BookBean book) {
+        this.book = book;
     }
 }
 

@@ -45,7 +45,7 @@ public class ReservationController {
         Optional<Book> book = bookDao.findById(bookId);
         reservation.setBook(book.get());
         book.get().setNbreExemplaire(book.get().getNbreExemplaire()-1);
-       reservationService.save(reservation);
+        reservationService.save(reservation);
 
     }
 }
