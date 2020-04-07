@@ -1,21 +1,27 @@
 package com.Ustora.clientui.beans;
 
-import java.sql.Date;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import java.util.Date;
 
 public class ReservationBean {
 
     private Long bookId;
     private Long userId;
     private Date borrowing;
+    private Date endBorrowing;
     private boolean extend;
+
+    private BookBean bookBean;
 
     public ReservationBean() {
     }
 
-    public ReservationBean(Long bookId, Long userId, Date borrowing, boolean extend) {
+    public ReservationBean(Long bookId, Long userId, Date borrowing,Date endBorrowing, boolean extend) {
         this.bookId = bookId;
         this.userId = userId;
         this.borrowing = borrowing;
+        this.endBorrowing = endBorrowing;
         this.extend = extend;
     }
 
@@ -43,6 +49,14 @@ public class ReservationBean {
         this.borrowing = borrowing;
     }
 
+    public Date getEndBorrowing() {
+        return endBorrowing;
+    }
+
+    public void setEndBorrowing(Date endBorrowing) {
+        this.endBorrowing = endBorrowing;
+    }
+
     public boolean isExtend() {
         return extend;
     }
@@ -50,4 +64,13 @@ public class ReservationBean {
     public void setExtend(boolean extend) {
         this.extend = extend;
     }
+
+    public BookBean getBookBean() {
+        return bookBean;
+    }
+
+    public void setBookBean(BookBean bookBean) {
+        this.bookBean = bookBean;
+    }
 }
+

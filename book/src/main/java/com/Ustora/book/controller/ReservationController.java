@@ -6,8 +6,8 @@ import com.Ustora.book.dao.ReservationDao;
 import com.Ustora.book.entities.Book;
 import com.Ustora.book.entities.Reservation;
 import com.Ustora.book.proxies.UserProxy;
+import com.Ustora.book.service.ReservationService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 
 import java.sql.Date;
@@ -19,7 +19,7 @@ import java.util.Optional;
 public class ReservationController {
 
     @Autowired
-    private ReservationDao reservationDao;
+    private ReservationService reservationService;
 
     @Autowired
     private BookDao bookDao;
@@ -30,21 +30,22 @@ public class ReservationController {
 
     @GetMapping("/reservation")
     public List<Reservation> findReservation(@RequestParam Long userId){
-        List<Reservation> reservationList = reservationDao.findReservationsByUserBookId(userId);
+        List<Reservation> reservationList = reservationService.findReservationsByUserBookId(userId);
         return reservationList;
     }
 
     @PostMapping("/save/reservation")
-    public void  saveReservation(@RequestBody Reservation reservation){
+    public void  saveReservation(@RequestParam Long bookId, @RequestParam Long userId){
+        Reservation reservation = new Reservation();
         Date aujourdhui = new Date(Calendar.getInstance().getTime().getTime());
-        UserBean currentUser = userProxy.find(SecurityContextHolder.getContext().getAuthentication().getName());
         reservation.setBorrowing(aujourdhui);
-        reservation.setEndBorriwing(reservationDao.add4Weeks(reservation.getBorrowing()));
+        reservation.setEndBorrowing(reservationService.add4Weeks(reservation.getBorrowing()));
         reservation.setExtend(false);
-        reservation.setUserBookId((currentUser.getId()));
-        Optional<Book> book = bookDao.findById(reservation.getBook().getId());
+        reservation.setUserBookId(userId);
+        Optional<Book> book = bookDao.findById(bookId);
+        reservation.setBook(book.get());
         book.get().setNbreExemplaire(book.get().getNbreExemplaire()-1);
-        reservationDao.save(reservation);
+       reservationService.save(reservation);
 
     }
 }

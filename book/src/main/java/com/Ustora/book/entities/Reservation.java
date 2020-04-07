@@ -5,7 +5,8 @@ import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.sql.Date;
+import java.util.Date;
+
 
 @Entity
 public class Reservation implements Serializable {
@@ -14,7 +15,7 @@ public class Reservation implements Serializable {
     private Long id;
     private Long userBookId;
     private Date borrowing;
-    private Date endBorriwing;
+    private Date endBorrowing;
     private boolean extend;
 
     @ManyToOne
@@ -28,14 +29,14 @@ public class Reservation implements Serializable {
      *
      * @param userBookId
      * @param borrowing
-     * @param endBorriwing
+     * @param endBorrowing
      * @param extend
      */
-    public Reservation(Long userBookId, Date borrowing,Date endBorriwing, boolean extend) {
+    public Reservation(Long userBookId, Date borrowing,Date endBorrowing, boolean extend) {
 
         this.userBookId = userBookId;
         this.borrowing = borrowing;
-        this.endBorriwing = endBorriwing;
+        this.endBorrowing = endBorrowing;
         this.extend = extend;
 
     }
@@ -56,12 +57,12 @@ public class Reservation implements Serializable {
         this.borrowing = borrowing;
     }
 
-    public Date getEndBorriwing() {
-        return endBorriwing;
+    public Date getEndBorrowing() {
+        return endBorrowing;
     }
 
-    public void setEndBorriwing(Date endBorriwing) {
-        this.endBorriwing = endBorriwing;
+    public void setEndBorrowing(Date endBorrowing) {
+        this.endBorrowing = endBorrowing;
     }
 
     public boolean isExtend() {

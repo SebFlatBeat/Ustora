@@ -132,8 +132,9 @@ public class ClientController {
     }
 
     @PostMapping(value = "/save/reservation")
-    public String reservation (@ModelAttribute ReservationBean reservationBean){
-        reservationProxy.newReservation(reservationBean);
+    public String reservation (@RequestParam Long bookId){
+        UserBean currentUser = (UserBean) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        reservationProxy.newReservation(bookId, currentUser.getId());
         return "redirect:/reservationSuccess";
     }
 }

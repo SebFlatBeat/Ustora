@@ -2,12 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c71ef9e-16a3-4367-b8d3-f39ec379e535" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/service/BookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/service/ReservationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/Ustora/user/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3d98b5d7-2063-4113-b89f-d98b42a02839.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/3d98b5d7-2063-4113-b89f-d98b42a02839.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3d98b5d7-2063-4113-b89f-d98b42a02839/storage_v2/_src_/database/Bibliotheque.R4OgdQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/3d98b5d7-2063-4113-b89f-d98b42a02839/storage_v2/_src_/database/Bibliotheque.R4OgdQ/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/BookApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/BookApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/controller/BookController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/controller/ReservationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/controller/ReservationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/dao/BookDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/dao/BookDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/dao/ReservationDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/dao/ReservationDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/dao/ReservationDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/entities/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/entities/Reservation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/beans/ReservationBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/beans/ReservationBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/controller/ClientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/Ustora/user/UserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/Ustora/user/UserApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/proxies/ReservationProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/proxies/ReservationProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/espacePerso.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/espacePerso.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +86,16 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="reservation: table" type="69fad909:PgImplModel$LocalTable" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Bibliotheque@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="Bibliotheque: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="user_book: table" type="69fad909:PgImplModel$LocalTable" />
       </path>
     </expand>
@@ -84,8 +104,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -125,7 +145,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MTCustomThemeConfigurable" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
@@ -295,7 +315,7 @@
       <workItem from="1585900041209" duration="26210000" />
       <workItem from="1585988631101" duration="2616000" />
       <workItem from="1585992719127" duration="636000" />
-      <workItem from="1586004802471" duration="53403000" />
+      <workItem from="1586004802471" duration="67575000" />
     </task>
     <task id="LOCAL-00001" summary="Modification du fichier xml">
       <created>1585788896625</created>
@@ -409,7 +429,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586244523340</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Correction anomalie sur la page index pour le post save/reservation">
+      <created>1586248234072</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1586248234072</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -432,21 +459,26 @@
     <MESSAGE value="Mise en page de l'espace Perso" />
     <MESSAGE value="espace Perso -&gt; ajout navbar" />
     <MESSAGE value="Implementatiton de la Reservation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementatiton de la Reservation" />
+    <MESSAGE value="Correction anomalie sur la page index pour le post save/reservation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correction anomalie sur la page index pour le post save/reservation" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Notifications" timestamp="1585788923959">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="22" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1585788923959" />
+    <state x="413" y="119" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1586251226872">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="119" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1586251226872" />
     <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585993683895">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1585993683895" />
-    <state x="488" y="48" key="#com.intellij.ide.util.MemberChooser" timestamp="1586184218023">
+    <state x="488" y="48" width="594" height="593" key="#com.intellij.ide.util.MemberChooser" timestamp="1586265882212">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="48" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1586184218023" />
+    <state x="488" y="48" width="594" height="593" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1586265882212" />
     <state x="313" y="53" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1585792510360">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -459,18 +491,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="482" y="271" key="#com.intellij.javaee.module.view.web.EditWebRootDialog/0.0.1366.728@0.0.1366.728" timestamp="1585792840259" />
-    <state x="270" y="78" width="773" height="594" key="#xdebugger.evaluate" timestamp="1586247116034">
+    <state x="448" y="134" width="773" height="594" key="#xdebugger.evaluate" timestamp="1586267206691">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="270" y="78" width="773" height="594" key="#xdebugger.evaluate/0.0.1366.728@0.0.1366.728" timestamp="1586247116034" />
-    <state x="383" y="78" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1585988474996">
+    <state x="448" y="134" width="773" height="594" key="#xdebugger.evaluate/0.0.1366.728@0.0.1366.728" timestamp="1586267206691" />
+    <state x="383" y="78" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1586267124040">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="383" y="78" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728@0.0.1366.728" timestamp="1585988474996" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1586244517200">
+    <state x="383" y="78" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728@0.0.1366.728" timestamp="1586267124040" />
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1586248231209">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586244517200" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586248231209" />
     <state width="394" height="466" key="DebuggerActiveHint" timestamp="1585904954962">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -487,54 +519,58 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="553" y="257" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1585790800540" />
-    <state width="1021" height="332" key="GridCell.Tab.0.bottom" timestamp="1586247195582">
+    <state width="498" height="266" key="GridCell.Tab.0.bottom" timestamp="1586283970264">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="332" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586247195582" />
-    <state width="1021" height="332" key="GridCell.Tab.0.center" timestamp="1586247195582">
+    <state width="498" height="266" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586283970264" />
+    <state width="498" height="266" key="GridCell.Tab.0.center" timestamp="1586283970263">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="332" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586247195582" />
-    <state width="1021" height="332" key="GridCell.Tab.0.left" timestamp="1586247195582">
+    <state width="498" height="266" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586283970263" />
+    <state width="498" height="266" key="GridCell.Tab.0.left" timestamp="1586283970263">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="332" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586247195582" />
-    <state width="1021" height="332" key="GridCell.Tab.0.right" timestamp="1586247195582">
+    <state width="498" height="266" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586283970263" />
+    <state width="498" height="266" key="GridCell.Tab.0.right" timestamp="1586283970263">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="332" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586247195582" />
-    <state width="1021" height="332" key="GridCell.Tab.1.bottom" timestamp="1586247195582">
+    <state width="498" height="266" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586283970263" />
+    <state width="498" height="266" key="GridCell.Tab.1.bottom" timestamp="1586283970264">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="332" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586247195582" />
-    <state width="1021" height="332" key="GridCell.Tab.1.center" timestamp="1586247195582">
+    <state width="498" height="266" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586283970264" />
+    <state width="498" height="266" key="GridCell.Tab.1.center" timestamp="1586283970264">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="332" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1586247195582" />
-    <state width="1021" height="332" key="GridCell.Tab.1.left" timestamp="1586247195582">
+    <state width="498" height="266" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1586283970264" />
+    <state width="498" height="266" key="GridCell.Tab.1.left" timestamp="1586283970264">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="332" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1586247195582" />
-    <state width="1021" height="332" key="GridCell.Tab.1.right" timestamp="1586247195582">
+    <state width="498" height="266" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1586283970264" />
+    <state width="498" height="266" key="GridCell.Tab.1.right" timestamp="1586283970264">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="332" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1586247195582" />
-    <state width="1021" height="332" key="GridCell.Tab.2.bottom" timestamp="1586247195583">
+    <state width="498" height="266" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1586283970264" />
+    <state width="498" height="266" key="GridCell.Tab.2.bottom" timestamp="1586283970264">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="332" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586247195583" />
-    <state width="1021" height="332" key="GridCell.Tab.2.center" timestamp="1586247195583">
+    <state width="498" height="266" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586283970264" />
+    <state width="498" height="266" key="GridCell.Tab.2.center" timestamp="1586283970264">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="332" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1586247195583" />
-    <state width="1021" height="332" key="GridCell.Tab.2.left" timestamp="1586247195582">
+    <state width="498" height="266" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1586283970264" />
+    <state width="498" height="266" key="GridCell.Tab.2.left" timestamp="1586283970264">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="332" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1586247195582" />
-    <state width="1021" height="332" key="GridCell.Tab.2.right" timestamp="1586247195583">
+    <state width="498" height="266" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1586283970264" />
+    <state width="498" height="266" key="GridCell.Tab.2.right" timestamp="1586283970264">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="332" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1586247195583" />
+    <state width="498" height="266" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1586283970264" />
+    <state width="223" height="539" key="HiddenNamespacesPopup" timestamp="1586254335317">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="223" height="539" key="HiddenNamespacesPopup/0.0.1366.728@0.0.1366.728" timestamp="1586254335317" />
     <state x="213" y="19" key="Maven.ArtifactSearchDialog" timestamp="1585779291108">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -543,10 +579,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="348" y="63" key="NewModule_or_Project.wizard/0.0.1366.728@0.0.1366.728" timestamp="1585792438447" />
-    <state x="163" y="0" key="SettingsEditor" timestamp="1586030178114">
+    <state x="163" y="0" key="SettingsEditor" timestamp="1586254232446">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1586030178114" />
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1586254232446" />
     <state width="514" height="477" key="SwitcherDM" timestamp="1586166494655">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -559,10 +595,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="438" y="208" key="cloudConfig.SelfSettingsDialog/0.0.1366.728@0.0.1366.728" timestamp="1585988119578" />
-    <state x="582" y="254" width="326" height="261" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1586163039525">
+    <state x="582" y="254" width="326" height="261" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1586263618783">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="582" y="254" width="326" height="261" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1366.728@0.0.1366.728" timestamp="1586163039525" />
+    <state x="582" y="254" width="326" height="261" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1366.728@0.0.1366.728" timestamp="1586263618783" />
     <state x="413" y="169" key="com.intellij.database.dbimport.ImportUtil.MyDialog" timestamp="1586170261478">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -601,14 +637,34 @@
           <option name="timeStamp" value="62" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/user/src/main/java/com/Ustora/user/controller/UserController.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="69" />
+          <url>file://$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/controller/ClientController.java</url>
+          <line>136</line>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/book/src/main/java/com/Ustora/book/controller/ReservationController.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="94" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/book/src/main/java/com/Ustora/book/controller/ReservationController.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="95" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/book/src/main/java/com/Ustora/book/controller/ReservationController.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="98" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/controller/ClientController.java</url>
-          <line>135</line>
-          <option name="timeStamp" value="78" />
+          <line>111</line>
+          <option name="timeStamp" value="100" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/controller/ClientController.java</url>
+          <line>112</line>
+          <option name="timeStamp" value="101" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/controller/ClientController.java</url>

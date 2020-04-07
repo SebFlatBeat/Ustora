@@ -8,7 +8,7 @@
     <database id="2" parent="1" name="Bibliotheque">
       <ObjectId>16393</ObjectId>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>552</IntrospectionStateNumber>
+      <IntrospectionStateNumber>574</IntrospectionStateNumber>
       <Current>1</Current>
     </database>
     <database id="3" parent="1" name="postgres">
@@ -65,7 +65,7 @@
       <Comment>standard public schema</Comment>
       <StateNumber>276</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>553</IntrospectionStateNumber>
+      <IntrospectionStateNumber>575</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <access-method id="16" parent="2" name="heap">
@@ -145,9 +145,9 @@
       <StateNumber>518</StateNumber>
     </table>
     <table id="26" parent="15" name="reservation">
-      <ObjectId>16476</ObjectId>
+      <ObjectId>16486</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>549</StateNumber>
+      <StateNumber>572</StateNumber>
     </table>
     <table id="27" parent="15" name="user_book">
       <ObjectId>16394</ObjectId>
@@ -237,57 +237,57 @@
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>548</StateNumber>
+      <StateNumber>571</StateNumber>
       <TypeId>20</TypeId>
     </column>
     <column id="41" parent="26" name="borrowing">
       <Position>2</Position>
-      <DataType>date|0s</DataType>
-      <StateNumber>548</StateNumber>
-      <TypeId>1082</TypeId>
+      <DataType>timestamp|0s</DataType>
+      <StateNumber>571</StateNumber>
+      <TypeId>1114</TypeId>
     </column>
-    <column id="42" parent="26" name="end_borriwing">
+    <column id="42" parent="26" name="end_borrowing">
       <Position>3</Position>
-      <DataType>date|0s</DataType>
-      <StateNumber>548</StateNumber>
-      <TypeId>1082</TypeId>
+      <DataType>timestamp|0s</DataType>
+      <StateNumber>571</StateNumber>
+      <TypeId>1114</TypeId>
     </column>
     <column id="43" parent="26" name="extend">
       <Position>4</Position>
       <DataType>boolean|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>548</StateNumber>
+      <StateNumber>571</StateNumber>
       <TypeId>16</TypeId>
     </column>
     <column id="44" parent="26" name="user_book_id">
       <Position>5</Position>
       <DataType>bigint|0s</DataType>
-      <StateNumber>548</StateNumber>
+      <StateNumber>571</StateNumber>
       <TypeId>20</TypeId>
     </column>
     <column id="45" parent="26" name="book_id">
       <Position>6</Position>
       <DataType>bigint|0s</DataType>
-      <StateNumber>548</StateNumber>
+      <StateNumber>571</StateNumber>
       <TypeId>20</TypeId>
     </column>
     <index id="46" parent="26" name="reservation_pkey">
-      <ObjectId>16479</ObjectId>
-      <StateNumber>548</StateNumber>
+      <ObjectId>16489</ObjectId>
+      <StateNumber>571</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
     <key id="47" parent="26" name="reservation_pkey">
-      <ObjectId>16480</ObjectId>
-      <StateNumber>548</StateNumber>
+      <ObjectId>16490</ObjectId>
+      <StateNumber>571</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>reservation_pkey</UnderlyingIndexName>
     </key>
     <foreign-key id="48" parent="26" name="fkirxtcw4s6lhwi6l9ocrk6bjfy">
-      <ObjectId>16481</ObjectId>
-      <StateNumber>549</StateNumber>
+      <ObjectId>16491</ObjectId>
+      <StateNumber>572</StateNumber>
       <ColNames>book_id</ColNames>
       <RefTableId>16433</RefTableId>
       <RefColPositions>1</RefColPositions>

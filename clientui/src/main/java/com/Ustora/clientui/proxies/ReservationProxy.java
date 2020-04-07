@@ -20,6 +20,6 @@ public interface ReservationProxy {
     List<ReservationBean> reservationList (@RequestParam Long userId);
 
     @PostMapping(value = "/book/save/reservation")
-    ReservationBean newReservation(ReservationBean reservationBean);
+    ReservationBean newReservation(@RequestParam Long booKId, @RequestParam Long userId);
 
 }
