@@ -1,15 +1,19 @@
 package com.Ustora.clientui.controller;
 
 import com.Ustora.clientui.beans.BookBean;
+import com.Ustora.clientui.beans.ReservationBean;
 import com.Ustora.clientui.beans.UserBean;
 import com.Ustora.clientui.dto.RestResponsePage;
 import com.Ustora.clientui.proxies.BookProxy;
+import com.Ustora.clientui.proxies.ReservationProxy;
 import com.Ustora.clientui.proxies.UserProxy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.*;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+
 
 import java.util.List;
 import java.util.Optional;
@@ -23,6 +27,9 @@ public class ClientController {
 
     @Autowired
     private BookProxy bookProxy;
+
+    @Autowired
+    private ReservationProxy reservationProxy;
 
     @GetMapping(value = {"/","/index"})
     public String index(Model modelAllBook, Model modelPagination, Model modelAllBookList,
@@ -42,7 +49,6 @@ public class ClientController {
         modelAllBookList.addAttribute("allBookList",allBookList);
         modelAllBook.addAttribute("allBook",allBook.getContent());
         modelPagination.addAttribute("paginationBook",allBook);
-
 
         List<String> titres = bookProxy.findTitre();
         modelDistinctTitre.addAttribute("titres",titres);
@@ -100,28 +106,34 @@ public class ClientController {
         return "index";
     }
 
-    @GetMapping("/espacePerso")
-    public String espacePerso(){
-
+    @GetMapping(value = "/espacePerso")
+    public String espacePerso( Model modelUserReservation){
+        UserBean currentUser = userProxy.find(SecurityContextHolder.getContext().getAuthentication().getName());
+        List<ReservationBean> userReservation = reservationProxy.reservationList(currentUser.getId());
+        modelUserReservation.addAttribute("userReservation",userReservation);
         return "espacePerso";
     }
 
-    @GetMapping("/register")
+    @GetMapping(value = "/register")
     public String register(){
 
         return "register";
     }
 
-    @PostMapping("/registerPost")
+    @PostMapping(value = "/registerPost")
     public String registerPost(@ModelAttribute UserBean userBean){
         userProxy.register(userBean);
         return "redirect:/registerSuccess";
     }
 
-    @GetMapping("/registerSuccess")
+    @GetMapping(value = "/registerSuccess")
     public String registerSuccess(){
         return "registerSuccess";
     }
 
-
+    @PostMapping(value = "/reservation")
+    public String reservation (@ModelAttribute ReservationBean reservationBean){
+        reservationProxy.newReservation(reservationBean);
+        return "redirect:/reservationSuccess";
+    }
 }

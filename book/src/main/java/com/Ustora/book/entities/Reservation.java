@@ -12,12 +12,12 @@ public class Reservation implements Serializable {
     @Id
     @GeneratedValue
     private Long id;
-    private String borrower;
-    private String bookReservation;
+    private Long userBookId;
     private Date borrowing;
-    private boolean accepted;
+    private Date endBorriwing;
+    private boolean extend;
 
-    @OneToOne
+    @ManyToOne
     @Cascade(org.hibernate.annotations.CascadeType.DETACH)
     private Book book;
 
@@ -26,16 +26,18 @@ public class Reservation implements Serializable {
 
     /**
      *
-     * @param borrower
-     * @param bookReservation
+     * @param userBookId
      * @param borrowing
-     * @param accepted
+     * @param endBorriwing
+     * @param extend
      */
-    public Reservation(String borrower, String bookReservation, Date borrowing, boolean accepted) {
-        this.borrower = borrower;
-        this.bookReservation = bookReservation;
+    public Reservation(Long userBookId, Date borrowing,Date endBorriwing, boolean extend) {
+
+        this.userBookId = userBookId;
         this.borrowing = borrowing;
-        this.accepted = accepted;
+        this.endBorriwing = endBorriwing;
+        this.extend = extend;
+
     }
 
     public Long getId() {
@@ -46,22 +48,6 @@ public class Reservation implements Serializable {
         this.id = id;
     }
 
-    public String getBorrower() {
-        return borrower;
-    }
-
-    public void setBorrower(String borrower) {
-        this.borrower = borrower;
-    }
-
-    public String getBookReservation() {
-        return bookReservation;
-    }
-
-    public void setBookReservation(String bookReservation) {
-        this.bookReservation = bookReservation;
-    }
-
     public Date getBorrowing() {
         return borrowing;
     }
@@ -70,19 +56,44 @@ public class Reservation implements Serializable {
         this.borrowing = borrowing;
     }
 
-    public boolean isAccepted() {
-        return accepted;
+    public Date getEndBorriwing() {
+        return endBorriwing;
     }
 
-    public void setAccepted(boolean accepted) {
-        this.accepted = accepted;
+    public void setEndBorriwing(Date endBorriwing) {
+        this.endBorriwing = endBorriwing;
+    }
+
+    public boolean isExtend() {
+        return extend;
+    }
+
+    public void setExtend(boolean extend) {
+        this.extend = extend;
+    }
+
+    public Long getUserBookId() {
+        return userBookId;
+    }
+
+    public void setUserBookId(Long userBookId) {
+        this.userBookId = userBookId;
+    }
+
+
+    public void setBook(Book book) {
+        this.book = book;
     }
 
     public Book getBook() {
         return book;
     }
 
-    public void setBook(Book book) {
-        this.book = book;
+    @Override
+    public String toString() {
+        return "Reservation  [id=" + id +
+                ", userBookId=" + userBookId +
+                ", borrowing=" + borrowing +
+                ", extend=" + extend + "]";
     }
 }

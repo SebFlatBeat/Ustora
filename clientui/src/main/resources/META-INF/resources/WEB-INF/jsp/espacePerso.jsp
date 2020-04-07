@@ -13,7 +13,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ustora Espace Perso</title>
+    <title>Espace de ${pageContext.request.userPrincipal.name}</title>
+
+    <!-- FavIcon -->
+    <link rel="icon" type="image/png" href="../../img/book-24px.png" />
 
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'/>
@@ -105,13 +108,11 @@
         </tr>
         </thead>
         <tbody>
-        <c:forEach var="lend" items="${reservations}">
+        <c:forEach var="lend" items="${userReservation}">
             <tr>
-                <c:if test="${lend.accepted}">
                     <td class="text-center" scope="row">${lend.bookReservation}</td>
                     <td class="text-center" scope="row">${lend.borrower}</td>
                     <td class="text-center" scope="row">${lend.borrowing}></td>
-                </c:if>
             </tr>
         </c:forEach>
         </tbody>

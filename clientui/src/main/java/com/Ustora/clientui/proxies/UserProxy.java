@@ -20,5 +20,8 @@ public interface UserProxy {
 
     @PostMapping(value = "/user/registerPost")
     UserBean register(UserBean userBean);
-    }
 
+    @GetMapping(value = "/user/find/{username}")
+    UserBean find(@PathVariable String username);
+
+}

@@ -2,11 +2,14 @@ package com.Ustora.clientui.beans;
 
 
 import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
 
 public class UserBean implements UserDetails {
+
+    private Long id;
 
     private String username;
 
@@ -24,6 +27,13 @@ public class UserBean implements UserDetails {
         this.password = password;
     }
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public void setUsername(String username) {
         this.username = username;

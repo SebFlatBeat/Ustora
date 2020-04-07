@@ -35,5 +35,10 @@ public class UserController {
         return userBook;
     }
 
+    @GetMapping("/find/{username}")
+    public Optional <UserBook> findCurrentUser(@PathVariable String username){
+        Optional<UserBook> userBook =userDao.findByUsername(username);
+        return userBook;
+    }
 
 }

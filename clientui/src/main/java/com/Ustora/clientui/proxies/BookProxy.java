@@ -20,45 +20,45 @@ public interface BookProxy {
     @GetMapping(value = "/book/allBookList")
     List<BookBean> allBookList();
 
-    @GetMapping("/book/find/titre")
+    @GetMapping(value = "/book/find/titre")
     List<String> findTitre();
 
-    @GetMapping("/book/find/auteurNom")
+    @GetMapping(value = "/book/find/auteurNom")
     List<String> findAuteurNom();
 
-    @GetMapping("/book/find/auteurPrenom")
+    @GetMapping(value = "/book/find/auteurPrenom")
     List<String> findAuteurPrenom();
 
-    @GetMapping("/book/find/editeur")
+    @GetMapping(value = "/book/find/editeur")
     List<String> findEditeur();
 
-    @GetMapping("/book/find/anneeEdition")
+    @GetMapping(value = "/book/find/anneeEdition")
     List<String> findAnneeEdition();
 
-    @GetMapping("/book/find/section")
+    @GetMapping(value = "/book/find/section")
     List<String> findSection();
 
-    @GetMapping("/book/find/isbn")
+    @GetMapping(value = "/book/find/isbn")
      List<String> findIsbn();
 
-    @PostMapping("/book/search/auteurPrincipalNom/{auteurNom}")
+    @PostMapping(value = "/book/search/auteurPrincipalNom/{auteurNom}")
     List<BookBean> searchAuteurNom(@PathVariable("auteurNom") String auteurNom, @RequestBody List<BookBean> searchBook);
 
-    @PostMapping("/book/search/titre/{titre}")
+    @PostMapping(value = "/book/search/titre/{titre}")
     List<BookBean> searchTitre(@PathVariable("titre") String titre, @RequestBody List<BookBean> searchBook);
 
-    @PostMapping("/book/search/auteurPrincipalPrenom/{auteurPrenom}")
+    @PostMapping(value = "/book/search/auteurPrincipalPrenom/{auteurPrenom}")
     List<BookBean> searchAuteurPrenom(@PathVariable("auteurPrenom") String auteurPrenom, @RequestBody List<BookBean> searchBook);
 
-    @PostMapping("/book/search/editeur/{editeur}")
+    @PostMapping(value = "/book/search/editeur/{editeur}")
     List<BookBean> searchEditeur(@PathVariable("editeur") String editeur, @RequestBody List<BookBean> searchBook);
 
-    @PostMapping("/book/search/anneeEdition/{anneeEdition}")
+    @PostMapping(value = "/book/search/anneeEdition/{anneeEdition}")
     List<BookBean> searchAnneeEdition(@PathVariable("anneeEdition") String anneeEdition, @RequestBody List<BookBean> searchBook);
 
-    @PostMapping("/book/search/section/{section}")
+    @PostMapping(value = "/book/search/section/{section}")
     List<BookBean> searchSection(@PathVariable("section") String section, @RequestBody List<BookBean> searchBook);
 
-    @PostMapping("/book/search/isbn/{isbn}")
+    @PostMapping(value = "/book/search/isbn/{isbn}")
     List<BookBean> searchIsbn(@PathVariable("isbn") String isbn, @RequestBody List<BookBean> searchBook);
 }

@@ -15,6 +15,9 @@ URL: https://www.freshdesignweb.com/ustora/
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bibliotheque Ustora</title>
 
+    <!-- FavIcon -->
+    <link rel="icon" type="image/png" href="../../img/book-24px.png" />
+
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'/>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'/>
@@ -54,26 +57,26 @@ URL: https://www.freshdesignweb.com/ustora/
                 <div class="user-menu text-right">
                     <ul class="navbar-brand">
                         <c:if test="${pageContext.request.userPrincipal == null}">
-                        <li class="nav-item"><a class="nav-link" href="<c:url value="/register"/>"><i class="fa fa-user"></i> Creer Compte</a></li>
-                        <li class="nav-item"><a class="nav-link" href="<c:url value="/login"/>"><i class="fa fa-user"></i>Connexion</a>
-                        </li>
+                            <li class="nav-item"><a class="nav-link" href="<c:url value="/register"/>"><i class="fa fa-user"></i> Creer Compte</a></li>
+                            <li class="nav-item"><a class="nav-link" href="<c:url value="/login"/>"><i class="fa fa-user"></i>Connexion</a>
+                            </li>
                         </c:if>
                         <c:if test="${pageContext.request.userPrincipal != null}">
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                                <i class="fa fa-user"></i>${pageContext.request.userPrincipal.name}</a>
-                            <div class="dropdown-menu">
-                        <a class="dropdown-item" href="<c:url value="/espacePerso"/>">Espace Perso</a>
-                        <a class="dropdown-item" href="<c:url value="/logout"/>">Déconnexion</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-user"></i>${pageContext.request.userPrincipal.name}</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="<c:url value="/espacePerso"/>">Espace Perso</a>
+                                    <a class="dropdown-item" href="<c:url value="/logout"/>">Déconnexion</a>
+                                </div>
+                            </li>
+                        </c:if>
+                    </ul>
                 </div>
-                </li>
-                </c:if>
-                </ul>
             </div>
         </div>
     </div>
-</div>
 </div>
 <!-- End header area -->
 
@@ -234,9 +237,11 @@ URL: https://www.freshdesignweb.com/ustora/
                             <td class="text-center" scope="row">${bookAll.nbreExemplaire}</td>
                             <td class="text-center" scope="row">
                                 <div class="single-product">
-                                    <button href="../../../../bookDetail/${bookAll.id}" class="btn btn-outline-primary">Détails</button>
                                     <sec:authorize access="hasAnyAuthority('USER', 'ADMIN')">
-                                        <button class="btn btn-outline-success">Reserver</button>
+                                        <form action="/reservation" method="post">
+                                            <input type="hidden" ${bookAll.id}/>
+                                            <button class="btn btn-outline-success">Reserver</button>
+                                        </form>
                                     </sec:authorize>
                                 </div>
                             </td>
@@ -258,7 +263,10 @@ URL: https://www.freshdesignweb.com/ustora/
                                 <div class="single-product">
                                     <button href="../../../../bookDetail/${bookAll.id}" class="btn btn-outline-primary">Détails</button>
                                     <sec:authorize access="hasAnyAuthority('USER', 'ADMIN')">
-                                        <button class="btn btn-outline-success">Reserver</button>
+                                        <form action="/reservation" method="post">
+                                            <input type="hidden" ${bookAll.id}/>
+                                            <button class="btn btn-outline-success">Reserver</button>
+                                        </form>
                                     </sec:authorize>
                                 </div>
                             </td>
@@ -340,7 +348,7 @@ URL: https://www.freshdesignweb.com/ustora/
                             <div class="product-f-image">
                                 <img src="../../img/product-1.jpg" alt="">
                                 <div class="product-hover">
-                                    <a href="../../../../templates/single-product.html" class="view-details-link"><i class="fa fa-link"></i> Voir details</a>
+                                    <a href="../../../../templates/single-product.html" class="view-details-link"> Reserver</a>
                                 </div>
                             </div>
 
@@ -354,7 +362,7 @@ URL: https://www.freshdesignweb.com/ustora/
                             <div class="product-f-image">
                                 <img src="../../img/product-2.jpg" alt="">
                                 <div class="product-hover">
-                                    <a href="../../../../templates/single-product.html" class="view-details-link"><i class="fa fa-link"></i> Voir details</a>
+                                    <a href="../../../../templates/single-product.html" class="view-details-link"> Reserver</a>
                                 </div>
                             </div>
 
@@ -367,7 +375,7 @@ URL: https://www.freshdesignweb.com/ustora/
                             <div class="product-f-image">
                                 <img src="../../img/product-3.jpg" alt="">
                                 <div class="product-hover">
-                                    <a href="../../../../templates/single-product.html" class="view-details-link"><i class="fa fa-link"></i> Voir details</a>
+                                    <a href="../../../../templates/single-product.html" class="view-details-link"> Reserver</a>
                                 </div>
                             </div>
 
@@ -381,7 +389,7 @@ URL: https://www.freshdesignweb.com/ustora/
                             <div class="product-f-image">
                                 <img src="../../img/product-4.jpg" alt="">
                                 <div class="product-hover">
-                                    <a href="../../../../templates/single-product.html" class="view-details-link"><i class="fa fa-link"></i> Voir details</a>
+                                    <a href="../../../../templates/single-product.html" class="view-details-link">Reserver</a>
                                 </div>
                             </div>
 
@@ -395,27 +403,7 @@ URL: https://www.freshdesignweb.com/ustora/
                             <div class="product-f-image">
                                 <img src="../../img/product-6.jpg" alt="">
                                 <div class="product-hover">
-                                    <a href="../../../../templates/single-product.html" class="view-details-link"><i class="fa fa-link"></i> Voir details</a>
-                                </div>
-                            </div>
-
-                            <h2><a href="../../../../templates/single-product.html">Guillaume Appolinaire</a></h2>
-
-                            <div class="product-carousel-price">
-                                <ins>Si Je Mourrais Là-Bas</ins>
-                            </div>
-                            <div class="single-product">
-                                <div class="product-f-image">
-                                    <img src="../../img/product-7.jpg" alt="">
-                                    <div class="product-hover">
-                                        <a href="../../../../templates/single-product.html" class="view-details-link"><i class="fa fa-link"></i> Voir details</a>
-                                    </div>
-                                </div>
-
-                                <h2><a href="../../../../templates/single-product.html"></a>Marcel Proust</h2>
-
-                                <div class="product-carousel-price">
-                                    <ins>La Prisonnière</ins>
+                                    <a href="../../../../templates/single-product.html" class="view-details-link">Reserver</a>
                                 </div>
                             </div>
                         </div>
