@@ -23,9 +23,6 @@ public class ReservationController {
     @Autowired
     private BookService bookService;
 
-    @Autowired
-    private UserProxy userProxy;
-
 
     @GetMapping("/reservation")
     public List<Reservation> findReservation(@RequestParam Long userId){

@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="1c71ef9e-16a3-4367-b8d3-f39ec379e535" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/espacePerso.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/espacePerso.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/controller/ReservationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/controller/ReservationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/Ustora/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/Ustora/user/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/Ustora/user/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/Ustora/user/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/Ustora/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/Ustora/user/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -299,7 +302,7 @@
       <workItem from="1585900041209" duration="26210000" />
       <workItem from="1585988631101" duration="2616000" />
       <workItem from="1585992719127" duration="636000" />
-      <workItem from="1586004802471" duration="91382000" />
+      <workItem from="1586004802471" duration="91982000" />
     </task>
     <task id="LOCAL-00001" summary="Modification du fichier xml">
       <created>1585788896625</created>
@@ -448,7 +451,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586343645105</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="FrontEnd : implementation du renouvellement de l'emprunt">
+      <created>1586351521590</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1586351521590</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -486,9 +496,14 @@
     <MESSAGE value="Correction anomalie sur Reservation" />
     <MESSAGE value="Ajout de la fonctionnalité empechant la reservation en double" />
     <MESSAGE value="BackEnd : prolongation de prêt" />
-    <option name="LAST_COMMIT_MESSAGE" value="BackEnd : prolongation de prêt" />
+    <MESSAGE value="FrontEnd : implementation du renouvellement de l'emprunt" />
+    <option name="LAST_COMMIT_MESSAGE" value="FrontEnd : implementation du renouvellement de l'emprunt" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="275" y="22" key="#Auto_Import" timestamp="1586351797524">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="22" key="#Auto_Import/0.0.1366.728@0.0.1366.728" timestamp="1586351797524" />
     <state x="275" y="22" key="#Notifications" timestamp="1585788923959">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -525,10 +540,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="383" y="78" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728@0.0.1366.728" timestamp="1586267124040" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1586343640188">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1586352072210">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586343640188" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586352072210" />
     <state width="410" height="466" key="DebuggerActiveHint" timestamp="1586329853959">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -613,10 +628,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="514" height="497" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1586328362841" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1586343647959">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1586351525595">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586343647959" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586351525595" />
     <state x="438" y="208" key="cloudConfig.SelfSettingsDialog" timestamp="1585988119579">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -674,12 +689,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/book/src/main/java/com/Ustora/book/controller/ReservationController.java</url>
-          <line>70</line>
+          <line>67</line>
           <option name="timeStamp" value="121" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/book/src/main/java/com/Ustora/book/controller/ReservationController.java</url>
-          <line>67</line>
+          <line>64</line>
           <option name="timeStamp" value="122" />
         </line-breakpoint>
       </breakpoints>

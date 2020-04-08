@@ -2,6 +2,7 @@ package com.Ustora.user.controller;
 
 import com.Ustora.user.dao.UserDao;
 import com.Ustora.user.entities.UserBook;
+import com.Ustora.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,30 +15,30 @@ import java.util.Optional;
 public class UserController {
 
     @Autowired
-    private UserDao userDao;
+    private UserService userService;
 
     @GetMapping("/all-account")
     public List<UserBook> userBookList (){
-        List<UserBook> userBooks = userDao.findAll();
+        List<UserBook> userBooks = userService.findAll();
 
         return userBooks;
     }
 
     @GetMapping("/{username}/login")
     public Optional<UserBook> login (@PathVariable String username){
-       Optional<UserBook> userBook = userDao.findByUsername(username);
+       Optional<UserBook> userBook = userService.findByUsername(username);
         return userBook;
     }
 
     @PostMapping(value = "/registerPost")
     public UserBook register(@RequestBody UserBook userBook) {
-        userDao.save(userBook);
+        userService.save(userBook);
         return userBook;
     }
 
     @GetMapping("/find/{username}")
     public Optional <UserBook> findCurrentUser(@PathVariable String username){
-        Optional<UserBook> userBook =userDao.findByUsername(username);
+        Optional<UserBook> userBook =userService.findByUsername(username);
         return userBook;
     }
 
