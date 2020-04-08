@@ -10,7 +10,10 @@ public interface ReservationDao extends JpaRepository<Reservation, Long> {
 
    List<Reservation> findReservationsByUserBookId ( Long userId);
 
-   Optional<Reservation> findById(Long bookId);
+   Optional<Reservation> findById(Long id);
 
-  Reservation save(Optional <Reservation> reservation);
+  Reservation save(Reservation reservation);
+
+    void delete(Reservation reservation);
+
 }

@@ -2,17 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c71ef9e-16a3-4367-b8d3-f39ec379e535" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/reservationNotDone.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/controller/ReservationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/controller/ReservationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/dao/BookDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/dao/BookDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/dao/ReservationDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/dao/ReservationDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/service/BookService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/service/ReservationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/service/ReservationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/beans/ReservationBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/beans/ReservationBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/controller/ClientController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/proxies/ReservationProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/proxies/ReservationProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/registerSuccess.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/registerSuccess.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/reservationSuccess.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/reservationSuccess.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/espacePerso.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/espacePerso.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -284,11 +282,6 @@
               </path>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Not Started" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Bibliotheque@localhost: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
@@ -313,7 +306,7 @@
       <workItem from="1585900041209" duration="26210000" />
       <workItem from="1585988631101" duration="2616000" />
       <workItem from="1585992719127" duration="636000" />
-      <workItem from="1586004802471" duration="80828000" />
+      <workItem from="1586004802471" duration="90238000" />
     </task>
     <task id="LOCAL-00001" summary="Modification du fichier xml">
       <created>1585788896625</created>
@@ -448,7 +441,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586291208577</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Ajout de la fonctionnalité empechant la reservation en double">
+      <created>1586334899552</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1586334899552</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -484,7 +484,8 @@
     <MESSAGE value="Correction anomalie sur la page index pour le post save/reservation" />
     <MESSAGE value="implementation de la couche service" />
     <MESSAGE value="Correction anomalie sur Reservation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correction anomalie sur Reservation" />
+    <MESSAGE value="Ajout de la fonctionnalité empechant la reservation en double" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout de la fonctionnalité empechant la reservation en double" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Notifications" timestamp="1585788923959">
@@ -515,18 +516,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="482" y="271" key="#com.intellij.javaee.module.view.web.EditWebRootDialog/0.0.1366.728@0.0.1366.728" timestamp="1585792840259" />
-    <state x="380" y="55" width="773" height="594" key="#xdebugger.evaluate" timestamp="1586333312660">
+    <state x="380" y="55" width="773" height="594" key="#xdebugger.evaluate" timestamp="1586339404873">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="380" y="55" width="773" height="594" key="#xdebugger.evaluate/0.0.1366.728@0.0.1366.728" timestamp="1586333312660" />
+    <state x="380" y="55" width="773" height="594" key="#xdebugger.evaluate/0.0.1366.728@0.0.1366.728" timestamp="1586339404873" />
     <state x="383" y="78" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1586267124040">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="383" y="78" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728@0.0.1366.728" timestamp="1586267124040" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1586291203363">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1586334896103">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586291203363" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586334896103" />
     <state width="410" height="466" key="DebuggerActiveHint" timestamp="1586329853959">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -543,54 +544,54 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="553" y="257" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1585790800540" />
-    <state width="1021" height="304" key="GridCell.Tab.0.bottom" timestamp="1586333852075">
+    <state width="1021" height="304" key="GridCell.Tab.0.bottom" timestamp="1586343430797">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="304" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586333852075" />
-    <state width="1021" height="304" key="GridCell.Tab.0.center" timestamp="1586333852075">
+    <state width="1021" height="304" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586343430797" />
+    <state width="1021" height="304" key="GridCell.Tab.0.center" timestamp="1586343430797">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="304" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586333852075" />
-    <state width="1021" height="304" key="GridCell.Tab.0.left" timestamp="1586333852075">
+    <state width="1021" height="304" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586343430797" />
+    <state width="1021" height="304" key="GridCell.Tab.0.left" timestamp="1586343430797">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="304" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586333852075" />
-    <state width="1021" height="304" key="GridCell.Tab.0.right" timestamp="1586333852075">
+    <state width="1021" height="304" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586343430797" />
+    <state width="1021" height="304" key="GridCell.Tab.0.right" timestamp="1586343430797">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="304" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586333852075" />
-    <state width="1021" height="304" key="GridCell.Tab.1.bottom" timestamp="1586333852075">
+    <state width="1021" height="304" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586343430797" />
+    <state width="1021" height="304" key="GridCell.Tab.1.bottom" timestamp="1586343430797">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="304" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586333852075" />
-    <state width="1021" height="304" key="GridCell.Tab.1.center" timestamp="1586333852075">
+    <state width="1021" height="304" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586343430797" />
+    <state width="1021" height="304" key="GridCell.Tab.1.center" timestamp="1586343430797">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="304" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1586333852075" />
-    <state width="1021" height="304" key="GridCell.Tab.1.left" timestamp="1586333852075">
+    <state width="1021" height="304" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1586343430797" />
+    <state width="1021" height="304" key="GridCell.Tab.1.left" timestamp="1586343430797">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="304" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1586333852075" />
-    <state width="1021" height="304" key="GridCell.Tab.1.right" timestamp="1586333852075">
+    <state width="1021" height="304" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1586343430797" />
+    <state width="1021" height="304" key="GridCell.Tab.1.right" timestamp="1586343430797">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="304" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1586333852075" />
-    <state width="1021" height="304" key="GridCell.Tab.2.bottom" timestamp="1586333852076">
+    <state width="1021" height="304" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1586343430797" />
+    <state width="1021" height="304" key="GridCell.Tab.2.bottom" timestamp="1586343236108">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="304" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586333852076" />
-    <state width="1021" height="304" key="GridCell.Tab.2.center" timestamp="1586333852075">
+    <state width="1021" height="304" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586343236108" />
+    <state width="1021" height="304" key="GridCell.Tab.2.center" timestamp="1586343236108">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="304" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1586333852075" />
-    <state width="1021" height="304" key="GridCell.Tab.2.left" timestamp="1586333852075">
+    <state width="1021" height="304" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1586343236108" />
+    <state width="1021" height="304" key="GridCell.Tab.2.left" timestamp="1586343236107">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="304" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1586333852075" />
-    <state width="1021" height="304" key="GridCell.Tab.2.right" timestamp="1586333852076">
+    <state width="1021" height="304" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1586343236107" />
+    <state width="1021" height="304" key="GridCell.Tab.2.right" timestamp="1586343236108">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="304" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1586333852076" />
+    <state width="1021" height="304" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1586343236108" />
     <state width="223" height="539" key="HiddenNamespacesPopup" timestamp="1586254335317">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -669,6 +670,16 @@
           <url>file://$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/controller/ClientController.java</url>
           <line>138</line>
           <option name="timeStamp" value="114" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/book/src/main/java/com/Ustora/book/controller/ReservationController.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="121" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/book/src/main/java/com/Ustora/book/controller/ReservationController.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="122" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

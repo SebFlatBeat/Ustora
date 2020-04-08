@@ -96,36 +96,45 @@
 &nbsp;
 
 <section id="prets">
-<div class="service-box team boxed-grey col-md-10 ml-auto mr-auto">
-    <h3 class="text-center">Prêt en cours</h3>
-    <table class="table table-responsive-lg table-striped table-hover">
-        <thead class="thead-dark">
-        <tr class="bg-primary">
-            <th class="text-center" scope="col"> Nom du Livre</th>
-            <th class="text-center" scope="col">Date d'emprunt</th>
-            <th class="text-center" scope="col">Date de fin de prêt</th>
-            <th class="text-center" scope="col">Actions</th>
-        </tr>
-        </thead>
-        <tbody>
-        <c:forEach var="available" items="${userReservation}">
-            <tr>
+    <div class="service-box team boxed-grey col-md-10 ml-auto mr-auto">
+        <h3 class="text-center">Prêt en cours</h3>
+        <table class="table table-responsive-lg table-striped table-hover">
+            <thead class="thead-dark">
+            <tr class="bg-primary">
+                <th class="text-center" scope="col"> Numéro de réservation</th>
+                <th class="text-center" scope="col"> Nom du Livre</th>
+                <th class="text-center" scope="col">Date d'emprunt</th>
+                <th class="text-center" scope="col">Date de fin de prêt</th>
+                <th class="text-center" scope="col"></th>
+                <th class="text-center" scope="col"></th>
+            </tr>
+            </thead>
+            <tbody>
+            <c:forEach var="available" items="${userReservation}">
+                <tr>
+                    <td class="text-center" scope="row">${available.id}</td>
                     <td class="text-center" scope="row">${available.book.titre}</td>
                     <td class="text-center" scope="row">
                         <fmt:formatDate value="${available.borrowing}" type="date" pattern="dd.MM.yyyy" />
                     </td>
-                <td class="text-center" scope="row">
-                    <fmt:formatDate value="${available.endBorrowing}" type="date" pattern="dd.MM.yyyy" />
-                </td>
-                <td class="text-center" scope="row">
-                    <button class="btn btn-outline-success" href="/extend/reservation">Renouveller</button>
-                    <button class="btn btn-outline-primary" href="/restore/reservation">Rendre mon livre</button>
-                </td>
-            </tr>
-        </c:forEach>
-        </tbody>
-    </table>
-</div>
+                    <td class="text-center" scope="row">
+                        <fmt:formatDate value="${available.endBorrowing}" type="date" pattern="dd.MM.yyyy" />
+                    </td>
+                    <td class="text-center" scope="row">
+                        <form method="post" action="/extend/reservation">
+                                <button class="btn btn-outline-success" name="id" id="id" value="${available.id}">Renouveller</button>
+                        </form>
+                    </td>
+                        <td class="text-center" scope="row">
+                        <form method="post" action="/delete/reservation">
+                                <button class="btn btn-outline-primary" name="id" id="id" value="${available.id}">Rendre</button>
+                        </form>
+                    </td>
+                </tr>
+            </c:forEach>
+            </tbody>
+        </table>
+    </div>
 </section>
 <!-- End section prets area -->
 

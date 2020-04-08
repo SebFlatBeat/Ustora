@@ -21,8 +21,8 @@ public class ReservationService {
         return reservationDao.findReservationsByUserBookId(userId);
     }
 
-    public Optional<Reservation> findById(Long bookId){
-       return reservationDao.findById(bookId);
+    public Optional<Reservation> findById(Long id){
+       return reservationDao.findById(id);
     }
 
 
@@ -41,12 +41,13 @@ public class ReservationService {
         return calendar.getTime();
     }
 
-    public void save (Optional<Reservation> reservation){
-        reservationDao.save(reservation);
-    }
-
     public void save (Reservation reservation){
         reservationDao.save(reservation);
     }
+
+    public void delete (Reservation reservation) {
+       reservationDao.delete(reservation);
+    }
+
 }
 

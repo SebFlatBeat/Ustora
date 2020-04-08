@@ -1,6 +1,7 @@
 package com.Ustora.book.dao;
 
 import com.Ustora.book.entities.Book;
+import com.Ustora.book.entities.Reservation;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.Query;
@@ -8,6 +9,7 @@ import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.repository.query.Param;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface BookDao extends PagingAndSortingRepository<Book, Long> {
     @Override
@@ -56,4 +58,6 @@ public interface BookDao extends PagingAndSortingRepository<Book, Long> {
 
     @Query("select distinct book from Book book where book.isbn=:isbn and book in :listBook")
     List<Book> findByIsbn(@Param("isbn") String isbn, @Param("listBook")List<Book> bookList);
+
+    Book save(Book book);
 }

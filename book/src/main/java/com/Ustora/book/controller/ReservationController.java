@@ -1,8 +1,5 @@
 package com.Ustora.book.controller;
 
-import com.Ustora.book.beans.UserBean;
-import com.Ustora.book.dao.BookDao;
-import com.Ustora.book.dao.ReservationDao;
 import com.Ustora.book.entities.Book;
 import com.Ustora.book.entities.Reservation;
 import com.Ustora.book.proxies.UserProxy;
@@ -13,7 +10,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.sql.Date;
 import java.util.Calendar;
-import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -57,11 +53,22 @@ public class ReservationController {
         }
         return reservation;
     }
-    @PostMapping(value = "extend/reservation")
-    public void  extendReservation(@RequestParam Long id){
-        Optional<Reservation> reservations = reservationService.findById(id);
-        reservations.get().setExtend(true);
-        reservations.get().setEndBorrowing(reservationService.add8Weeks(reservations.get().getBorrowing()));
-        reservationService.save(reservations);
+
+    @PostMapping(value = "/delete/reservation")
+    public void  deleteReservation (@RequestParam Long id){
+        Optional<Reservation> reservation = reservationService.findById(id);
+        Optional<Book> book = bookService.findById(reservation.get().getBook().getId());
+        book.get().setNbreExemplaire(book.get().getNbreExemplaire() + 1);
+        bookService.save(book.get());
+        reservationService.delete(reservation.get());
+    }
+
+    @PostMapping(value = "/extend/reservation")
+    public Optional<Reservation> updateReservation (@RequestParam Long id){
+        Optional<Reservation> reservation = reservationService.findById(id);
+        reservation.get().setEndBorrowing(reservationService.add8Weeks(reservation.get().getBorrowing()));
+        reservation.get().setExtend(true);
+        reservationService.save(reservation.get());
+        return reservation;
     }
 }

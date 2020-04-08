@@ -143,10 +143,15 @@ public class ClientController {
     }
 
     @PostMapping(value = "/delete/reservation")
-    public String deleteReservation (@RequestParam Long bookId){
-        UserBean currentUser = (UserBean) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-        reservationProxy.deleteReservation(bookId, currentUser.getId());
-        return "redirect:/reservationSuccess";
+    public String deleteReservation (@RequestParam Long id){
+        reservationProxy.deleteReservation(id);
+        return "redirect:/espacePerso";
+    }
+
+    @PostMapping(value = "/extend/reservation")
+    public String extendReservation (@RequestParam Long id){
+        reservationProxy.updateReservation(id);
+        return "redirect:/espacePerso";
     }
 
     @GetMapping(value = "reservationSuccess")
