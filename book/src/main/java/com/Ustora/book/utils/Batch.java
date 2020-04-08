@@ -20,8 +20,8 @@ public class Batch {
     @Autowired
     private Mail mail;
 
-    @Scheduled(cron = "*//**60 * * * * *")
-    public void sendingLateMail(UserBean userBean) {
+    @Scheduled(cron = "0 0 8 * * *" )
+    public void sendingLateMail() {
 
-        mail.sendMessage(userProxy.find(userBean.getEmail()));
+        mail.sendMessage();
     }}
