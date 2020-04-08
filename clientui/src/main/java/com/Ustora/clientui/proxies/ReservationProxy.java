@@ -22,4 +22,7 @@ public interface ReservationProxy {
     @PostMapping(value = "/book/save/reservation")
     ReservationBean newReservation(@RequestParam Long bookId, @RequestParam Long userId);
 
+    @PostMapping(value = "/book/delete/reservation")
+    ReservationBean deleteReservation(@RequestParam Long bookId, @RequestParam Long userId);
+
 }

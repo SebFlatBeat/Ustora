@@ -1,11 +1,11 @@
 package com.Ustora.clientui.beans;
 
-import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Date;
 
 public class ReservationBean {
 
+    private Long id;
     private Long bookId;
     private Long userId;
     private Date borrowing;
@@ -17,12 +17,21 @@ public class ReservationBean {
     public ReservationBean() {
     }
 
-    public ReservationBean(Long bookId, Long userId, Date borrowing,Date endBorrowing, boolean extend) {
+    public ReservationBean(Long id, Long bookId, Long userId, Date borrowing,Date endBorrowing, boolean extend) {
+        this.id = id;
         this.bookId = bookId;
         this.userId = userId;
         this.borrowing = borrowing;
         this.endBorrowing = endBorrowing;
         this.extend = extend;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public Long getBookId() {

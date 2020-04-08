@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Register Ustora</title>
+	<title>Reservation Succes Ustora</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -44,8 +44,7 @@
 					Votre réservation s'est bien effectuée
 				</span>
 			<div class="col-md-7 ml-auto">
-				<button><a class="btn btn-success" href="<c:url value="/login"/>">Connexion</a></button>
-				<button><a class="btn btn-warning"href="<c:url value="/index"/>">Accueil</a></button>
+				<button><a class="btn btn-warning"href="<c:url value="/index"/>">Retour</a></button>
 			</div>
 		</div>
 	</div>

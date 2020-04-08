@@ -43,7 +43,7 @@ public class ClientController {
                         @RequestParam Optional<String> section, Model modelDistinctSection,
                         @RequestParam Optional<String> isbn, Model modelDistinctIsbn,
                         Model modelSearchBook, Model modelSearchBookPage, Model modelPaginationSearchBook
-                        ) {
+    ) {
         RestResponsePage <BookBean> allBook = bookProxy.allBook(page);
         List<BookBean> allBookList = bookProxy.allBookList();
         modelAllBookList.addAttribute("allBookList",allBookList);
@@ -134,7 +134,29 @@ public class ClientController {
     @PostMapping(value = "/save/reservation")
     public String reservation (@RequestParam Long bookId){
         UserBean currentUser = (UserBean) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-        reservationProxy.newReservation(bookId, currentUser.getId());
+        ReservationBean newReservation = reservationProxy.newReservation(bookId, currentUser.getId());
+        if (newReservation ==null){
+            return "redirect:/reservationNotDone";
+        }else {
+            return "redirect:/reservationSuccess";
+        }
+    }
+
+    @PostMapping(value = "/delete/reservation")
+    public String deleteReservation (@RequestParam Long bookId){
+        UserBean currentUser = (UserBean) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        reservationProxy.deleteReservation(bookId, currentUser.getId());
         return "redirect:/reservationSuccess";
     }
+
+    @GetMapping(value = "reservationSuccess")
+    public String reservationSucces(){
+        return "reservationSuccess";
+    }
+
+    @GetMapping(value = "reservationNotDone")
+    public String reservationNotDone(){
+        return "reservationNotDone";
+    }
+
 }

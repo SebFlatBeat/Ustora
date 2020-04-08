@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Register Success Ustora</title>
+	<title>Reservation not done Ustora</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -37,15 +37,14 @@
 		<div class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
 
 					<span class="login100-form-title p-b-32">
-						Enregistré(e) avec succes
+						Reservation non effectuée
 					</span>
 
 			<span class="login100-form-title">
-					Votre compte a été créé
+					Vous avez déjà ce livre en votre possesion
 				</span>
 			<div class="col-md-7 ml-auto">
-				<button><a class="btn btn-success" href="<c:url value="/login"/>">Connexion</a></button>
-				<button><a class="btn btn-warning"href="<c:url value="/index"/>">Accueil</a></button>
+				<button><a class="btn btn-warning"href="<c:url value="/index"/>">Retour</a></button>
 			</div>
 		</div>
 	</div>
