@@ -121,9 +121,14 @@
                         <fmt:formatDate value="${available.endBorrowing}" type="date" pattern="dd.MM.yyyy" />
                     </td>
                     <td class="text-center" scope="row">
+                        <c:if test="${available.extend == false}">
                         <form method="post" action="/extend/reservation">
                                 <button class="btn btn-outline-success" name="id" id="id" value="${available.id}">Renouveller</button>
                         </form>
+                        </c:if>
+                        <c:if test="${available.extend == true}">
+                            <button class="btn btn-outline-danger disabled" name="id" id="id" value="${available.id}">Renouveller</button>
+                        </c:if>
                     </td>
                         <td class="text-center" scope="row">
                         <form method="post" action="/delete/reservation">
