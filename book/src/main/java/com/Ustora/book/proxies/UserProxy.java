@@ -16,7 +16,4 @@ public interface UserProxy {
     @GetMapping(value = "/user/find/{username}")
     UserBean find(@PathVariable String username);
 
-   /** @GetMapping(value = "/user/{id}")
-    UserBean getUser(@PathVariable("id") Long id);
-   */
 }

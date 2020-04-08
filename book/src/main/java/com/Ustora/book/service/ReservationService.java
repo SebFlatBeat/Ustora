@@ -49,5 +49,8 @@ public class ReservationService {
        reservationDao.delete(reservation);
     }
 
+    public List <Reservation> findAll() {
+      return reservationDao.findAll();
+    }
 }
 

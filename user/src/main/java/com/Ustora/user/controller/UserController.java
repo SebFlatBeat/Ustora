@@ -1,6 +1,5 @@
 package com.Ustora.user.controller;
 
-import com.Ustora.user.dao.UserDao;
 import com.Ustora.user.entities.UserBook;
 import com.Ustora.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;

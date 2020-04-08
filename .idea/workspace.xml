@@ -2,11 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c71ef9e-16a3-4367-b8d3-f39ec379e535" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_activation_jakarta_activation_1_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_jakarta_mail_1_6_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_mail_2_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_acl_5_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_taglibs_5_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/utils/Permanent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/controller/ReservationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/controller/ReservationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/book/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/configurations/EmailConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/configurations/EmailConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/proxies/UserProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/proxies/UserProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/service/ReservationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/service/ReservationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/utils/Batch.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/utils/Batch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/utils/MailSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/utils/Mail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientui/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/src/main/java/com/Ustora/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/Ustora/user/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/Ustora/user/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/Ustora/user/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/Ustora/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/Ustora/user/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,26 +78,6 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Bibliotheque@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="Bibliotheque: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="reservation: table" type="69fad909:PgImplModel$LocalTable" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Bibliotheque@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="Bibliotheque: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="user_book: table" type="69fad909:PgImplModel$LocalTable" />
       </path>
     </expand>
     <select />
@@ -278,6 +270,11 @@
               </path>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Bibliotheque@localhost: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
@@ -302,7 +299,7 @@
       <workItem from="1585900041209" duration="26210000" />
       <workItem from="1585988631101" duration="2616000" />
       <workItem from="1585992719127" duration="636000" />
-      <workItem from="1586004802471" duration="91982000" />
+      <workItem from="1586004802471" duration="102463000" />
     </task>
     <task id="LOCAL-00001" summary="Modification du fichier xml">
       <created>1585788896625</created>
@@ -458,7 +455,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586351521590</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Implementation de la couche Service dans le module User">
+      <created>1586352097560</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1586352097560</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -497,7 +501,8 @@
     <MESSAGE value="Ajout de la fonctionnalité empechant la reservation en double" />
     <MESSAGE value="BackEnd : prolongation de prêt" />
     <MESSAGE value="FrontEnd : implementation du renouvellement de l'emprunt" />
-    <option name="LAST_COMMIT_MESSAGE" value="FrontEnd : implementation du renouvellement de l'emprunt" />
+    <MESSAGE value="Implementation de la couche Service dans le module User" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementation de la couche Service dans le module User" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Auto_Import" timestamp="1586351797524">
@@ -540,10 +545,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="383" y="78" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728@0.0.1366.728" timestamp="1586267124040" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1586352072210">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1586352093136">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586352072210" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586352093136" />
     <state width="410" height="466" key="DebuggerActiveHint" timestamp="1586329853959">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -560,38 +565,38 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="553" y="257" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1585790800540" />
-    <state width="1021" height="304" key="GridCell.Tab.0.bottom" timestamp="1586351461958">
+    <state width="1021" height="304" key="GridCell.Tab.0.bottom" timestamp="1586377491171">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="304" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586351461958" />
-    <state width="1021" height="304" key="GridCell.Tab.0.center" timestamp="1586351461957">
+    <state width="1021" height="304" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586377491171" />
+    <state width="1021" height="304" key="GridCell.Tab.0.center" timestamp="1586377491171">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="304" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586351461957" />
-    <state width="1021" height="304" key="GridCell.Tab.0.left" timestamp="1586351461957">
+    <state width="1021" height="304" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586377491171" />
+    <state width="1021" height="304" key="GridCell.Tab.0.left" timestamp="1586377491171">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="304" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586351461957" />
-    <state width="1021" height="304" key="GridCell.Tab.0.right" timestamp="1586351461957">
+    <state width="1021" height="304" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586377491171" />
+    <state width="1021" height="304" key="GridCell.Tab.0.right" timestamp="1586377491171">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="304" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586351461957" />
-    <state width="1021" height="304" key="GridCell.Tab.1.bottom" timestamp="1586351461958">
+    <state width="1021" height="304" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586377491171" />
+    <state width="1021" height="304" key="GridCell.Tab.1.bottom" timestamp="1586377491172">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="304" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586351461958" />
-    <state width="1021" height="304" key="GridCell.Tab.1.center" timestamp="1586351461958">
+    <state width="1021" height="304" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586377491172" />
+    <state width="1021" height="304" key="GridCell.Tab.1.center" timestamp="1586377491171">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="304" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1586351461958" />
-    <state width="1021" height="304" key="GridCell.Tab.1.left" timestamp="1586351461958">
+    <state width="1021" height="304" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1586377491171" />
+    <state width="1021" height="304" key="GridCell.Tab.1.left" timestamp="1586377491171">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="304" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1586351461958" />
-    <state width="1021" height="304" key="GridCell.Tab.1.right" timestamp="1586351461958">
+    <state width="1021" height="304" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1586377491171" />
+    <state width="1021" height="304" key="GridCell.Tab.1.right" timestamp="1586377491171">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="304" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1586351461958" />
+    <state width="1021" height="304" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1586377491171" />
     <state width="1021" height="304" key="GridCell.Tab.2.bottom" timestamp="1586351093486">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -624,14 +629,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1586329039316" />
-    <state width="514" height="497" key="SwitcherDM" timestamp="1586328362841">
+    <state width="514" height="517" key="SwitcherDM" timestamp="1586381614466">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="514" height="497" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1586328362841" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1586351525595">
+    <state width="514" height="517" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1586381614466" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1586352206370">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586351525595" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586352206370" />
     <state x="438" y="208" key="cloudConfig.SelfSettingsDialog" timestamp="1585988119579">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -676,16 +681,6 @@
           <url>file://$PROJECT_DIR$/user/src/main/java/com/Ustora/user/entities/UserBook.java</url>
           <line>52</line>
           <option name="timeStamp" value="62" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/controller/ClientController.java</url>
-          <line>137</line>
-          <option name="timeStamp" value="113" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/controller/ClientController.java</url>
-          <line>138</line>
-          <option name="timeStamp" value="114" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/book/src/main/java/com/Ustora/book/controller/ReservationController.java</url>

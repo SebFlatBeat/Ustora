@@ -237,7 +237,7 @@ URL: https://www.freshdesignweb.com/ustora/
                             <td class="text-center" scope="row">${bookAll.nbreExemplaire}</td>
                             <td class="text-center" scope="row">
                                 <div class="single-product">
-                                    <sec:authorize access="hasAnyAuthority('USER', 'ADMIN')">
+                                    <sec:authorize access="hasAuthority('USER', 'ADMIN')">
                                         <form action="/save/reservation" method="post">
                                             <input type="hidden" name="bookId" id="bookId" value="${bookAll.id}"/>
                                             <button class="btn btn-outline-success">Reserver</button>
@@ -435,8 +435,8 @@ URL: https://www.freshdesignweb.com/ustora/
                 <div class="footer-menu">
                     <h2 class="footer-wid-title">User Navigation </h2>
                     <ul>
-                        <li><a href="#">Mon compte</a></li>
-                        <li><a href="#">Mes emprunts</a></li>
+                        <li><a href="/espacePerso">Mon compte</a></li>
+                        <li><a href="/espacePerso#">Mes emprunts</a></li>
                     </ul>
                 </div>
             </div>
