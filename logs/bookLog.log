@@ -57,3 +57,85 @@
 2020-04-09 09:16:19.106  INFO [book,,,] 20920 --- [RMI TCP Connection(5)-192.168.43.44] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:9101
 2020-04-09 09:16:19.122  INFO [book,,,] 20920 --- [RMI TCP Connection(4)-192.168.43.44] o.s.web.servlet.DispatcherServlet        : Completed initialization in 81 ms
 2020-04-09 09:16:20.715  INFO [book,,,] 20920 --- [RMI TCP Connection(5)-192.168.43.44] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=book, profiles=[default], label=null, version=fc976e353d551a0a0ea7a51737bf5dfb54c16f2f, state=null
+2020-04-09 15:23:43.466  INFO [book,,,] 17928 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Vincs\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/Vincs/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/Vincs/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/Vincs/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/Vincs/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/Vincs/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/Vincs/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-04-09 15:23:43.518  INFO [book,,,] 17928 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-09 15:23:44.463  INFO [book,,,] 17928 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:9101
+2020-04-09 15:23:45.894  INFO [book,,,] 17928 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=book, profiles=[default], label=null, version=fc976e353d551a0a0ea7a51737bf5dfb54c16f2f, state=null
+2020-04-09 15:23:45.896  INFO [book,,,] 17928 --- [restartedMain] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/SebFlatBeat/bibliotheque-config-repo.git/book.properties'}]
+2020-04-09 15:23:45.950  INFO [book,,,] 17928 --- [restartedMain] com.Ustora.book.BookApplication          : No active profile set, falling back to default profiles: default
+2020-04-09 15:23:48.213  INFO [book,,,] 17928 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-09 15:23:48.354  INFO [book,,,] 17928 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 128ms. Found 2 JPA repository interfaces.
+2020-04-09 15:23:48.654  WARN [book,,,] 17928 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-04-09 15:23:49.150  INFO [book,,,] 17928 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e7f94b33-142b-3035-a515-4a24e5ac2e9f
+2020-04-09 15:23:50.858  INFO [book,,,] 17928 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9002 (http)
+2020-04-09 15:23:50.870  INFO [book,,,] 17928 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-09 15:23:50.871  INFO [book,,,] 17928 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-09 15:23:51.146  INFO [book,,,] 17928 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-09 15:23:51.147  INFO [book,,,] 17928 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5167 ms
+2020-04-09 15:23:51.437  WARN [book,,,] 17928 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-04-09 15:23:51.438  INFO [book,,,] 17928 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-09 15:23:51.454  INFO [book,,,] 17928 --- [restartedMain] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@c85f146
+2020-04-09 15:23:55.194  INFO [book,,,] 17928 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-04-09 15:23:55.322  INFO [book,,,] 17928 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-04-09 15:23:55.543  INFO [book,,,] 17928 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-04-09 15:23:55.740  INFO [book,,,] 17928 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-09 15:23:55.945  INFO [book,,,] 17928 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-09 15:23:55.969  INFO [book,,,] 17928 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-04-09 15:23:57.711  INFO [book,,,] 17928 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-04-09 15:23:57.721  INFO [book,,,] 17928 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 15:23:57.865  INFO [book,,,] 17928 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-04-09 15:23:59.170  WARN [book,,,] 17928 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-09 15:24:00.351  WARN [book,,,] 17928 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-04-09 15:24:00.352  INFO [book,,,] 17928 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-09 15:24:00.760  INFO [book,,,] 17928 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-09 15:24:02.382  INFO [book,,,] 17928 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-04-09 15:24:03.068  WARN [book,,,] 17928 --- [restartedMain] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-04-09 15:24:03.971  INFO [book,,,] 17928 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoint(s) beneath base path '/actuator'
+2020-04-09 15:24:04.147  INFO [book,,,] 17928 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-04-09 15:24:04.202  INFO [book,,,] 17928 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-04-09 15:24:04.692  INFO [book,,,] 17928 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-04-09 15:24:04.693  INFO [book,,,] 17928 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-04-09 15:24:04.863  INFO [book,,,] 17928 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-04-09 15:24:04.864  INFO [book,,,] 17928 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-04-09 15:24:05.114  INFO [book,,,] 17928 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-04-09 15:24:05.373  INFO [book,,,] 17928 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-04-09 15:24:05.374  INFO [book,,,] 17928 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-04-09 15:24:05.374  INFO [book,,,] 17928 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-04-09 15:24:05.374  INFO [book,,,] 17928 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-04-09 15:24:05.375  INFO [book,,,] 17928 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-04-09 15:24:05.375  INFO [book,,,] 17928 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-04-09 15:24:05.375  INFO [book,,,] 17928 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-04-09 15:24:05.547  INFO [book,,,] 17928 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-04-09 15:24:05.550  INFO [book,,,] 17928 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-04-09 15:24:05.554  INFO [book,,,] 17928 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-04-09 15:24:05.558  INFO [book,,,] 17928 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1586438645557 with initial instances count: 2
+2020-04-09 15:24:05.576  INFO [book,,,] 17928 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BOOK with eureka with status UP
+2020-04-09 15:24:05.578  INFO [book,,,] 17928 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1586438645578, current=UP, previous=STARTING]
+2020-04-09 15:24:05.580  INFO [book,,,] 17928 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BOOK/LAPTOP-R62TREJ2:book:9002: registering service...
+2020-04-09 15:24:05.638  INFO [book,,,] 17928 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BOOK/LAPTOP-R62TREJ2:book:9002 - registration status: 204
+2020-04-09 15:24:05.673  INFO [book,,,] 17928 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9002 (http) with context path ''
+2020-04-09 15:24:05.673  INFO [book,,,] 17928 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9002
+2020-04-09 15:24:06.030  INFO [book,,,] 17928 --- [restartedMain] com.Ustora.book.BookApplication          : Started BookApplication in 25.139 seconds (JVM running for 27.851)
+2020-04-09 15:24:07.132  INFO [book,,,] 17928 --- [RMI TCP Connection(3)-192.168.43.44] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-09 15:24:07.159  INFO [book,,,] 17928 --- [RMI TCP Connection(5)-192.168.43.44] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:9101
+2020-04-09 15:24:08.899  INFO [book,,,] 17928 --- [RMI TCP Connection(3)-192.168.43.44] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-09 15:24:09.016  INFO [book,,,] 17928 --- [RMI TCP Connection(3)-192.168.43.44] o.s.web.servlet.DispatcherServlet        : Completed initialization in 116 ms
+2020-04-09 15:24:10.556  INFO [book,,,] 17928 --- [RMI TCP Connection(5)-192.168.43.44] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=book, profiles=[default], label=null, version=fc976e353d551a0a0ea7a51737bf5dfb54c16f2f, state=null
+2020-04-09 15:29:05.435  INFO [book,,,] 17928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-04-09 15:29:15.009  INFO [book,2e83dffd0acfdee6,2e83dffd0acfdee6,false] 17928 --- [http-nio-9002-exec-10] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:9101
+2020-04-09 15:29:17.022  INFO [book,2e83dffd0acfdee6,2e83dffd0acfdee6,false] 17928 --- [http-nio-9002-exec-10] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=book, profiles=[default], label=null, version=fc976e353d551a0a0ea7a51737bf5dfb54c16f2f, state=null
+2020-04-09 15:34:05.437  INFO [book,,,] 17928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-04-09 15:34:24.792  INFO [book,d61b8439c11cc668,d61b8439c11cc668,false] 17928 --- [http-nio-9002-exec-10] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:9101
+2020-04-09 15:34:26.036  INFO [book,d61b8439c11cc668,d61b8439c11cc668,false] 17928 --- [http-nio-9002-exec-10] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=book, profiles=[default], label=null, version=fc976e353d551a0a0ea7a51737bf5dfb54c16f2f, state=null
+2020-04-09 15:39:05.439  INFO [book,,,] 17928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-04-09 15:39:34.901  INFO [book,bee445d50af25092,bee445d50af25092,false] 17928 --- [http-nio-9002-exec-10] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:9101
+2020-04-09 15:39:38.096  INFO [book,bee445d50af25092,bee445d50af25092,false] 17928 --- [http-nio-9002-exec-10] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=book, profiles=[default], label=null, version=fc976e353d551a0a0ea7a51737bf5dfb54c16f2f, state=null
+2020-04-09 15:44:05.441  INFO [book,,,] 17928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-04-09 15:44:54.771  INFO [book,f2d3f2d2e03505a6,f2d3f2d2e03505a6,false] 17928 --- [http-nio-9002-exec-10] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:9101
+2020-04-09 15:44:56.419  INFO [book,f2d3f2d2e03505a6,f2d3f2d2e03505a6,false] 17928 --- [http-nio-9002-exec-10] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=book, profiles=[default], label=null, version=fc976e353d551a0a0ea7a51737bf5dfb54c16f2f, state=null
+2020-04-09 15:49:05.445  INFO [book,,,] 17928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-04-09 15:50:04.762  INFO [book,61a1eb1c139267d7,61a1eb1c139267d7,false] 17928 --- [http-nio-9002-exec-10] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:9101
+2020-04-09 15:50:06.071  INFO [book,61a1eb1c139267d7,61a1eb1c139267d7,false] 17928 --- [http-nio-9002-exec-10] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=book, profiles=[default], label=null, version=fc976e353d551a0a0ea7a51737bf5dfb54c16f2f, state=null
+2020-04-09 15:54:05.446  INFO [book,,,] 17928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-04-09 15:55:04.779  INFO [book,2500fe62d9fa87fe,2500fe62d9fa87fe,false] 17928 --- [http-nio-9002-exec-9] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:9101
+2020-04-09 15:55:06.238  INFO [book,2500fe62d9fa87fe,2500fe62d9fa87fe,false] 17928 --- [http-nio-9002-exec-9] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=book, profiles=[default], label=null, version=fc976e353d551a0a0ea7a51737bf5dfb54c16f2f, state=null

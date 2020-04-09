@@ -2,13 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c71ef9e-16a3-4367-b8d3-f39ec379e535" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/0/1028b280eb54dfe3b4529393601471cb86d1a9f9" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/0/1028b280eb54dfe3b4529393601471cb86d1a9f9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/7/7702300589b8d8260276bb16363dc04016009d14" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/7/7702300589b8d8260276bb16363dc04016009d14" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/5/b5aa843524f5813d789502fd42e3b080ca499533" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/5/b5aa843524f5813d789502fd42e3b080ca499533" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/d/cd9a09e8e49c358fd2ef4a7e12eb08c399a7724d" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/d/cd9a09e8e49c358fd2ef4a7e12eb08c399a7724d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/resources/bootstrap.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eureka/src/main/resources/bootstrap.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-admin/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-admin/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/resources/bootstrap.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuul-server/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/zuul-server/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/bookLog.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/bookLog.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/Ustora/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/Ustora/user/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/Ustora/user/entities/UserBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/Ustora/user/entities/UserBook.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,19 +129,19 @@
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main\resources\META-INF\resources\WEB-INF\jsp" />
-      <recent name="C:\Users\Vincs\IdeaProjects\Ustora\user\src\main\java\com\Ustora\user" />
-      <recent name="C:\Users\Vincs\IdeaProjects\Ustora\book\src\main\java\com\Ustora\book" />
-      <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main\resources" />
-      <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main\java\com\Ustora\clientui" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main\resources\META-INF\resources" />
       <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main\resources\META-INF.resources" />
       <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main" />
       <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main\resources\WEB-INF" />
       <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main\resources" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main\resources\META-INF\resources\WEB-INF\jsp" />
+      <recent name="C:\Users\Vincs\IdeaProjects\Ustora\user\src\main\java\com\Ustora\user" />
+      <recent name="C:\Users\Vincs\IdeaProjects\Ustora\book\src\main\java\com\Ustora\book" />
+      <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main\resources" />
+      <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main\java\com\Ustora\clientui" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -261,11 +265,7 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Bibliotheque@localhost: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Not Started" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
             <select />
@@ -289,7 +289,8 @@
       <workItem from="1585900041209" duration="26210000" />
       <workItem from="1585988631101" duration="2616000" />
       <workItem from="1585992719127" duration="636000" />
-      <workItem from="1586004802471" duration="111725000" />
+      <workItem from="1586004802471" duration="111836000" />
+      <workItem from="1586437156468" duration="3197000" />
     </task>
     <task id="LOCAL-00001" summary="Modification du fichier xml">
       <created>1585788896625</created>
@@ -480,7 +481,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586419210141</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="ajout de la configuration du fichier de Log dans chaque module">
+      <created>1586436960381</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1586436960381</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -498,7 +506,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Ajout web resources" />
     <MESSAGE value="Correction chemin des ressources" />
     <MESSAGE value="Implementation de chosen jquery" />
     <MESSAGE value="Afficher et paginer une liste de livre" />
@@ -523,7 +530,8 @@
     <MESSAGE value="Implementation du Batch" />
     <MESSAGE value="Installation du Logger" />
     <MESSAGE value="Correction faille de sécuité sur Logger" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correction faille de sécuité sur Logger" />
+    <MESSAGE value="ajout de la configuration du fichier de Log dans chaque module" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout de la configuration du fichier de Log dans chaque module" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Auto_Import" timestamp="1586351797524">
@@ -542,10 +550,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1585993683895" />
-    <state x="488" y="48" width="594" height="593" key="#com.intellij.ide.util.MemberChooser" timestamp="1586327128216">
+    <state x="488" y="48" width="594" height="593" key="#com.intellij.ide.util.MemberChooser" timestamp="1586439721997">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="48" width="594" height="593" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1586327128216" />
+    <state x="488" y="48" width="594" height="593" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1586439721997" />
     <state x="313" y="53" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1585792510360">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -558,6 +566,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="482" y="271" key="#com.intellij.javaee.module.view.web.EditWebRootDialog/0.0.1366.728@0.0.1366.728" timestamp="1585792840259" />
+    <state x="363" y="100" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1586437327946">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="363" y="100" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1586437327946" />
     <state x="380" y="55" width="773" height="594" key="#xdebugger.evaluate" timestamp="1586339404873">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -566,10 +578,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="383" y="78" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728@0.0.1366.728" timestamp="1586267124040" />
-    <state x="224" y="0" key="CommitChangelistDialog2" timestamp="1586419199792">
+    <state x="224" y="0" key="CommitChangelistDialog2" timestamp="1586436956473">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="224" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586419199792" />
+    <state x="224" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586436956473" />
     <state width="410" height="466" key="DebuggerActiveHint" timestamp="1586329853959">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -586,38 +598,38 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="553" y="257" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1585790800540" />
-    <state width="1323" height="158" key="GridCell.Tab.0.bottom" timestamp="1586433703176">
+    <state width="1021" height="304" key="GridCell.Tab.0.bottom" timestamp="1586439922378">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="158" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586433703176" />
-    <state width="1323" height="158" key="GridCell.Tab.0.center" timestamp="1586433703175">
+    <state width="1021" height="304" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586439922378" />
+    <state width="1021" height="304" key="GridCell.Tab.0.center" timestamp="1586439922378">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="158" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586433703175" />
-    <state width="1323" height="158" key="GridCell.Tab.0.left" timestamp="1586433703175">
+    <state width="1021" height="304" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586439922378" />
+    <state width="1021" height="304" key="GridCell.Tab.0.left" timestamp="1586439922378">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="158" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586433703175" />
-    <state width="1323" height="158" key="GridCell.Tab.0.right" timestamp="1586433703176">
+    <state width="1021" height="304" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586439922378" />
+    <state width="1021" height="304" key="GridCell.Tab.0.right" timestamp="1586439922378">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="158" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586433703176" />
-    <state width="1021" height="304" key="GridCell.Tab.1.bottom" timestamp="1586418515522">
+    <state width="1021" height="304" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586439922378" />
+    <state width="1021" height="304" key="GridCell.Tab.1.bottom" timestamp="1586439922378">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="304" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586418515522" />
-    <state width="1021" height="304" key="GridCell.Tab.1.center" timestamp="1586418515522">
+    <state width="1021" height="304" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586439922378" />
+    <state width="1021" height="304" key="GridCell.Tab.1.center" timestamp="1586439922378">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="304" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1586418515522" />
-    <state width="1021" height="304" key="GridCell.Tab.1.left" timestamp="1586418515522">
+    <state width="1021" height="304" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1586439922378" />
+    <state width="1021" height="304" key="GridCell.Tab.1.left" timestamp="1586439922378">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="304" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1586418515522" />
-    <state width="1021" height="304" key="GridCell.Tab.1.right" timestamp="1586418515522">
+    <state width="1021" height="304" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1586439922378" />
+    <state width="1021" height="304" key="GridCell.Tab.1.right" timestamp="1586439922378">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="304" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1586418515522" />
+    <state width="1021" height="304" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1586439922378" />
     <state width="1021" height="304" key="GridCell.Tab.2.bottom" timestamp="1586351093486">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -638,10 +650,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="223" height="539" key="HiddenNamespacesPopup/0.0.1366.728@0.0.1366.728" timestamp="1586254335317" />
-    <state x="213" y="19" key="Maven.ArtifactSearchDialog" timestamp="1585779291108">
+    <state x="213" y="19" key="Maven.ArtifactSearchDialog" timestamp="1586438193680">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="213" y="19" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1585779291108" />
+    <state x="213" y="19" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1586438193680" />
     <state x="348" y="63" key="NewModule_or_Project.wizard" timestamp="1585792438447">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -654,10 +666,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="514" height="537" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1586417985623" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1586415963401">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1586436965892">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586415963401" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586436965892" />
     <state x="438" y="208" key="cloudConfig.SelfSettingsDialog" timestamp="1585988119579">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -670,10 +682,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="169" key="com.intellij.database.dbimport.ImportUtil.MyDialog/0.0.1366.728@0.0.1366.728" timestamp="1586170261478" />
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1585988641635">
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1586437183900">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1585988641635" />
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1586437183900" />
     <state x="492" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585789153950">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -686,10 +698,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="689" y="0" key="refactoring.ChangeSignatureDialog/0.0.1366.728@0.0.1366.728" timestamp="1586327563316" />
-    <state x="322" y="86" width="672" height="488" key="run.anything.popup" timestamp="1586419090225">
+    <state x="322" y="86" width="672" height="488" key="run.anything.popup" timestamp="1586439623955">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="322" y="86" width="672" height="488" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1586419090225" />
+    <state x="322" y="86" width="672" height="488" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1586439623955" />
     <state x="370" y="42" width="672" height="678" key="search.everywhere.popup" timestamp="1586005745033">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -698,11 +710,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/user/src/main/java/com/Ustora/user/entities/UserBook.java</url>
-          <line>52</line>
-          <option name="timeStamp" value="62" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/book/src/main/java/com/Ustora/book/controller/ReservationController.java</url>
           <line>67</line>

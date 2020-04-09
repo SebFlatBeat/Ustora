@@ -1,6 +1,7 @@
 package com.Ustora.user.controller;
 
 import com.Ustora.user.entities.UserBook;
+import com.Ustora.user.entities.UserRole;
 import com.Ustora.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -31,6 +32,7 @@ public class UserController {
 
     @PostMapping(value = "/registerPost")
     public UserBook register(@RequestBody UserBook userBook) {
+        userBook.grantAuthority(UserRole.USER);
         userService.save(userBook);
         return userBook;
     }

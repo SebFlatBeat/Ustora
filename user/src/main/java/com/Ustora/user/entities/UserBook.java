@@ -1,6 +1,9 @@
 package com.Ustora.user.entities;
 
 import com.Ustora.user.security.BCryptEncoderConfig;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.*;
 import javax.validation.constraints.Email;
@@ -8,10 +11,11 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 @Entity
-public class UserBook {
+public class UserBook implements UserDetails {
     @Id
     @GeneratedValue
     private Long id;
@@ -66,6 +70,26 @@ public class UserBook {
         return username;
     }
 
+    @Override
+    public boolean isAccountNonExpired() {
+        return false;
+    }
+
+    @Override
+    public boolean isAccountNonLocked() {
+        return false;
+    }
+
+    @Override
+    public boolean isCredentialsNonExpired() {
+        return false;
+    }
+
+    @Override
+    public boolean isEnabled() {
+        return false;
+    }
+
     public void setUsername(String username) {
         this.username = username;
     }
@@ -76,6 +100,13 @@ public class UserBook {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    @Override
+    public List<GrantedAuthority> getAuthorities() {
+        List<GrantedAuthority> authorities = new ArrayList<>();
+        userRoleList.forEach(userRole -> authorities.add(new SimpleGrantedAuthority(userRole.toString())));
+        return authorities;
     }
 
     public String getPassword() {
@@ -90,6 +121,7 @@ public class UserBook {
         if ( userRoleList == null ) userRoleList = new ArrayList<>();
         userRoleList.add(authority);
     }
+
     @Override
     public String toString(){
         return "UserBook{"+
