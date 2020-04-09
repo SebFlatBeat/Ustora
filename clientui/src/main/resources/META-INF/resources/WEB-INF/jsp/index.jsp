@@ -91,7 +91,7 @@ URL: https://www.freshdesignweb.com/ustora/
                         J.R.R <span class="primary"><strong>Tolkien</strong></span>
                     </h2>
                     <h4 class="caption subtitle">Beowulf</h4>
-                    <a class="caption button-radius" href="#"><span class="icon"></span>Plus de détails</a>
+                    <a class="caption button-radius" href="#"><span class="icon"></span>Réserver</a>
                 </div>
             </li>
             <li><img src="../../img/h4-slide2.png" alt="Slide">
@@ -100,7 +100,7 @@ URL: https://www.freshdesignweb.com/ustora/
                         Jules <span class="primary"><strong>Verne</strong></span>
                     </h2>
                     <h4 class="caption subtitle">L'étonnante aventure de la mission barsac</h4>
-                    <a class="caption button-radius" href="#"><span class="icon"></span>Plus de détails</a>
+                    <a class="caption button-radius" href="#"><span class="icon"></span>Réserver</a>
                 </div>
             </li>
             <li><img src="../../img/h4-slide3.png" alt="Slide">
@@ -109,7 +109,7 @@ URL: https://www.freshdesignweb.com/ustora/
                         Stephen <span class="primary"><strong>King</strong></span>
                     </h2>
                     <h4 class="caption subtitle">The Mist</h4>
-                    <a class="caption button-radius" href="#"><span class="icon"></span>Plus de détails</a>
+                    <a class="caption button-radius" href="#"><span class="icon"></span>Réserver</a>
                 </div>
             </li>
             <li><img src="../../img/h4-slide4.png" alt="Slide">
@@ -118,7 +118,7 @@ URL: https://www.freshdesignweb.com/ustora/
                         Mary <span class="primary">Higgins <strong>Clark</strong></span>
                     </h2>
                     <h4 class="caption subtitle">Dernière Danse</h4>
-                    <a class="caption button-radius" href="#"><span class="icon"></span>Plus de détails</a>
+                    <a class="caption button-radius" href="#"><span class="icon"></span>Réserver</a>
                 </div>
             </li>
         </ul>
@@ -277,7 +277,6 @@ URL: https://www.freshdesignweb.com/ustora/
             </table>
         </div>
     </div>
-    <c:if test="${allBookList.size()==searchBook.size()}">
     <nav aria-label="Page navigation example">
         <ul class="pagination justify-content-center">
             <c:if test="${paginationBook.getNumber() == 0}">
@@ -299,19 +298,11 @@ URL: https://www.freshdesignweb.com/ustora/
         </ul>
     </nav>
 </div>
-</c:if>
-<c:if test="${allBookList.size()!=searchBook.size()}">
-    <nav>
-
-    </nav>
-</c:if>
-</div>
 <!-- End mainmenu area -->
 
 
 
 <div class="promo-area">
-    <div class="zigzag-bottom"></div>
     <div class="container">
         <div class="row">
             <div class="col-md-4 col-sm-8">
@@ -329,7 +320,7 @@ URL: https://www.freshdesignweb.com/ustora/
             <div class="col-md-4 col-sm-8">
                 <div class="single-promo promo4">
                     <i class="fa fa-gift"></i>
-                    <p>nouveau livres</p>
+                    <p>nouveaux livres</p>
                 </div>
             </div>
         </div>
@@ -348,11 +339,11 @@ URL: https://www.freshdesignweb.com/ustora/
                             <div class="product-f-image">
                                 <img src="../../img/product-1.jpg" alt="">
                                 <div class="product-hover">
-                                    <a href="../../../../templates/single-product.html" class="view-details-link"> Reserver</a>
+                                    <a href="../../../../templates/single-product.html" name="bookId" id="bookId" class="view-details-link"> Reserver</a>
                                 </div>
                             </div>
 
-                            <h2><a href="../../../../templates/single-product.html">Balzac</a></h2>
+                            <h2><a >Balzac</a></h2>
 
                             <div class="product-carousel-price">
                                 <ins>Les Chouans</ins>
@@ -393,7 +384,7 @@ URL: https://www.freshdesignweb.com/ustora/
                                 </div>
                             </div>
 
-                            <h2><a href="../../../../templates/single-product.html">Les frères Grimm</a></h2>
+                            <h2><a >Les frères Grimm</a></h2>
 
                             <div class="product-carousel-price">
                                 <ins>Hänsel et Gretel</ins>
@@ -405,6 +396,12 @@ URL: https://www.freshdesignweb.com/ustora/
                                 <div class="product-hover">
                                     <a href="../../../../templates/single-product.html" class="view-details-link">Reserver</a>
                                 </div>
+                            </div>
+
+                            <h2><a >Guillaume Apollinaire</a></h2>
+
+                            <div class="product-carousel-price">
+                                <ins>Si je mourais là-bas</ins>
                             </div>
                         </div>
                     </div>
@@ -418,7 +415,7 @@ URL: https://www.freshdesignweb.com/ustora/
     <div class="zigzag-bottom"></div>
     <div class="container">
         <div class="row">
-            <div class="col-md-3 col-sm-6">
+            <div class="col-9">
                 <div class="footer-about-us">
                     <h2>u<span>Stora</span></h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis sunt id doloribus vero quam laborum quas alias dolores blanditiis iusto consequatur, modi aliquid eveniet eligendi iure eaque ipsam iste, pariatur omnis sint! Suscipit, debitis, quisquam. Laborum commodi veritatis magni at?</p>
@@ -431,36 +428,13 @@ URL: https://www.freshdesignweb.com/ustora/
                 </div>
             </div>
 
-            <div class="col-md-3 col-sm-6">
+            <div class="col-3">
                 <div class="footer-menu">
-                    <h2 class="footer-wid-title">User Navigation </h2>
+                    <h2 class="footer-wid-title">Accès Rapide</h2>
                     <ul>
                         <li><a href="/espacePerso">Mon compte</a></li>
                         <li><a href="/espacePerso#">Mes emprunts</a></li>
                     </ul>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6">
-                <div class="footer-menu">
-                    <h2 class="footer-wid-title">Categories</h2>
-                    <ul>
-                        <li><a href="#">Adulte</a></li>
-                        <li><a href="#">Jeunesse</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6">
-                <div class="footer-newsletter">
-                    <h2 class="footer-wid-title">Newsletter</h2>
-                    <p>Sign up to our newsletter and get exclusive deals you wont find anywhere else straight to your inbox!</p>
-                    <div class="newsletter-form">
-                        <form action="#">
-                            <input type="email" placeholder="Type your email">
-                            <input type="submit" value="Subscribe">
-                        </form>
-                    </div>
                 </div>
             </div>
         </div>
