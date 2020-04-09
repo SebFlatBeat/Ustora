@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 import java.util.List;
+import java.util.Optional;
 
 @Component
 public class Batch {
@@ -26,8 +27,8 @@ public class Batch {
     public void sendingLateMail() {
         List<Reservation> reservationList = reservationService.findByEndBorrowingAfter();
         for (int i = 0; i<=reservationList.size(); i++) {
-            UserBean userBeanLate = userProxy.findById(reservationList.get(i).getUserBookId());
-            mail.sendMessage(userBeanLate.getEmail());
+            Optional<UserBean> userBeanLate = userProxy.findById(reservationList.get(i).getUserBookId());
+            mail.sendMessage(userBeanLate.get().getEmail());
         }
     }
 }
