@@ -16,9 +16,7 @@ public class SpringAdminApplication {
 
 	public static void main(String[] args) {
 
-		logger.debug("Debug log message");
-		logger.info("Info log message");
-		logger.error("Error log message");
+		logger.info("Démarrage de l'application");
 
 		SpringApplication.run(SpringAdminApplication.class, args);
 	}
