@@ -4,9 +4,11 @@ import com.Ustora.book.beans.UserBean;
 import com.Ustora.book.entities.Reservation;
 import com.Ustora.book.proxies.UserProxy;
 import com.Ustora.book.service.ReservationService;
+import com.sun.xml.internal.ws.spi.db.DatabindingException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
+import java.util.List;
 
 @Component
 public class Batch {
@@ -20,8 +22,12 @@ public class Batch {
     @Autowired
     private Mail mail;
 
-    @Scheduled(cron = "0 0 8 * * *" )
+    @Scheduled(cron = "0 0 8 * * *")
     public void sendingLateMail() {
-
-        mail.sendMessage();
-    }}
+        List<Reservation> reservationList = reservationService.findByEndBorrowingAfter();
+        for (int i = 0; i<=reservationList.size(); i++) {
+            UserBean userBeanLate = userProxy.findById(reservationList.get(i).getUserBookId());
+            mail.sendMessage(userBeanLate.getEmail());
+        }
+    }
+}

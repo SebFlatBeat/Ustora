@@ -42,5 +42,9 @@ public class UserController {
         Optional<UserBook> userBook =userService.findByUsername(username);
         return userBook;
     }
-
+    @GetMapping("/find/id")
+    public Optional<UserBook> findById (Long id) {
+        Optional<UserBook> userBook = userService.findById(id);
+        return userBook;
+    }
 }

@@ -23,4 +23,7 @@ public class UserService {
     public   UserBook save(UserBook userBook) {return userDao.save(userBook);}
 
 
+    public Optional<UserBook> findById(Long id) {
+        return userDao.findById(id);
+    }
 }

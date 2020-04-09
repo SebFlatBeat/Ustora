@@ -52,5 +52,9 @@ public class ReservationService {
     public List <Reservation> findAll() {
       return reservationDao.findAll();
     }
+
+    public List<Reservation> findByEndBorrowingAfter(){
+       return reservationDao.findByEndBorrowingAfter();
+    }
 }
 
