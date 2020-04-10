@@ -262,8 +262,7 @@ URL: https://www.freshdesignweb.com/ustora/
                             <td class="text-center" scope="row">${bookAll.nbreExemplaire}</td>
                             <td class="text-center" scope="row">
                                 <div class="single-product">
-                                    <button href="../../../../bookDetail/${bookAll.id}" class="btn btn-outline-primary">Détails</button>
-                                    <<sec:authorize access="hasAnyAuthority('USER','ADMIN')">
+                                    <sec:authorize access="hasAnyAuthority('USER','ADMIN')">
                                         <form action="/save/reservation" method="post">
                                             <input type="hidden" name="bookId" id="bookId" value="${bookAll.id}"/>
                                             <button class="btn btn-outline-success">Reserver</button>

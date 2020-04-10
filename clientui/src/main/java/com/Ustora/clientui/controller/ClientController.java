@@ -10,6 +10,7 @@ import com.Ustora.clientui.proxies.UserProxy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.*;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -133,8 +134,9 @@ public class ClientController {
 
     @PostMapping(value = "/save/reservation")
     public String reservation (@RequestParam Long bookId){
-        UserBean currentUser = (UserBean) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-        ReservationBean newReservation = reservationProxy.newReservation(bookId, currentUser.getId());
+        User currentUser = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        UserBean userId = userProxy.find(currentUser.getUsername());
+        ReservationBean newReservation = reservationProxy.newReservation(bookId, userId.getId());
         if (newReservation ==null){
             return "redirect:/reservationNotDone";
         }else {

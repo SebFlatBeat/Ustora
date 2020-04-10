@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c71ef9e-16a3-4367-b8d3-f39ec379e535" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/beans/UserRole.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/beans/UserBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/beans/UserBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/service/UserBookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/service/UserBookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/controller/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/bookLog.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/bookLog.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/Ustora/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/Ustora/user/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/Ustora/user/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/Ustora/user/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/Ustora/user/entities/UserBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/Ustora/user/entities/UserBook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/Ustora/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/Ustora/user/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -514,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586450257387</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Implementation UserRole dans clientUi">
+      <created>1586526529318</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1586526529318</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -532,7 +534,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Afficher et paginer une liste de livre" />
     <MESSAGE value="Mise en page d'index" />
     <MESSAGE value="Ajout des Listes de recherche sur page d'index" />
     <MESSAGE value="Ajout de la fonctionnalité Recherche MutlitCritère" />
@@ -557,7 +558,8 @@
     <MESSAGE value="ajout de la configuration du fichier de Log dans chaque module" />
     <MESSAGE value="Ajout de sec:autorize" />
     <MESSAGE value="Correction Batch" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correction Batch" />
+    <MESSAGE value="Implementation UserRole dans clientUi" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementation UserRole dans clientUi" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Auto_Import" timestamp="1586351797524">
@@ -596,18 +598,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="363" y="100" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1586437327946" />
-    <state x="368" y="10" width="773" height="594" key="#xdebugger.evaluate" timestamp="1586526384417">
+    <state x="413" y="111" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1586528004774">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="368" y="10" width="773" height="594" key="#xdebugger.evaluate/0.0.1366.728@0.0.1366.728" timestamp="1586526384417" />
+    <state x="413" y="111" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1366.728@0.0.1366.728" timestamp="1586528004774" />
+    <state x="368" y="10" width="773" height="594" key="#xdebugger.evaluate" timestamp="1586527606426">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="368" y="10" width="773" height="594" key="#xdebugger.evaluate/0.0.1366.728@0.0.1366.728" timestamp="1586527606426" />
     <state x="383" y="78" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1586267124040">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="383" y="78" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728@0.0.1366.728" timestamp="1586267124040" />
-    <state x="224" y="0" key="CommitChangelistDialog2" timestamp="1586450254472">
+    <state x="224" y="0" key="CommitChangelistDialog2" timestamp="1586526524305">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="224" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586450254472" />
+    <state x="224" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586526524305" />
     <state width="410" height="466" key="DebuggerActiveHint" timestamp="1586329853959">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -624,54 +630,54 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="553" y="257" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1585790800540" />
-    <state width="1021" height="313" key="GridCell.Tab.0.bottom" timestamp="1586526397209">
+    <state width="1021" height="313" key="GridCell.Tab.0.bottom" timestamp="1586529235378">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="313" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586526397209" />
-    <state width="1021" height="313" key="GridCell.Tab.0.center" timestamp="1586526397208">
+    <state width="1021" height="313" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586529235378" />
+    <state width="1021" height="313" key="GridCell.Tab.0.center" timestamp="1586529235378">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="313" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586526397208" />
-    <state width="1021" height="313" key="GridCell.Tab.0.left" timestamp="1586526397208">
+    <state width="1021" height="313" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586529235378" />
+    <state width="1021" height="313" key="GridCell.Tab.0.left" timestamp="1586529235377">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="313" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586526397208" />
-    <state width="1021" height="313" key="GridCell.Tab.0.right" timestamp="1586526397209">
+    <state width="1021" height="313" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586529235377" />
+    <state width="1021" height="313" key="GridCell.Tab.0.right" timestamp="1586529235378">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="313" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586526397209" />
-    <state width="1021" height="313" key="GridCell.Tab.1.bottom" timestamp="1586526397209">
+    <state width="1021" height="313" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586529235378" />
+    <state width="1021" height="313" key="GridCell.Tab.1.bottom" timestamp="1586529235378">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="313" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586526397209" />
-    <state width="1021" height="313" key="GridCell.Tab.1.center" timestamp="1586526397209">
+    <state width="1021" height="313" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586529235378" />
+    <state width="1021" height="313" key="GridCell.Tab.1.center" timestamp="1586529235378">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="313" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1586526397209" />
-    <state width="1021" height="313" key="GridCell.Tab.1.left" timestamp="1586526397209">
+    <state width="1021" height="313" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1586529235378" />
+    <state width="1021" height="313" key="GridCell.Tab.1.left" timestamp="1586529235378">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="313" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1586526397209" />
-    <state width="1021" height="313" key="GridCell.Tab.1.right" timestamp="1586526397209">
+    <state width="1021" height="313" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1586529235378" />
+    <state width="1021" height="313" key="GridCell.Tab.1.right" timestamp="1586529235378">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="313" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1586526397209" />
-    <state width="1021" height="313" key="GridCell.Tab.2.bottom" timestamp="1586526397209">
+    <state width="1021" height="313" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1586529235378" />
+    <state width="1021" height="313" key="GridCell.Tab.2.bottom" timestamp="1586529235378">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="313" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586526397209" />
-    <state width="1021" height="313" key="GridCell.Tab.2.center" timestamp="1586526397209">
+    <state width="1021" height="313" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586529235378" />
+    <state width="1021" height="313" key="GridCell.Tab.2.center" timestamp="1586529235378">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="313" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1586526397209" />
-    <state width="1021" height="313" key="GridCell.Tab.2.left" timestamp="1586526397209">
+    <state width="1021" height="313" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1586529235378" />
+    <state width="1021" height="313" key="GridCell.Tab.2.left" timestamp="1586529235378">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="313" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1586526397209" />
-    <state width="1021" height="313" key="GridCell.Tab.2.right" timestamp="1586526397209">
+    <state width="1021" height="313" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1586529235378" />
+    <state width="1021" height="313" key="GridCell.Tab.2.right" timestamp="1586529235378">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="313" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1586526397209" />
+    <state width="1021" height="313" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1586529235378" />
     <state width="223" height="539" key="HiddenNamespacesPopup" timestamp="1586254335317">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -755,29 +761,14 @@
           <option name="timeStamp" value="122" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/user/src/main/java/com/Ustora/user/controller/UserController.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="126" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/user/src/main/java/com/Ustora/user/controller/UserController.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="129" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/service/UserBookService.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="131" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/service/UserBookService.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="132" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/user/src/main/java/com/Ustora/user/service/UserService.java</url>
           <line>18</line>
           <option name="timeStamp" value="134" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/controller/ClientController.java</url>
+          <line>136</line>
+          <option name="timeStamp" value="141" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/user/src/main/java/com/Ustora/user/service/UserService.java</url>
