@@ -25,21 +25,21 @@ public class UserController {
     }
 
     @GetMapping("/{username}/login")
-    public Optional<UserBook> login (@PathVariable String username){
-       Optional<UserBook> userBook = userService.findByUsername(username);
+    public UserBook login (@PathVariable String username){
+      UserBook userBook = userService.findByUsername(username);
         return userBook;
     }
 
     @PostMapping(value = "/registerPost")
     public UserBook register(@RequestBody UserBook userBook) {
-        userBook.grantAuthority(UserRole.USER);
+        userBook.getUserRoleList().add(UserRole.USER);
         userService.save(userBook);
         return userBook;
     }
 
     @GetMapping("/find/{username}")
-    public Optional <UserBook> findCurrentUser(@PathVariable String username){
-        Optional<UserBook> userBook =userService.findByUsername(username);
+    public UserBook findCurrentUser(@PathVariable String username){
+        UserBook userBook =userService.findByUsername(username);
         return userBook;
     }
     @GetMapping("/find/id")

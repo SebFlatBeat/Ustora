@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c71ef9e-16a3-4367-b8d3-f39ec379e535" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/utils/Batch.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/utils/Batch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/utils/Mail.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/utils/Mail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/beans/UserRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/beans/UserBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/beans/UserBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/service/UserBookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/service/UserBookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/bookLog.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/bookLog.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/Ustora/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/Ustora/user/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/Ustora/user/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/Ustora/user/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/Ustora/user/entities/UserBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/Ustora/user/entities/UserBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/Ustora/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/Ustora/user/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +92,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -136,6 +144,9 @@
       <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main" />
       <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main\resources\WEB-INF" />
       <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main\resources" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.Ustora.clientui.beans" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Vincs\IdeaProjects\Ustora\clientui\src\main\resources\META-INF\resources\WEB-INF\jsp" />
@@ -561,14 +572,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="119" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1586251226872" />
-    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585993683895">
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586509842736">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1585993683895" />
-    <state x="488" y="48" width="594" height="593" key="#com.intellij.ide.util.MemberChooser" timestamp="1586439721997">
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1586509842736" />
+    <state x="488" y="48" width="594" height="593" key="#com.intellij.ide.util.MemberChooser" timestamp="1586523603923">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="48" width="594" height="593" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1586439721997" />
+    <state x="488" y="48" width="594" height="593" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1586523603923" />
     <state x="313" y="53" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1585792510360">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -585,10 +596,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="363" y="100" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1586437327946" />
-    <state x="380" y="55" width="773" height="594" key="#xdebugger.evaluate" timestamp="1586339404873">
+    <state x="368" y="10" width="773" height="594" key="#xdebugger.evaluate" timestamp="1586526384417">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="380" y="55" width="773" height="594" key="#xdebugger.evaluate/0.0.1366.728@0.0.1366.728" timestamp="1586339404873" />
+    <state x="368" y="10" width="773" height="594" key="#xdebugger.evaluate/0.0.1366.728@0.0.1366.728" timestamp="1586526384417" />
     <state x="383" y="78" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1586267124040">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -613,54 +624,54 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="553" y="257" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1585790800540" />
-    <state width="1021" height="304" key="GridCell.Tab.0.bottom" timestamp="1586443012018">
+    <state width="1021" height="313" key="GridCell.Tab.0.bottom" timestamp="1586526397209">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="304" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586443012018" />
-    <state width="1021" height="304" key="GridCell.Tab.0.center" timestamp="1586443012018">
+    <state width="1021" height="313" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586526397209" />
+    <state width="1021" height="313" key="GridCell.Tab.0.center" timestamp="1586526397208">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="304" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586443012018" />
-    <state width="1021" height="304" key="GridCell.Tab.0.left" timestamp="1586443012018">
+    <state width="1021" height="313" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586526397208" />
+    <state width="1021" height="313" key="GridCell.Tab.0.left" timestamp="1586526397208">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="304" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586443012018" />
-    <state width="1021" height="304" key="GridCell.Tab.0.right" timestamp="1586443012018">
+    <state width="1021" height="313" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586526397208" />
+    <state width="1021" height="313" key="GridCell.Tab.0.right" timestamp="1586526397209">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="304" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586443012018" />
-    <state width="1021" height="304" key="GridCell.Tab.1.bottom" timestamp="1586443012019">
+    <state width="1021" height="313" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586526397209" />
+    <state width="1021" height="313" key="GridCell.Tab.1.bottom" timestamp="1586526397209">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="304" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586443012019" />
-    <state width="1021" height="304" key="GridCell.Tab.1.center" timestamp="1586443012018">
+    <state width="1021" height="313" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586526397209" />
+    <state width="1021" height="313" key="GridCell.Tab.1.center" timestamp="1586526397209">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="304" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1586443012018" />
-    <state width="1021" height="304" key="GridCell.Tab.1.left" timestamp="1586443012018">
+    <state width="1021" height="313" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1586526397209" />
+    <state width="1021" height="313" key="GridCell.Tab.1.left" timestamp="1586526397209">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="304" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1586443012018" />
-    <state width="1021" height="304" key="GridCell.Tab.1.right" timestamp="1586443012018">
+    <state width="1021" height="313" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1586526397209" />
+    <state width="1021" height="313" key="GridCell.Tab.1.right" timestamp="1586526397209">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="304" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1586443012018" />
-    <state width="1021" height="304" key="GridCell.Tab.2.bottom" timestamp="1586351093486">
+    <state width="1021" height="313" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1586526397209" />
+    <state width="1021" height="313" key="GridCell.Tab.2.bottom" timestamp="1586526397209">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="304" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586351093486" />
-    <state width="1021" height="304" key="GridCell.Tab.2.center" timestamp="1586351093486">
+    <state width="1021" height="313" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586526397209" />
+    <state width="1021" height="313" key="GridCell.Tab.2.center" timestamp="1586526397209">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="304" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1586351093486" />
-    <state width="1021" height="304" key="GridCell.Tab.2.left" timestamp="1586351093486">
+    <state width="1021" height="313" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1586526397209" />
+    <state width="1021" height="313" key="GridCell.Tab.2.left" timestamp="1586526397209">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="304" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1586351093486" />
-    <state width="1021" height="304" key="GridCell.Tab.2.right" timestamp="1586351093486">
+    <state width="1021" height="313" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1586526397209" />
+    <state width="1021" height="313" key="GridCell.Tab.2.right" timestamp="1586526397209">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1021" height="304" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1586351093486" />
+    <state width="1021" height="313" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1586526397209" />
     <state width="223" height="539" key="HiddenNamespacesPopup" timestamp="1586254335317">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -673,6 +684,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="348" y="63" key="NewModule_or_Project.wizard/0.0.1366.728@0.0.1366.728" timestamp="1585792438447" />
+    <state x="498" y="0" key="RollbackChangesDialog" timestamp="1586516312620">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="498" y="0" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1586516312620" />
     <state x="163" y="0" key="SettingsEditor" timestamp="1586329039316">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -685,6 +700,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586450260908" />
+    <state width="691" height="372" key="XDebugger.FullValuePopup" timestamp="1586525771218">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="691" height="372" key="XDebugger.FullValuePopup/0.0.1366.728@0.0.1366.728" timestamp="1586525771218" />
     <state x="438" y="208" key="cloudConfig.SelfSettingsDialog" timestamp="1585988119579">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -735,7 +754,45 @@
           <line>64</line>
           <option name="timeStamp" value="122" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/user/src/main/java/com/Ustora/user/controller/UserController.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="126" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/user/src/main/java/com/Ustora/user/controller/UserController.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="129" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/service/UserBookService.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="131" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/service/UserBookService.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="132" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/user/src/main/java/com/Ustora/user/service/UserService.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="134" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/user/src/main/java/com/Ustora/user/service/UserService.java</url>
+          <line>17</line>
+          <properties class="com.Ustora.user.service.UserService" method="findByUsername">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="130" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression=" UserBean userBook = userProxy.login(userName);" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

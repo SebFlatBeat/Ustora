@@ -15,7 +15,7 @@ import java.util.Collection;
 import java.util.List;
 
 @Entity
-public class UserBook implements UserDetails {
+public class UserBook {
     @Id
     @GeneratedValue
     private Long id;
@@ -70,26 +70,6 @@ public class UserBook implements UserDetails {
         return username;
     }
 
-    @Override
-    public boolean isAccountNonExpired() {
-        return false;
-    }
-
-    @Override
-    public boolean isAccountNonLocked() {
-        return false;
-    }
-
-    @Override
-    public boolean isCredentialsNonExpired() {
-        return false;
-    }
-
-    @Override
-    public boolean isEnabled() {
-        return false;
-    }
-
     public void setUsername(String username) {
         this.username = username;
     }
@@ -102,13 +82,6 @@ public class UserBook implements UserDetails {
         this.email = email;
     }
 
-    @Override
-    public List<GrantedAuthority> getAuthorities() {
-        List<GrantedAuthority> authorities = new ArrayList<>();
-        userRoleList.forEach(userRole -> authorities.add(new SimpleGrantedAuthority(userRole.toString())));
-        return authorities;
-    }
-
     public String getPassword() {
         return password;
     }
@@ -117,9 +90,12 @@ public class UserBook implements UserDetails {
         this.password = BCryptEncoderConfig.passwordencoder().encode(password);
     }
 
-    public void grantAuthority(UserRole authority) {
-        if ( userRoleList == null ) userRoleList = new ArrayList<>();
-        userRoleList.add(authority);
+    public List<UserRole> getUserRoleList() {
+        return userRoleList;
+    }
+
+    public void setUserRoleList(List<UserRole> userRoleList) {
+        this.userRoleList = userRoleList;
     }
 
     @Override

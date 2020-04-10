@@ -9,7 +9,7 @@ import java.util.Optional;
 
 @Repository
 public interface UserDao extends JpaRepository<UserBook, Long> {
-   Optional <UserBook> findByUsername(String username);
+   UserBook findByUsername(String username);
 
    List<UserBook> findAll();
 

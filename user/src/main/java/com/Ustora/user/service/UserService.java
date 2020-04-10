@@ -5,6 +5,7 @@ import com.Ustora.user.entities.UserBook;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.jws.soap.SOAPBinding;
 import java.util.List;
 import java.util.Optional;
 
@@ -14,7 +15,7 @@ public class UserService {
     @Autowired
     UserDao userDao;
 
-    public Optional<UserBook> findByUsername(String username){
+    public UserBook findByUsername(String username){
         return userDao.findByUsername(username);
     }
 

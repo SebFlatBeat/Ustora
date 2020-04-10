@@ -1,13 +1,16 @@
 package com.Ustora.clientui.beans;
 
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
-public class UserBean implements UserDetails {
+public class UserBean  implements UserDetails{
 
     private Long id;
 
@@ -16,6 +19,8 @@ public class UserBean implements UserDetails {
     private String email;
 
     private String password;
+
+    private List<UserRole> userRoleList;
 
     public UserBean() {
 
@@ -49,7 +54,14 @@ public class UserBean implements UserDetails {
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return null;
+        List<GrantedAuthority> authorities = new ArrayList<>();
+        userRoleList.forEach(userRole -> authorities.add(new SimpleGrantedAuthority(userRole.toString())));
+        return authorities;
+    }
+
+    public void grantAuthority(UserRole authority) {
+        if ( userRoleList == null ) userRoleList = new ArrayList<>();
+        userRoleList.add(authority);
     }
 
     public String getPassword() {
@@ -63,26 +75,34 @@ public class UserBean implements UserDetails {
 
     @Override
     public boolean isAccountNonExpired() {
-        return true;
+        return false;
     }
 
     @Override
     public boolean isAccountNonLocked() {
-        return true;
+        return false;
     }
 
     @Override
     public boolean isCredentialsNonExpired() {
-        return true;
+        return false;
     }
 
     @Override
     public boolean isEnabled() {
-        return true;
+        return false;
     }
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public List<UserRole> getUserRoleList() {
+        return userRoleList;
+    }
+
+    public void setUserRoleList(List<UserRole> userRoleList) {
+        this.userRoleList = userRoleList;
     }
 
     @Override
