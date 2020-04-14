@@ -16,7 +16,7 @@ public class ZuulServerApplication {
 
 	public static void main(String[] args) {
 
-		logger.info("Démarrage de l'application");
+		logger.info("Démarrage de l'application Zuul-Server");
 
 		SpringApplication.run(ZuulServerApplication.class, args);
 	}

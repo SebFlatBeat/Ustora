@@ -7,6 +7,8 @@ import com.Ustora.clientui.dto.RestResponsePage;
 import com.Ustora.clientui.proxies.BookProxy;
 import com.Ustora.clientui.proxies.ReservationProxy;
 import com.Ustora.clientui.proxies.UserProxy;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.*;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -32,6 +34,34 @@ public class ClientController {
     @Autowired
     private ReservationProxy reservationProxy;
 
+    Logger logger = LoggerFactory.getLogger(this.getClass());
+
+    /**
+     *
+     * @param modelAllBook
+     * @param modelPagination
+     * @param modelAllBookList
+     * @param page
+     * @param size
+     * @param titre
+     * @param modelDistinctTitre
+     * @param auteurPrincipalNom
+     * @param modelDistinctAuteurNom
+     * @param auteurPrincipalPrenom
+     * @param modelDistinctAuteurPrenom
+     * @param editeur
+     * @param modelDistinctEditeur
+     * @param anneeEdition
+     * @param modelDistinctAnneeEdition
+     * @param section
+     * @param modelDistinctSection
+     * @param isbn
+     * @param modelDistinctIsbn
+     * @param modelSearchBook
+     * @param modelSearchBookPage
+     * @param modelPaginationSearchBook
+     * @return
+     */
     @GetMapping(value = {"/","/index"})
     public String index(Model modelAllBook, Model modelPagination, Model modelAllBookList,
                         @RequestParam(name = "page", defaultValue = "0") int page,
@@ -104,63 +134,110 @@ public class ClientController {
         modelSearchBook.addAttribute("searchBook",searchBook);
         modelSearchBookPage.addAttribute("searchBookPage",searchBookPage);
         modelPaginationSearchBook.addAttribute("paginationSearchBook", searchBookPage);
+        logger.info("Affichage de la page d'acceuil");
         return "index";
     }
 
+    /**
+     *
+     * @param modelUserReservation
+     * @return
+     */
     @GetMapping(value = "/espacePerso")
     public String espacePerso( Model modelUserReservation){
         UserBean currentUser = userProxy.find(SecurityContextHolder.getContext().getAuthentication().getName());
         List<ReservationBean> userReservation = reservationProxy.reservationList(currentUser.getId());
         modelUserReservation.addAttribute("userReservation",userReservation);
+        logger.info("Affichage de l'espace personnel");
         return "espacePerso";
     }
 
+    /**
+     *
+     * @return
+     */
     @GetMapping(value = "/register")
     public String register(){
 
         return "register";
     }
 
+    /**
+     *
+     * @param userBean
+     * @return
+     */
     @PostMapping(value = "/registerPost")
     public String registerPost(@ModelAttribute UserBean userBean){
         userProxy.register(userBean);
         return "redirect:/registerSuccess";
     }
 
+    /**
+     *
+     * @return
+     */
     @GetMapping(value = "/registerSuccess")
     public String registerSuccess(){
         return "registerSuccess";
     }
 
+    /**
+     *
+     * @param bookId
+     * @return
+     */
     @PostMapping(value = "/save/reservation")
     public String reservation (@RequestParam Long bookId){
         User currentUser = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         UserBean userId = userProxy.find(currentUser.getUsername());
         ReservationBean newReservation = reservationProxy.newReservation(bookId, userId.getId());
         if (newReservation ==null){
+            logger.info("Livre déjà en la possession de l'utilisateur");
             return "redirect:/reservationNotDone";
         }else {
+            logger.info("Nouvelle reservation de livre enregitrée");
             return "redirect:/reservationSuccess";
         }
     }
 
+    /**
+     *
+     * @param id
+     * @return
+     */
     @PostMapping(value = "/delete/reservation")
     public String deleteReservation (@RequestParam Long id){
         reservationProxy.deleteReservation(id);
+        logger.info("Reservation effacée");
         return "redirect:/espacePerso";
     }
 
+    /**
+     *
+     * @param id
+     * @return
+     */
     @PostMapping(value = "/extend/reservation")
     public String extendReservation (@RequestParam Long id){
         reservationProxy.updateReservation(id);
+        logger.info("Prolongement de la reservation");
         return "redirect:/espacePerso";
     }
 
+    /**
+     *
+     * @return
+     */
     @GetMapping(value = "reservationSuccess")
     public String reservationSucces(){
         return "reservationSuccess";
     }
 
+    /**
+     *
+     * @return
+     */
     @GetMapping(value = "reservationNotDone")
     public String reservationNotDone(){
         return "reservationNotDone";

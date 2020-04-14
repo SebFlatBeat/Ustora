@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 @Component
 public class ResponseFilter extends ZuulFilter {
 
-    Logger log = LoggerFactory.getLogger(this.getClass());
+    Logger logger = LoggerFactory.getLogger(this.getClass());
 
     @Override
     public String filterType() {
@@ -29,12 +29,17 @@ public class ResponseFilter extends ZuulFilter {
         return true;
     }
 
+    /**
+     *
+     * @return
+     * @throws ZuulException
+     */
     @Override
     public Object run() throws ZuulException {
 
         HttpServletResponse response = RequestContext.getCurrentContext().getResponse();
 
-        log.info(" CODE HTTP {} ", response.getStatus());
+        logger.info(" CODE HTTP {} ", response.getStatus());
 
         return null;
     }

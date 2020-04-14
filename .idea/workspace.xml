@@ -1,12 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c71ef9e-16a3-4367-b8d3-f39ec379e535" name="Default Changelist" comment="Correction anomalie New reservation">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+    <list default="true" id="1c71ef9e-16a3-4367-b8d3-f39ec379e535" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/BookApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/BookApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/controller/ReservationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/controller/ReservationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/proxies/UserProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/proxies/UserProxy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/utils/Batch.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/utils/Batch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/bookLog.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/bookLog.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuul-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zuul-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/utils/Mail.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/utils/Mail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/ClientuiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/ClientuiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/controller/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/proxies/BookProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/proxies/BookProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/proxies/ReservationProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/proxies/ReservationProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/proxies/UserProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/proxies/UserProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/security/SecurityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/security/SecurityController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/service/UserBookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/service/UserBookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/java/com/Ustora/configserver/ConfigServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/java/com/Ustora/configserver/ConfigServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka/src/main/java/com/Ustora/eureka/EurekaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka/src/main/java/com/Ustora/eureka/EurekaApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-admin/src/main/java/com/Ustora/springadmin/SpringAdminApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-admin/src/main/java/com/Ustora/springadmin/SpringAdminApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/Ustora/user/UserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/Ustora/user/UserApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/Ustora/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/Ustora/user/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul-server/src/main/java/com/Ustora/zuulserver/ZuulServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/zuul-server/src/main/java/com/Ustora/zuulserver/ZuulServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul-server/src/main/java/com/Ustora/zuulserver/filters/LogFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/zuul-server/src/main/java/com/Ustora/zuulserver/filters/LogFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul-server/src/main/java/com/Ustora/zuulserver/filters/ResponseFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/zuul-server/src/main/java/com/Ustora/zuulserver/filters/ResponseFilter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -524,7 +541,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586529371463</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Amélioration du code dans Batch">
+      <created>1586849714167</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1586849714167</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -542,7 +566,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Ajout des Listes de recherche sur page d'index" />
     <MESSAGE value="Ajout de la fonctionnalité Recherche MutlitCritère" />
     <MESSAGE value="Correction Anomalie Recherche Multi Critere, implementation de la Reservation" />
     <MESSAGE value="Correction Anomalie Recherche Multi Critere" />
@@ -567,7 +590,8 @@
     <MESSAGE value="Correction Batch" />
     <MESSAGE value="Implementation UserRole dans clientUi" />
     <MESSAGE value="Correction anomalie New reservation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correction anomalie New reservation" />
+    <MESSAGE value="Amélioration du code dans Batch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Amélioration du code dans Batch" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Auto_Import" timestamp="1586351797524">
@@ -618,10 +642,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="383" y="78" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728@0.0.1366.728" timestamp="1586267124040" />
-    <state x="224" y="0" key="CommitChangelistDialog2" timestamp="1586605801690">
+    <state x="224" y="0" key="CommitChangelistDialog2" timestamp="1586851793724">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="224" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586605801690" />
+    <state x="224" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586851793724" />
     <state width="410" height="466" key="DebuggerActiveHint" timestamp="1586329853959">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -710,10 +734,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="514" height="537" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1586417985623" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1586529378123">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1586849718332">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586529378123" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586849718332" />
     <state width="691" height="372" key="XDebugger.FullValuePopup" timestamp="1586525771218">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -759,24 +783,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/book/src/main/java/com/Ustora/book/controller/ReservationController.java</url>
-          <line>67</line>
-          <option name="timeStamp" value="121" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/book/src/main/java/com/Ustora/book/controller/ReservationController.java</url>
-          <line>64</line>
-          <option name="timeStamp" value="122" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/user/src/main/java/com/Ustora/user/service/UserService.java</url>
           <line>18</line>
           <option name="timeStamp" value="134" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/controller/ClientController.java</url>
-          <line>136</line>
-          <option name="timeStamp" value="141" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/user/src/main/java/com/Ustora/user/service/UserService.java</url>

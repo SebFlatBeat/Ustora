@@ -15,9 +15,19 @@ import java.util.Optional;
 @Component
 public interface UserProxy {
 
+    /**
+     *
+     * @param username
+     * @return
+     */
     @GetMapping(value = "/user/find/{username}")
     UserBean find(@PathVariable String username);
 
+    /**
+     *
+     * @param userBookId
+     * @return
+     */
     @GetMapping(value = "/user/find/id")
     Optional<UserBean> findById(Long userBookId);
 }

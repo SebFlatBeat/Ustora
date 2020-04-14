@@ -16,15 +16,36 @@ import java.util.List;
 @Component
 public interface ReservationProxy {
 
+    /**
+     *
+     * @param userId
+     * @return
+     */
     @GetMapping( value = "/book/reservation")
     List<ReservationBean> reservationList (@RequestParam Long userId);
 
+    /**
+     *
+     * @param bookId
+     * @param userId
+     * @return
+     */
     @PostMapping(value = "/book/save/reservation")
     ReservationBean newReservation(@RequestParam Long bookId, @RequestParam Long userId);
 
+    /**
+     *
+     * @param id
+     * @return
+     */
     @PostMapping(value = "/book/delete/reservation")
     ReservationBean deleteReservation(@RequestParam Long id);
 
+    /**
+     *
+     * @param id
+     * @return
+     */
     @PostMapping(value = "/book/extend/reservation")
     ReservationBean updateReservation(@RequestParam Long id);
 

@@ -15,12 +15,27 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Component
 public interface UserProxy {
 
+    /**
+     *
+     * @param username
+     * @return
+     */
     @GetMapping(value = "/user/{username}/login")
     UserBean login(@PathVariable String username);
 
+    /**
+     *
+     * @param userBean
+     * @return
+     */
     @PostMapping(value = "/user/registerPost")
     UserBean register(UserBean userBean);
 
+    /**
+     *
+     * @param username
+     * @return
+     */
     @GetMapping(value = "/user/find/{username}")
     UserBean find(@PathVariable String username);
 

@@ -15,7 +15,7 @@ public class UserApplication {
 	private static Logger logger = LoggerFactory.getLogger(UserApplication.class);
 
 	public static void main(String[] args) {
-		logger.info("Démarrage de l'application");
+		logger.info("Démarrage de l'application User");
 
 		SpringApplication.run(UserApplication.class, args);
 	}

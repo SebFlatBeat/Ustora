@@ -13,6 +13,12 @@ public class UserBookService implements UserDetailsService {
     @Autowired
     UserProxy userProxy;
 
+    /**
+     *
+     * @param username
+     * @return
+     * @throws UsernameNotFoundException
+     */
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         UserBean userBook = userProxy.login(username);

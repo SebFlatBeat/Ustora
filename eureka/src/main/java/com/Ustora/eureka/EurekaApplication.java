@@ -14,7 +14,7 @@ public class EurekaApplication {
 
 	public static void main(String[] args) {
 
-		logger.info("Démarrage de l'application");
+		logger.info("Démarrage de l'application Eureka");
 		SpringApplication.run(EurekaApplication.class, args);
 	}
 

@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 @Component
 public class LogFilter extends ZuulFilter {
 
-    Logger log = LoggerFactory.getLogger(this.getClass());
+    Logger logger = LoggerFactory.getLogger(this.getClass());
 
     @Override
     public String filterType() {
@@ -29,12 +29,17 @@ public class LogFilter extends ZuulFilter {
         return true;
     }
 
+    /**
+     *
+     * @return
+     * @throws ZuulException
+     */
     @Override
     public Object run() throws ZuulException {
 
         HttpServletRequest request = RequestContext.getCurrentContext().getRequest();
 
-        log.info("L'URL est : {}",request.getRequestURL());
+        logger.info("L'URL est : {}",request.getRequestURL());
 
         return null;
     }

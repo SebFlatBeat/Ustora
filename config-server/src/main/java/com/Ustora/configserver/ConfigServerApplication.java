@@ -13,7 +13,7 @@ public class ConfigServerApplication {
 	private static Logger logger = LoggerFactory.getLogger(ConfigServerApplication.class);
 
 	public static void main(String[] args) {
-		logger.info("Démarrage de l'application");
+		logger.info("Démarrage de l'application ConfigServer");
 		SpringApplication.run(ConfigServerApplication.class, args);
 	}
 
