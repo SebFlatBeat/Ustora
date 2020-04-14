@@ -113,8 +113,6 @@ f
 6spring-admin/src/main/resources/application.properties,9\5\95c73df9a67bede4b00787e603d3c65f88feb3af
 \
 ,user/src/main/resources/bootstrap.properties,0\f\0f0b23037d2d3dab365e1f1c56a91fa5e2cac521
-c
-3zuul-server/src/main/resources/bootstrap.properties,c\a\cabd884892dbaa0f0a7deac7acda284d01061c9a
 `
 0clientui/src/main/resources/bootstrap.properties,4\e\4edddf7eda4d85257b9f971761094911989baa22
 E

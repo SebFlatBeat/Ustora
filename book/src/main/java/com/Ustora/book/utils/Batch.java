@@ -26,8 +26,8 @@ public class Batch {
     @Scheduled(cron = "0 0 8 * * *")
     public void sendingLateMail() {
         List<Reservation> reservationList = reservationService.findByEndBorrowingAfter();
-        for (int i = 0; i<=reservationList.size(); i++) {
-            Optional<UserBean> userBeanLate = userProxy.findById(reservationList.get(i).getUserBookId());
+        for (Reservation reservation :reservationList) {
+            Optional<UserBean> userBeanLate = userProxy.findById(reservation.getUserBookId());
             mail.sendMessage(userBeanLate.get().getEmail());
         }
     }
