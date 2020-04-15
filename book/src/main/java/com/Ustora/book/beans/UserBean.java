@@ -5,7 +5,7 @@ public class UserBean {
 
     private Long id;
 
-    private String userName;
+    private String username;
 
     private String email;
 
@@ -23,12 +23,12 @@ public class UserBean {
         this.id = id;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getUsername() {
+        return username;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getEmail() {
@@ -49,7 +49,7 @@ public class UserBean {
 
     @Override
     public String toString() {
-        return "UserBean [id=" + id + ", userName=" + userName + ", email=" + email
+        return "UserBean [id=" + id + ", username=" + username + ", email=" + email
                 + ", password=" + password + "]";
     }
 }

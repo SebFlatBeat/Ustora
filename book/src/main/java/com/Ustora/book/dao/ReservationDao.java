@@ -3,7 +3,9 @@ package com.Ustora.book.dao;
 import com.Ustora.book.entities.Reservation;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -18,5 +20,5 @@ public interface ReservationDao extends JpaRepository<Reservation, Long> {
     void delete(Reservation reservation);
 
     @Query("select reservation from Reservation reservation where reservation.endBorrowing>=:endBorrowing")
-    List<Reservation> findByEndBorrowingAfter();
+    List<Reservation> findByEndBorrowingAfter(@Param("endBorrowing")Date endBorrowing);
 }

@@ -1,12 +1,10 @@
 
 7
-java:S1116"Remove this empty statement.(Åñ­õşÿÿÿÿ
-{
-java:S1488"`Immediately return this expression instead of assigning it to the temporary variable "userBook".(âÀ‰ÿÿÿÿÿ
-‚
-java:S1488("`Immediately return this expression instead of assigning it to the temporary variable "userBook".(âÀ‰ÿÿÿÿÿ8ìê…½”.
-|
-java:S1488"aImmediately return this expression instead of assigning it to the temporary variable "userBooks".(¦‘¬Şúÿÿÿÿ
-V
-java:S4684!"@Replace this persistent entity with a simple POJO or DTO object.(„ü
+java:S1116"Remove this empty statement.(Åñ­õşÿÿÿÿ
+T
+java:S1128"2Remove this unused import 'java.util.Collections'.(¢³ïÓşÿÿÿÿ8†±œÔ—.
+`
+java:S1128">Remove this unused import 'com.Ustora.user.entities.UserRole'.(åµåÔıÿÿÿÿ8†±œÔ—.
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¸»Üöüÿÿÿÿ
+]
+java:S46846"@Replace this persistent entity with a simple POJO or DTO object.(„ü8˜…ÖÁ—.

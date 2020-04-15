@@ -8,6 +8,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
@@ -51,7 +52,6 @@ public class UserController {
      */
     @PostMapping(value = "/registerPost")
     public UserBook register(@RequestBody UserBook userBook) {
-        userBook.getUserRoleList().add(UserRole.USER);
         userService.save(userBook);
         logger.info("Renvoi de l'utilisateur enregistré");
         return userBook;
@@ -75,7 +75,7 @@ public class UserController {
      * @return
      */
     @GetMapping("/find/id")
-    public Optional<UserBook> findById (Long id) {
+    public Optional<UserBook> findById (@RequestParam Long id) {
         Optional<UserBook> userBook = userService.findById(id);
         logger.info("Renvoi de la recherche par Id");
         return userBook;

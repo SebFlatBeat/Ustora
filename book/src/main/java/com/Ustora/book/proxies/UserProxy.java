@@ -4,9 +4,11 @@ import com.Ustora.book.beans.UserBean;
 import com.Ustora.book.configurations.FeignConfig;
 import org.springframework.cloud.netflix.ribbon.RibbonClient;
 import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.Optional;
 
@@ -25,9 +27,9 @@ public interface UserProxy {
 
     /**
      *
-     * @param userBookId
+     * @param id
      * @return
      */
     @GetMapping(value = "/user/find/id")
-    Optional<UserBean> findById(Long userBookId);
+    Optional<UserBean> findById(@RequestParam Long id);
 }

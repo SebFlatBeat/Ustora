@@ -1,22 +1,2 @@
 
-v
-java:S1488!"`Immediately return this expression instead of assigning it to the temporary variable "bookList".(òÕ˜
-w
-java:S1488?"aImmediately return this expression instead of assigning it to the temporary variable "auteurNom".(ÚÙ«
-Z
-java:S1128"8Remove this unused import 'com.Ustora.book.dao.BookDao'.(¾‚­ˆûÿÿÿÿ8í’¶ •.
-
-java:S1488I"dImmediately return this expression instead of assigning it to the temporary variable "auteurPrenom".(Åùº­üÿÿÿÿ
-x
-java:S14885"]Immediately return this expression instead of assigning it to the temporary variable "titre".(×£ˆ£üÿÿÿÿ
-
-java:S1488]"dImmediately return this expression instead of assigning it to the temporary variable "anneeEdition".(¬ÈÁıÿÿÿÿ
-s
-java:S1488+"]Immediately return this expression instead of assigning it to the temporary variable "books".(ê±œ¢
 o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÄÇô—
-u
-java:S1488g"_Immediately return this expression instead of assigning it to the temporary variable "section".(áÀ¹Ÿ
-w
-java:S1488q"\Immediately return this expression instead of assigning it to the temporary variable "isbn".(ã¸”¿üÿÿÿÿ
-z
-java:S1488S"_Immediately return this expression instead of assigning it to the temporary variable "editeur".(›½˜ ıÿÿÿÿ

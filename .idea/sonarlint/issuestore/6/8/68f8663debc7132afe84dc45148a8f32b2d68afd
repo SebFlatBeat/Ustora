@@ -1,0 +1,7 @@
+
+[	java:S1079"AConstructor has 9 parameters, which is greater than 7 authorized.(¶”ϋώÿÿÿÿ
+F
+java:S1172a"0Remove this unused method parameter "auteurNom".(‚γώς
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(χωÿÿÿÿ
+‹
+java:S4165b"pRemove this useless assignment; "auteurPrincipalNom" already holds the assigned value along all execution paths.(–¥£Εψÿÿÿÿ

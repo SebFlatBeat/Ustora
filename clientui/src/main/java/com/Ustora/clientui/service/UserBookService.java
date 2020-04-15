@@ -1,6 +1,7 @@
 package com.Ustora.clientui.service;
 
 import com.Ustora.clientui.beans.UserBean;
+import com.Ustora.clientui.beans.UserRole;
 import com.Ustora.clientui.proxies.UserProxy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.User;
@@ -23,7 +24,7 @@ public class UserBookService implements UserDetailsService {
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         UserBean userBook = userProxy.login(username);
         if (userBook != null){
-            return new User(userBook.getUsername(),userBook.getPassword(),userBook.getAuthorities());
+            return new  User(userBook.getUsername(),userBook.getPassword(),userBook.getAuthorities());
         }else{
             throw new UsernameNotFoundException(String.format("Username[%s] not found"));
         }

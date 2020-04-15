@@ -1,0 +1,4 @@
+
+^
+java:S1128"ARemove this unused import 'com.Ustora.book.entities.Reservation'.(¾ì¢€8ÂÁÆÈ•.
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ï¹õþ

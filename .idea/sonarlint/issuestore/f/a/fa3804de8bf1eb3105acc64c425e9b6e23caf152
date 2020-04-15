@@ -1,0 +1,6 @@
+
+b
+java:S1128"@Remove this unused import 'javax.persistence.ElementCollection'.(ØŠÁÖşÿÿÿÿ8ˆöïÖ—.
+U
+java:S1128	"8Remove this unused import 'javax.persistence.FetchType'.(‡¯¿8ˆöïÖ—.
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‡šº!

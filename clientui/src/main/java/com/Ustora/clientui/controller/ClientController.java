@@ -3,6 +3,7 @@ package com.Ustora.clientui.controller;
 import com.Ustora.clientui.beans.BookBean;
 import com.Ustora.clientui.beans.ReservationBean;
 import com.Ustora.clientui.beans.UserBean;
+import com.Ustora.clientui.beans.UserRole;
 import com.Ustora.clientui.dto.RestResponsePage;
 import com.Ustora.clientui.proxies.BookProxy;
 import com.Ustora.clientui.proxies.ReservationProxy;
@@ -169,6 +170,7 @@ public class ClientController {
      */
     @PostMapping(value = "/registerPost")
     public String registerPost(@ModelAttribute UserBean userBean){
+        userBean.grantAuthority(UserRole.USER);
         userProxy.register(userBean);
         return "redirect:/registerSuccess";
     }

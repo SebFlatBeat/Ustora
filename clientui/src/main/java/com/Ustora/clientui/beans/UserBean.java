@@ -1,11 +1,12 @@
 package com.Ustora.clientui.beans;
 
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import javax.persistence.ElementCollection;
+import javax.persistence.FetchType;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -55,7 +56,7 @@ public class UserBean  implements UserDetails{
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         List<GrantedAuthority> authorities = new ArrayList<>();
-        userRoleList.forEach(userRole -> authorities.add(new SimpleGrantedAuthority(userRole.toString())));
+        this.userRoleList.forEach(userRole -> authorities.add(new SimpleGrantedAuthority(userRole.toString())));
         return authorities;
     }
 
@@ -95,6 +96,10 @@ public class UserBean  implements UserDetails{
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public void setAuthorities(List<UserRole> authorities) {
+        this.userRoleList = authorities;
     }
 
     public List<UserRole> getUserRoleList() {
