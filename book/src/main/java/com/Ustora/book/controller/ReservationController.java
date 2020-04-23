@@ -16,6 +16,9 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+/**
+ * The type Reservation controller.
+ */
 @RestController
 public class ReservationController {
 
@@ -25,12 +28,16 @@ public class ReservationController {
     @Autowired
     private BookService bookService;
 
+    /**
+     * The Logger.
+     */
     Logger logger = LoggerFactory.getLogger(this.getClass());
 
     /**
+     * Find reservation list.
      *
-     * @param userId
-     * @return
+     * @param userId the user id
+     * @return list
      */
     @GetMapping("/reservation")
     public List<Reservation> findReservation(@RequestParam Long userId){
@@ -40,10 +47,11 @@ public class ReservationController {
     }
 
     /**
+     * Save reservation reservation.
      *
-     * @param bookId
-     * @param userId
-     * @return
+     * @param bookId the book id
+     * @param userId the user id
+     * @return reservation
      */
     @PostMapping(value = "/save/reservation")
     public Reservation saveReservation(@RequestParam Long bookId, @RequestParam Long userId){
@@ -70,8 +78,9 @@ public class ReservationController {
     }
 
     /**
+     * Delete reservation.
      *
-     * @param id
+     * @param id the id
      */
     @PostMapping(value = "/delete/reservation")
     public void  deleteReservation (@RequestParam Long id){
@@ -84,9 +93,10 @@ public class ReservationController {
     }
 
     /**
+     * Update reservation optional.
      *
-     * @param id
-     * @return
+     * @param id the id
+     * @return optional
      */
     @PostMapping(value = "/extend/reservation")
     public Optional<Reservation> updateReservation (@RequestParam Long id){

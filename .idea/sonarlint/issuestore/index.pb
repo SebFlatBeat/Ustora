@@ -49,8 +49,6 @@ c
 3book/src/main/java/com/Ustora/book/dao/BookDao.java,a\5\a527ca78db7e290e6620b75fd4373e8fa5d1aef5
 x
 Hclientui/src/main/java/com/Ustora/clientui/proxies/ReservationProxy.java,0\1\01b27f4889397ad5a11cdadef4ea24601b2c6be4
-z
-Jclientui/src/main/resources/META-INF/resources/WEB-INF/jsp/espacePerso.jsp,8\1\81c1e7d72ba3b4574c8772ec706fa5c280cb776e
 j
 :book/src/main/java/com/Ustora/book/dao/ReservationDao.java,2\3\23bfd90229e561efa08ea9be0d23c9226edd7da7
 x
@@ -109,8 +107,6 @@ E
 book/logs/bookLog.log,9\1\9145af9c8fa866d2375ba01e91dc43c9a907f6e1
 n
 >clientui/src/main/java/com/Ustora/clientui/beans/UserRole.java,1\4\14d5dba525bd6bad045007e6c23c5eb4cba3ca1d
-t
-Dclientui/src/main/resources/META-INF/resources/WEB-INF/jsp/index.jsp,a\5\a546c5e2c18599aeae38eb8a1275299d651bce42
 z
 Jclientui/src/main/java/com/Ustora/clientui/configurations/FeignConfig.java,8\9\89d448585b0b49dab96a65179bf234f1fef9cc53
 |
@@ -131,3 +127,9 @@ K
 Sclientui/src/main/java/com/Ustora/clientui/configurations/FeignExceptionConfig.java,5\f\5fefc253e4efae8aa3c66945fe517f9ab6423fa4
 r
 Bbook/src/main/java/com/Ustora/book/configurations/FeignConfig.java,4\d\4d1d5fa198568c1a090a97a6d118973c8a385383
+@
+book/logback.xml,5\3\535447088df725e4140401ffa991d9614ce4969b
+|
+Lzuul-server/src/main/java/com/Ustora/zuulserver/security/SecurityConfig.java,f\6\f6c24bb2de68c851252ae6526a17d3b2ca777e2e
+s
+Cbook/src/main/java/com/Ustora/book/configurations/SleuthConfig.java,2\5\252bc989407511c87789c9cb453259665a7c881a

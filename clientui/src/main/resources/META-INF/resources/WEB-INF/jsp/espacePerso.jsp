@@ -84,9 +84,6 @@
             <li class="nav-item">
                 <a class="nav-link" href="<c:url value="/espacePerso#prets"/>">Mes prêts</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="<c:url value="/espacePerso#account"/>">Modifier mon compte</a>
-            </li>
         </ul>
     </div>
 </nav>

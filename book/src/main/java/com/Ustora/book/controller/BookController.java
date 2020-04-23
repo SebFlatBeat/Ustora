@@ -15,19 +15,26 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 
+/**
+ * The type Book controller.
+ */
 @RestController
 public class BookController {
 
+    /**
+     * The Logger.
+     */
     Logger logger = LoggerFactory.getLogger(this.getClass());
 
     @Autowired
     private BookService bookService;
 
     /**
+     * Books page.
      *
-     * @param page
-     * @param size
-     * @return bookList
+     * @param page the page
+     * @param size the size
+     * @return bookList page
      */
     @GetMapping("/allBook")
     public Page<Book> books(@RequestParam(name="page",defaultValue = "0") int page,
@@ -39,8 +46,9 @@ public class BookController {
     }
 
     /**
+     * All book list list.
      *
-     * @return books
+     * @return books list
      */
     @GetMapping("/allBookList")
     public List<Book> allBookList(){
@@ -50,8 +58,9 @@ public class BookController {
     }
 
     /**
+     * Find titre list.
      *
-     * @return titre
+     * @return titre list
      */
     @GetMapping("/find/titre")
     public List<String> findTitre(){
@@ -61,8 +70,9 @@ public class BookController {
     }
 
     /**
+     * Find auteur nom list.
      *
-     * @return auteurNom
+     * @return auteurNom list
      */
     @GetMapping("/find/auteurNom")
     public List<String> findAuteurNom(){
@@ -72,8 +82,9 @@ public class BookController {
     }
 
     /**
+     * Find auteur prenom list.
      *
-     * @return auteurPrenom
+     * @return auteurPrenom list
      */
     @GetMapping("/find/auteurPrenom")
     public List<String> findAuteurPrenom(){
@@ -83,8 +94,9 @@ public class BookController {
     }
 
     /**
+     * Find editeur list.
      *
-     * @return editeur
+     * @return editeur list
      */
     @GetMapping("/find/editeur")
     public List<String> findEditeur(){
@@ -94,8 +106,9 @@ public class BookController {
     }
 
     /**
+     * Find annee edition list.
      *
-     * @return anneeEdition
+     * @return anneeEdition list
      */
     @GetMapping("/find/anneeEdition")
     public List<String> findAnneeEdition(){
@@ -105,8 +118,9 @@ public class BookController {
     }
 
     /**
+     * Find section list.
      *
-     * @return section
+     * @return section list
      */
     @GetMapping("/find/section")
     public List<String> findSection(){
@@ -116,8 +130,9 @@ public class BookController {
     }
 
     /**
+     * Find isbn list.
      *
-     * @return isbn
+     * @return isbn list
      */
     @GetMapping("/find/isbn")
     public List<String> findIsbn(){
@@ -127,10 +142,11 @@ public class BookController {
     }
 
     /**
+     * Search titre list.
      *
-     * @param titre
-     * @param searchBook
-     * @return
+     * @param titre      the titre
+     * @param searchBook the search book
+     * @return list
      */
     @PostMapping("/search/titre/{titre}")
     public List<Book> searchTitre(@PathVariable("titre") String titre, @RequestBody List<Book> searchBook){
@@ -139,10 +155,11 @@ public class BookController {
     }
 
     /**
+     * Search auteur nom list.
      *
-     * @param auteurNom
-     * @param searchBook
-     * @return
+     * @param auteurNom  the auteur nom
+     * @param searchBook the search book
+     * @return list
      */
     @PostMapping("/search/auteurPrincipalNom/{auteurNom}")
     public List<Book> searchAuteurNom(@PathVariable("auteurNom") String auteurNom, @RequestBody List<Book> searchBook){
@@ -151,10 +168,11 @@ public class BookController {
     }
 
     /**
+     * Search auteur prenom list.
      *
-     * @param auteurPrenom
-     * @param searchBook
-     * @return
+     * @param auteurPrenom the auteur prenom
+     * @param searchBook   the search book
+     * @return list
      */
     @PostMapping("/search/auteurPrincipalPrenom/{auteurPrenom}")
     public List<Book> searchAuteurPrenom(@PathVariable("auteurPrenom") String auteurPrenom, @RequestBody List<Book> searchBook){
@@ -163,10 +181,11 @@ public class BookController {
     }
 
     /**
+     * Search editeur list.
      *
-     * @param editeur
-     * @param searchBook
-     * @return
+     * @param editeur    the editeur
+     * @param searchBook the search book
+     * @return list
      */
     @PostMapping("/search/editeur/{editeur}")
     public List<Book> searchEditeur(@PathVariable("editeur") String editeur, @RequestBody List<Book> searchBook){
@@ -175,10 +194,11 @@ public class BookController {
     }
 
     /**
+     * Search annee edition list.
      *
-     * @param anneeEdition
-     * @param searchBook
-     * @return
+     * @param anneeEdition the annee edition
+     * @param searchBook   the search book
+     * @return list
      */
     @PostMapping("/search/anneeEdition/{anneeEdition}")
     public List<Book> searchAnneeEdition(@PathVariable("anneeEdition") String anneeEdition, @RequestBody List<Book> searchBook){
@@ -187,10 +207,11 @@ public class BookController {
     }
 
     /**
+     * Search section list.
      *
-     * @param section
-     * @param searchBook
-     * @return
+     * @param section    the section
+     * @param searchBook the search book
+     * @return list
      */
     @PostMapping("/search/section/{section}")
     public List<Book> searchSection(@PathVariable("section") String section, @RequestBody List<Book> searchBook){
@@ -199,10 +220,11 @@ public class BookController {
     }
 
     /**
+     * Search isbn list.
      *
-     * @param isbn
-     * @param searchBook
-     * @return
+     * @param isbn       the isbn
+     * @param searchBook the search book
+     * @return list
      */
     @PostMapping("/search/isbn/{isbn}")
     public List<Book> searchIsbn(@PathVariable("isbn") String isbn, @RequestBody List<Book> searchBook){

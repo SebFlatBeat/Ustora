@@ -10,9 +10,17 @@ import javax.mail.PasswordAuthentication;
 import javax.mail.Session;
 import java.util.Properties;
 
+/**
+ * The type Email config.
+ */
 @Configuration
 public class EmailConfig {
 
+    /**
+     * Gets java mail sender.
+     *
+     * @return the java mail sender
+     */
     @Bean
     public JavaMailSender getJavaMailSender() {
         JavaMailSenderImpl mailSender = new JavaMailSenderImpl();

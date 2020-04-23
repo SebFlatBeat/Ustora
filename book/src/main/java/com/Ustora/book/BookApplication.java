@@ -10,6 +10,9 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 
+/**
+ * The type Book application.
+ */
 @SpringBootApplication
 @EnableFeignClients("com.Ustora.book")
 @EnableDiscoveryClient
@@ -18,7 +21,12 @@ public class BookApplication {
 
 	private static Logger logger = LoggerFactory.getLogger(BookApplication.class);
 
-	public static void main(String[] args) {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
+    public static void main(String[] args) {
 
 
 		logger.info("Démarrage de l'application Book");

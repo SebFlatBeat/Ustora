@@ -92,7 +92,6 @@ URL: https://www.freshdesignweb.com/ustora/
                         J.R.R <span class="primary"><strong>Tolkien</strong></span>
                     </h2>
                     <h4 class="caption subtitle">Beowulf</h4>
-                    <a class="caption button-radius" href="#"><span class="icon"></span>Réserver</a>
                 </div>
             </li>
             <li><img src="../../img/h4-slide2.png" alt="Slide">
@@ -101,7 +100,7 @@ URL: https://www.freshdesignweb.com/ustora/
                         Jules <span class="primary"><strong>Verne</strong></span>
                     </h2>
                     <h4 class="caption subtitle">L'étonnante aventure de la mission barsac</h4>
-                    <a class="caption button-radius" href="#"><span class="icon"></span>Réserver</a>
+
                 </div>
             </li>
             <li><img src="../../img/h4-slide3.png" alt="Slide">
@@ -110,7 +109,6 @@ URL: https://www.freshdesignweb.com/ustora/
                         Stephen <span class="primary"><strong>King</strong></span>
                     </h2>
                     <h4 class="caption subtitle">The Mist</h4>
-                    <a class="caption button-radius" href="#"><span class="icon"></span>Réserver</a>
                 </div>
             </li>
             <li><img src="../../img/h4-slide4.png" alt="Slide">
@@ -119,7 +117,6 @@ URL: https://www.freshdesignweb.com/ustora/
                         Mary <span class="primary">Higgins <strong>Clark</strong></span>
                     </h2>
                     <h4 class="caption subtitle">Dernière Danse</h4>
-                    <a class="caption button-radius" href="#"><span class="icon"></span>Réserver</a>
                 </div>
             </li>
         </ul>
@@ -338,9 +335,6 @@ URL: https://www.freshdesignweb.com/ustora/
                         <div class="single-product">
                             <div class="product-f-image">
                                 <img src="../../img/product-1.jpg" alt="">
-                                <div class="product-hover">
-                                    <a href="../../../../templates/single-product.html" name="bookId" id="bookId" class="view-details-link"> Reserver</a>
-                                </div>
                             </div>
 
                             <h2><a >Balzac</a></h2>
@@ -352,9 +346,6 @@ URL: https://www.freshdesignweb.com/ustora/
                         <div class="single-product">
                             <div class="product-f-image">
                                 <img src="../../img/product-2.jpg" alt="">
-                                <div class="product-hover">
-                                    <a href="../../../../templates/single-product.html" class="view-details-link"> Reserver</a>
-                                </div>
                             </div>
 
                             <h2>Balzac</h2>
@@ -365,9 +356,6 @@ URL: https://www.freshdesignweb.com/ustora/
                         <div class="single-product">
                             <div class="product-f-image">
                                 <img src="../../img/product-3.jpg" alt="">
-                                <div class="product-hover">
-                                    <a href="../../../../templates/single-product.html" class="view-details-link"> Reserver</a>
-                                </div>
                             </div>
 
                             <h2>Marcel Pagnol</h2>
@@ -379,9 +367,6 @@ URL: https://www.freshdesignweb.com/ustora/
                         <div class="single-product">
                             <div class="product-f-image">
                                 <img src="../../img/product-4.jpg" alt="">
-                                <div class="product-hover">
-                                    <a href="../../../../templates/single-product.html" class="view-details-link">Reserver</a>
-                                </div>
                             </div>
 
                             <h2><a >Les frères Grimm</a></h2>
@@ -393,9 +378,6 @@ URL: https://www.freshdesignweb.com/ustora/
                         <div class="single-product">
                             <div class="product-f-image">
                                 <img src="../../img/product-6.jpg" alt="">
-                                <div class="product-hover">
-                                    <a href="../../../../templates/single-product.html" class="view-details-link">Reserver</a>
-                                </div>
                             </div>
 
                             <h2><a >Guillaume Apollinaire</a></h2>

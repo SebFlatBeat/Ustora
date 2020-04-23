@@ -12,23 +12,28 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.Optional;
 
+/**
+ * The interface User proxy.
+ */
 @FeignClient(name = "zuul-server", contextId="userProxy", configuration= FeignConfig.class, url = "http://localhost:9004" )
 @RibbonClient(name = "user")
 @Component
 public interface UserProxy {
 
     /**
+     * Find user bean.
      *
-     * @param username
-     * @return
+     * @param username the username
+     * @return user bean
      */
     @GetMapping(value = "/user/find/{username}")
     UserBean find(@PathVariable String username);
 
     /**
+     * Find by id optional.
      *
-     * @param id
-     * @return
+     * @param id the id
+     * @return optional
      */
     @GetMapping(value = "/user/find/id")
     Optional<UserBean> findById(@RequestParam Long id);

@@ -7,14 +7,28 @@ import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Component;
 
+/**
+ * The type Mail.
+ */
 @Component
 public class Mail {
 
+    /**
+     * The Email sender.
+     */
     @Autowired
     public JavaMailSender emailSender;
 
+    /**
+     * The Logger.
+     */
     Logger logger = LoggerFactory.getLogger(this.getClass());
 
+    /**
+     * Send message.
+     *
+     * @param userMail the user mail
+     */
     public void sendMessage(String userMail) {
         logger.info("Création de l'email");
         SimpleMailMessage message = new SimpleMailMessage();

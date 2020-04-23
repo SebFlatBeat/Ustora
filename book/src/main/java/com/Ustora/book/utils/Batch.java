@@ -15,6 +15,9 @@ import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * The type Batch.
+ */
 @Component
 @Configuration
 public class Batch {
@@ -22,14 +25,23 @@ public class Batch {
     @Autowired
     private ReservationService reservationService;
 
+    /**
+     * The User proxy.
+     */
     @Autowired
     UserProxy userProxy;
 
     @Autowired
     private Mail mail;
 
+    /**
+     * The Logger.
+     */
     Logger logger = LoggerFactory.getLogger(this.getClass());
 
+    /**
+     * Sending late mail.
+     */
     @Scheduled(cron = "0 55 09 * * *")
     public void sendingLateMail() {
         logger.info("Démarrage du bacth");
